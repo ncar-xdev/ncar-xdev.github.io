@@ -1,0 +1,63 @@
+name: build-and-deploy
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    if: github.repository == 'ncar-xdev/ncar-xdev.github.io'
+    steps:
+
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup miniconda environment
+        uses: conda-incubator/setup-miniconda@master
+        with:
+          channels: conda-forge,nodefaults
+          channel-priority: strict
+          activate-environment: xdev
+          auto-update-conda: false
+          python-version: 3.9
+          environment-file: environment.yml
+          mamba-version: '*'
+          use-mamba: true
+
+      - name: Verify environment installation
+        run: conda env list
+
+      - name: Build the book
+        run: jupyter-book build .
+
+      - name: Zip up the site
+        run: |
+          set -x
+          set -e
+          if [ -f site.zip ]; then
+              rm -rf site.zip
+          fi
+          zip -r site.zip ./_build/html
+
+      - name: Upload zipped site artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: site-zip
+          path: ./site.zip
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html

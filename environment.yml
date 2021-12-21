@@ -1,0 +1,10 @@
+name: xdev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyter-book
+  - pip
+  - python>=3.8
+  - pip:
+    - sphinx-pythia-theme
