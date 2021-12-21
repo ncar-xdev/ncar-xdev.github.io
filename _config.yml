@@ -30,7 +30,7 @@ parse:
   myst_dmath_double_inline: true
 
 html:
-  favicon: images/X_icon.png
+  favicon: images/x_icon_light.png
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
