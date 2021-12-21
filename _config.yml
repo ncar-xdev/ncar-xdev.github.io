@@ -1,0 +1,70 @@
+title: "Xdev"
+logo: images/Xdev_logo_light.svg
+
+exclude_patterns:
+  - _build
+  - Thumbs.db
+  - .DS_Store
+  - "**.ipynb_checkpoints"
+
+execute:
+  execute_notebooks: "off"
+
+parse:
+  myst_enable_extensions:
+    # - amsmath
+    - colon_fence
+    # - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
+  myst_url_schemes:
+   - mailto
+   - http
+   - https
+  myst_dmath_double_inline: true
+
+html:
+  favicon: images/X_icon.png
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  use_multitoc_numbering: true
+  google_analytics_id: "G-50ST3W7ZN6"
+  home_page_in_navbar: true
+  baseurl: "https://ncar-xdev.github.io"
+  comments:
+    hypothesis: false
+    utterances:
+      repo: https://github.com/ncar-xdev/ncar-xdev-utterances
+
+repository:
+  url: https://github.com/ncar-xdev/ncar-xdev.github.io
+  path_to_book: ""
+  branch: main
+
+sphinx:
+  config:
+    html_theme: sphinx_pythia_theme
+    html_theme_options:
+      page_layouts:
+        index: banner
+      domnav:
+        - content: About
+          url: README
+      footer:
+        logos:
+          NCAR: images/NCAR-contemp-logo-blue.png
+        acknowledgement:
+          content: |
+            This material is based upon work supported by the National
+            Science Foundation. Any opinions, findings, and conclusions
+            or recommendations expressed in this material are those of
+            the author(s) and do not necessarily reflect the views of
+            the National Science Foundation.
+          image: images/NSF_AllWhite_bitmap_Logo.png
