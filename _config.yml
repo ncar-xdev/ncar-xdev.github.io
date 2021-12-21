@@ -1,5 +1,5 @@
 title: "Xdev"
-logo: images/Xdev_logo_light.svg
+logo: images/xdev_logo_light.svg
 
 exclude_patterns:
   - _build
