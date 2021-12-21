@@ -10,7 +10,7 @@ on:
 
 jobs:
   preview:
-    if: github.repository == 'ProjectPythia/projectpythia.github.io'
+    if: github.repository == 'ncar-xdev/ncar-xdev.github.io'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -84,7 +84,7 @@ jobs:
             ${{ env.comment_message }}
             Deployment in progress for git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
 
-      - name: Download Artifact site
+      - name: Download zipped site artifact
         if: |
           github.event.workflow_run.conclusion == 'success'
           && steps.find-pull-request.outputs.number != ''
@@ -96,7 +96,7 @@ jobs:
           run_id: ${{ github.event.workflow_run.id }}
           name: site-zip
 
-      - name: Unzip site
+      - name: Unzip site artifact
         if:  |
           github.event.workflow_run.conclusion == 'success'
           && steps.find-pull-request.outputs.number != ''
