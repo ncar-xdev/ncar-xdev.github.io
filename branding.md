@@ -62,6 +62,8 @@ The `X` in the Xdev logo is written with an uppercase "X" in the Google Font
 [Saira Stencil One](https://fonts.google.com/specimen/Saira+Stencil+One).
 The `dev` in the Xdev logo is written with lowercase "dev" in the Google Font
 [Audiowide](https://fonts.google.com/specimen/Audiowide?query=audiowide).
+Both fonts should have the same `font-size` and `font-weight: 400;` (or the
+default `font-weight`).
 
 The logo can be reproduced in HTML with inclusion of the appropriate Google
 Font stylesheets in the `<head>...</head>` section:
