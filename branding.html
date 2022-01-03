@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -87,7 +88,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="shortcut icon" href="_static/x_icon_light.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="About the Experimental Development Team" href="README.html" />
+    <link rel="prev" title="About Xdev" href="README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -95,35 +96,74 @@ commentsRunWhenDOMLoaded(addUtterances);
     <!-- Google Analytics -->
     
   </head>
-<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="132">
-<nav class="domnav navbar navbar-expand-md fixed-top navbar-dark bg-dark shadow">
-  <div class="container-fluid">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="132">
+<div class="container-fluid" id="shim"></div>
+
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        
-        
-        
-        
-        
+    <div class="container-fluid" id="banner"></div>
+
+    
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top bd-navbar shadow" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="index.html">
+<p class="title">Python</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class=" collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+  
+  <li class="nav-item">
+    <a class="nav-link nav-internal" href="README">About</a>
+  </li>
+  
+  
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="README.html">About</a>
+          <a class="nav-link" href="https://github.com/ncar-xdev" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
         </li>
-        
-        
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/NCARXdev" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
       </ul>
+      </div>
+      
     </div>
   </div>
+</div>
 </nav>
-  <div class="container-fluid" id="banner"></div>
-  
 
-  <div class="container-fluid p-0">
-    <div class="row">
-      
+    <div class="container-xl">
+      <div class="row">
+          
+
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -134,7 +174,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="README.html">
-   About the Experimental Development Team
+   About Xdev
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -145,14 +185,21 @@ commentsRunWhenDOMLoaded(addUtterances);
 </ul>
 
     </div>
-</nav>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by <a href="https://projectpythia.org">Project Pythia</a>
 </div>
 
-      
+</div>
 
-      <main class="col py-md-2 pl-md-4 bd-content overflow-auto" role="main">
-        
-    <div class="topbar container-xl fixed-top">
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main"><div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
@@ -226,9 +273,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+  <div id="main-content" class="row">
+    <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+      
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="branding">
@@ -291,7 +338,9 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>The <code class="docutils literal notranslate"><span class="pre">X</span></code> in the Xdev logo is written with an uppercase “X” in the Google Font
 <a class="reference external" href="https://fonts.google.com/specimen/Saira+Stencil+One">Saira Stencil One</a>.
 The <code class="docutils literal notranslate"><span class="pre">dev</span></code> in the Xdev logo is written with lowercase “dev” in the Google Font
-<a class="reference external" href="https://fonts.google.com/specimen/Audiowide?query=audiowide">Audiowide</a>.</p>
+<a class="reference external" href="https://fonts.google.com/specimen/Audiowide?query=audiowide">Audiowide</a>.
+Both fonts should have the same <code class="docutils literal notranslate"><span class="pre">font-size</span></code> and <code class="docutils literal notranslate"><span class="pre">font-weight:</span> <span class="pre">400;</span></code> (or the
+default <code class="docutils literal notranslate"><span class="pre">font-weight</span></code>).</p>
 <p>The logo can be reproduced in HTML with inclusion of the appropriate Google
 Font stylesheets in the <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;...&lt;/head&gt;</span></code> section:</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com/css?family=Saira+Stencil+One&amp;display=swap&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
@@ -299,23 +348,23 @@ Font stylesheets in the <code class="docutils literal notranslate"><span class="
 </pre></div>
 </div>
 <p>afterwhich elements in your HTML can be specify fonts with the appropriate styles:</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;Audiowide&#39;</span><span class="o">;</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Audiowide&#39;</span><span class="o">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;Saira Stencil One&#39;</span><span class="o">;</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Saira Stencil One&#39;</span><span class="o">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>(Note that with HTML5, you can place the <code class="docutils literal notranslate"><span class="pre">&lt;link</span> <span class="pre">...&gt;</span></code> tags above directly in the body,
 which is what makes the below example work.)</p>
 <p>This allows you to write the Xdev logo purely with text like so:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">span</span><span class="p">.</span><span class="nc">xdev-x</span> <span class="p">{</span>
-    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Saira Stencil One&#39;</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="nt">span</span><span class="p">.</span><span class="nc">xdev-dev</span> <span class="p">{</span>
-    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Audiowide&#39;</span><span class="p">;</span>
-  <span class="p">}</span>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">span</span><span class="p">.</span><span class="nc">xdev-x</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Saira Stencil One&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="nt">span</span><span class="p">.</span><span class="nc">xdev-dev</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Audiowide&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;xdev-x&quot;</span><span class="p">&gt;</span>X<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;xdev-dev&quot;</span><span class="p">&gt;</span>dev<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </pre></div>
@@ -356,68 +405,81 @@ which is what makes the below example work.)</p>
 
               </div>
               
-        
-            
-<!-- Previous / next buttons -->
-<div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="README.html" title="previous page">
-    <i class="fas fa-angle-double-left"></i>
-    <div class="prev-next-info">
-      <p class="prev-next-title">About the Experimental Development Team</p>
-    </div>
-  </a>
-</div>
-        
+      
+      <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="README.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">About Xdev</p>
         </div>
-    </div>
-    
-      </main>
-
+    </a>
+</div>
+      
     </div>
   </div>
-  
+</main>
+
+      </div>
+    </div>
   
   <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-<div class="footer" role="contentinfo">
-  <div class="container-fluid logobar">
-    <div class="container">
-      <div class="row d-flex flex-wrap align-items-center">
-        <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
-          <img
-            alt="NCAR"
-            src="_images/NCAR-contemp-logo-blue.png"
-            style="width: 100%"
-          />
-        </div>
+<footer class="footer">
+  <div class="container-fluid m-0 p-0">
+  
+    <div class="footer-item">
+    
+  <div class="container-fluid footer-logos">
+    <div class="row d-flex flex-wrap align-items-center">
+      <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
+        <img alt="NCAR" src="_images/NCAR-contemp-logo-blue.png" style="width: 100%">
       </div>
     </div>
   </div>
-  <div class="container-fluid infobar">
+    </div>
+  
+    <div class="footer-item">
+    
+    </div>
+  
+    <div class="footer-item">
+      <div class="container-fluid footer-info">
     <div class="container">
       <div class="d-flex justify-content-center">
-        <p class="m-0">&#169;
-          Copyright 2021.
-          Created using&nbsp;<a href="https://www.sphinx-doc.org/">Sphinx</a>&nbsp;4.3.2.
+        <p class="py-1 m-0">
+            &copy;&nbsp;2022.
+        
+          By the Xdev Team.
+        
+          Last updated on 3 January 2022.
         </p>
       </div>
     </div>
   </div>
-  <div class="container-fluid acknowledgement">
+    </div>
+  
+    <div class="footer-item">
+    
+  <div class="container-fluid footer-extra">
     <div class="container">
       <div class="row">
-        <div class="col">This material is based upon work supported by the National
+        <p class="m-0">
+          <img src="/_static/NSF_AllWhite_bitmap_Logo.png" style="float:left;width:60px;height:60px;margin-right:1rem;">
+This material is based upon work supported by the National
 Science Foundation. Any opinions, findings, and conclusions
 or recommendations expressed in this material are those of
 the author(s) and do not necessarily reflect the views of
 the National Science Foundation.
-</div>
-        <div class="col-auto">
-          <img src="_images/NSF_AllWhite_bitmap_Logo.png" />
-        </div>
+
+        </p>
       </div>
     </div>
   </div>
-</div>
+    </div>
+  
+  </div>
+</footer>
   </body>
 </html>
