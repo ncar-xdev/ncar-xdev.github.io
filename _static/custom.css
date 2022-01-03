@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+
+span.xdev-x {
+  font-family: 'Saira Stencil One';
+  font-size: 6rem;
+  line-height: 2rem;
+}
+span.xdev-dev {
+  font-family: 'Audiowide';
+  font-size: 6rem;
+  line-height: 2rem;
+}
+
+main.banner-main .splash-banner {
+  padding-top: calc(0.15 * 100vh);
+  height: calc(100vh - var(--pst-header-height) - 14rem);
+}
+
+main.banner-main .splash-banner h1 {
+  display: none;
+}
+
+main.banner-main .dark-banner a {
+  color: inherit !important;
+}

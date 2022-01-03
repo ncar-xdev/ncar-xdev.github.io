@@ -1,4 +1,6 @@
-title: "Xdev"
+title: Xdev
+author: the Xdev Team
+copyright: '2022'
 logo: images/xdev_logo_light.svg
 
 exclude_patterns:
@@ -50,21 +52,24 @@ repository:
 
 sphinx:
   config:
+    html_sidebars:
+      index: []
+    html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
     html_theme_options:
+      github_url: https://github.com/ncar-xdev
+      twitter_url: https://twitter.com/NCARXdev
       page_layouts:
-        index: banner
-      domnav:
-        - content: About
+        index: page-banner.html
+      navbar_links:
+        - name: About
           url: README
-      footer:
-        logos:
-          NCAR: images/NCAR-contemp-logo-blue.png
-        acknowledgement:
-          content: |
-            This material is based upon work supported by the National
-            Science Foundation. Any opinions, findings, and conclusions
-            or recommendations expressed in this material are those of
-            the author(s) and do not necessarily reflect the views of
-            the National Science Foundation.
-          image: images/NSF_AllWhite_bitmap_Logo.png
+      footer_logos:
+        NCAR: images/NCAR-contemp-logo-blue.png
+      extra_footer: |
+        <img src="/_static/NSF_AllWhite_bitmap_Logo.png" style="float:left;width:60px;height:60px;margin-right:1rem;">
+        This material is based upon work supported by the National
+        Science Foundation. Any opinions, findings, and conclusions
+        or recommendations expressed in this material are those of
+        the author(s) and do not necessarily reflect the views of
+        the National Science Foundation.
