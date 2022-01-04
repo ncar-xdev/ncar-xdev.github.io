@@ -1,3 +1,18 @@
-# Xdev
+# About us!
 
-In order to provide some context for understanding CISL’s Experimental Development Team (Xdev), it’s useful to understand [Pangeo](https://pangeo.io) first.
+The Experimental Development Team (Xdev) in the
+[Computational & Information Systems Lab (CISL)](https://www2.cisl.ucar.edu/)
+at the [National Center for Atmospheric Research](https://ncar.ucar.edu/), is
+a small team dedicated to the development of open source analysis technologies
+for the weather, and climate communities.  Xdev is located in the Technology
+Development Division (TDD) of CISL and within the Visualization and Analysis
+Software Team (VAST) of TDD.
+
+Primarily, Xdev is focused on addressing usability issues with the existing
+open source Python stack, primarily addressing limitations and adding new
+features and technologies to make the use of Python for data analysis in the
+weather and climate communities as powerful and effective as it can be.
+
+In order to provide some context for understanding the Experimental
+Development Team (Xdev), it’s useful to understand [Pangeo](https://pangeo.io)
+first.

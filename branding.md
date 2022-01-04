@@ -101,15 +101,4 @@ This allows you to write the Xdev logo purely with text like so:
 <span class="xdev-x">X</span><span class="xdev-dev">dev</span>
 ```
 
-<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
-<style>
-  span.xdev-x {
-    font-family: 'Saira Stencil One';
-  }
-  span.xdev-dev {
-    font-family: 'Audiowide';
-  }
-</style>
-
-which should display like <span class="xdev-x">X</span><span class="xdev-dev">dev</span>.
+which should display like <span style="font-family: 'Saira Stencil One'">X</span><span style="font-family: 'Audiowide';">dev</span>.

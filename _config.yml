@@ -33,22 +33,12 @@ parse:
 
 html:
   favicon: images/x_icon_light.png
-  use_edit_page_button: true
-  use_repository_button: true
-  use_issues_button: true
-  use_multitoc_numbering: true
-  google_analytics_id: "G-50ST3W7ZN6"
-  home_page_in_navbar: true
   baseurl: "https://ncar-xdev.github.io"
+  use_multitoc_numbering: true
   comments:
     hypothesis: false
     utterances:
       repo: https://github.com/ncar-xdev/ncar-xdev-utterances
-
-repository:
-  url: https://github.com/ncar-xdev/ncar-xdev.github.io
-  path_to_book: ""
-  branch: main
 
 sphinx:
   config:
@@ -57,13 +47,21 @@ sphinx:
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
     html_theme_options:
+      use_edit_page_button: true
+      use_repository_button: true
+      use_issues_button: true
+      google_analytics_id: "G-50ST3W7ZN6"
+      home_page_in_toc: true
       github_url: https://github.com/ncar-xdev
       twitter_url: https://twitter.com/NCARXdev
+      repository_url: https://github.com/ncar-xdev/ncar-xdev.github.io
+      repository_branch: main
+      path_to_docs: ""
       page_layouts:
         index: page-banner.html
       navbar_links:
-        - name: About
-          url: README
+        - name: Background
+          url: about
       footer_logos:
         NCAR: images/NCAR-contemp-logo-blue.png
       extra_footer: |
@@ -73,4 +71,6 @@ sphinx:
         or recommendations expressed in this material are those of
         the author(s) and do not necessarily reflect the views of
         the National Science Foundation.
-      extra_navbar: Theme by <a href="https://projectpythia.org">Project Pythia</a>
+      extra_navbar: |
+        Theme by <a href="https://projectpythia.org">Project Pythia</a>,<br>
+        powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
