@@ -24,3 +24,7 @@ main.banner-main .splash-banner h1 {
 main.banner-main .dark-banner a {
   color: inherit !important;
 }
+
+main.banner-main .dark-banner a.btn-light {
+  color: rgba(var(--spt-color-dark), 1) !important;
+}
