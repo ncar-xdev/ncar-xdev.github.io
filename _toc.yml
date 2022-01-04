@@ -1,12 +1,15 @@
 format: jb-book
 root: index
 parts:
-- caption: Background
+- caption: About
   chapters:
   - file: about
   - file: pangeo
   - file: xdev
     title: Xdev
+- caption: Handbook
+  chapters:
+  - file: processes
 - caption: Appendix
   chapters:
   - file: branding

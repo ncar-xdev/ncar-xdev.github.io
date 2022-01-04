@@ -1,4 +1,4 @@
-# About us!
+# What is Xdev?
 
 The Experimental Development Team (Xdev) in the
 [Computational & Information Systems Lab (CISL)](https://www2.cisl.ucar.edu/)
