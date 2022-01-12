@@ -33,9 +33,6 @@ parse:
   myst_dmath_double_inline: true
 
 html:
-  favicon: images/x_icon_light.png
-  baseurl: "https://ncar-xdev.github.io"
-  use_multitoc_numbering: true
   comments:
     hypothesis: false
     utterances:
@@ -43,9 +40,11 @@ html:
 
 sphinx:
   config:
+    html_baseurl: "https://ncar-xdev.github.io"
+    html_favicon: images/x_icon_light.png
+    html_last_updated_fmt: '%-d %B %Y'
     html_sidebars:
       index: []
-    html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
     html_theme_options:
       use_edit_page_button: true
@@ -61,17 +60,12 @@ sphinx:
       page_layouts:
         index: page-banner.html
       navbar_links:
-        - name: Background
+        - name: About
           url: about
+        - name: Handbook
+          url: handbook
       footer_logos:
         NCAR: images/NCAR-contemp-logo-blue.png
-      extra_footer: |
-        <img src="/_static/NSF_AllWhite_bitmap_Logo.png" style="float:left;width:60px;height:60px;margin-right:1rem;">
-        This material is based upon work supported by the National
-        Science Foundation. Any opinions, findings, and conclusions
-        or recommendations expressed in this material are those of
-        the author(s) and do not necessarily reflect the views of
-        the National Science Foundation.
       extra_navbar: |
         Theme by <a href="https://projectpythia.org">Project Pythia</a>,<br>
         powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
