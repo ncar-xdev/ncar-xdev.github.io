@@ -4,8 +4,8 @@ In December 2016, a small group of scientists and software engineers,
 including
 [Ryan Abernathey](https://datascience.columbia.edu/people/ryan-abernathey/),
 [Joseph Hamman](https://joehamman.com/),
-[Matthew Rocklin](http://matthewrocklin.com/), myself, and many others,
-met at Columbia University for the
+[Matthew Rocklin](http://matthewrocklin.com/), and many others (even I
+was there!), met at Columbia University for the
 [Columbia AOSPY Workshop](https://rabernat.github.io/aospy-workshop/) to
 discuss the future of a Python "toolkit for the analysis of ocean and
 atmosphere general circulation model (GCM) output based on xarray and dask."
@@ -19,8 +19,7 @@ In a quote from the motivating documentation leading to the workshop:
 > science itself.
 
 At that workshop, the group coined the name _Pangeo_, and a few months later
-we began writing the
-[NSF EarthCube](https://www.earthcube.org/)
+we began writing the [NSF EarthCube](https://www.earthcube.org/)
 award that would launch Pangeo as a project.
 
 Over the next few years, the Pangeo project illuminated a number of insights.
@@ -47,10 +46,10 @@ This is an interesting metric, even if not very accurate!
 
 Today, Pangeo is a community that spans the entire globe "promoting open,
 reproducible, and scalable science" (see
-[https://pangeo.io](https://pangeo.io)).  At the writing of this document,
-there are 340 contributing members in the
-[Pangeo GitHub organization](https://github.com/pangeo-data), 791 members of
-the [Pangeo Discourse community](https://discourse.pangeo.io/), and 3920
+[https://pangeo.io](https://pangeo.io)).  At the writing of this document
+(1/12/2022), there are 373 contributing members in the
+[Pangeo GitHub organization](https://github.com/pangeo-data), 854 members of
+the [Pangeo Discourse community](https://discourse.pangeo.io/), and 4296
 followers of the [@pangeo_data Twitter feed](https://twitter.com/pangeo_data).
 
 While the numbers suggest some measure of success, the real value provided by
@@ -81,7 +80,7 @@ Read more about [Pangeo's technical architecture](https://pangeo.io/architecture
 > vision is an ecosystem of tools that can be used together. We want you to be
 > able to easily build your own Pangeo, whatever that means to you.
 
-:::{figure} images/pangeo_tech_1.png
+:::{figure} ../images/pangeo_tech_1.png
 ---
 width: 600px
 name: pangeo-tech
@@ -94,7 +93,7 @@ Read more about [Why Xarray & Dask?](https://pangeo.io/packages.html#why-xarray-
 :::
 
 While the original Pangeo architectural model consisted only of Xarray, Dask,
-and Jupyter (as depicted in the figure right), Pangeo has evolved to allow for
+and Jupyter (as depicted in the figure above), Pangeo has evolved to allow for
 a wide variety of compatible packages and technologies, as long as these
 technologies are _interoperable_.  Pangeo does _strongly encourage_ the use of
 Xarray and Dask, but it is not required to be "Pangeo."
@@ -104,16 +103,17 @@ One of the primary mechanisms used in the scientific Python community for
 developing technologies that are _interoperable_ is by conforming to a
 "standardized" API.  For Pangeo, this means conforming to the API defined by
 the most popular _core_ data representations of the scientific Python
-ecosystem:  Pandas and NumPy.  Xarray builds upon both of these by providing a
-Pandas-like API for NumPy-like data arrays.  Hence, any NumPy-like array (or
-drop-in NumPy replacement) can be "handled natively" by Xarray.  The same is
-true for Dask, which provides distributed data representations for both
-DataFrames (i.e., Pandas-like) and DataArrays (i.e., NumPy-like), which are
-(mostly) drop-in replacements for Pandas DataFrames and NumPy ndarrays.  This
-means that Xarray data can be represented by Dask DataArrays (which themselves
-are composed of many NumPy ndarrays or CuPy ndarrays), Legate NumPy arrays, or
-any other "NumPy-like" array.  This is one of the primary reasons why Xarray
-is so strongly encouraged by the Pangeo community; Xarray provides a common
+ecosystem: [Pandas](https://pandas.pydata.org/) and [NumPy](https://numpy.org/).
+Xarray builds upon both of these by providing a Pandas-like API for NumPy-like
+data arrays.  Hence, any NumPy-like array (or drop-in NumPy replacement) can be
+"handled natively" by Xarray.  The same is true for Dask, which provides
+distributed data representations for both DataFrames (i.e., Pandas-like) and
+DataArrays (i.e., NumPy-like), which are (mostly) drop-in replacements for
+Pandas DataFrames and NumPy ndarrays.  This means that Xarray data can be
+represented by Dask DataArrays (which themselves are composed of many NumPy
+ndarrays or CuPy ndarrays), Legate NumPy arrays, or any other "NumPy-like"
+array.  This is one of the primary reasons why Xarray is so strongly
+ncouraged by the Pangeo community; Xarray provides a common
 layer of abstraction for climate and weather data.
 :::
 
@@ -124,7 +124,7 @@ _Processing Mode_, and a _Compute Platform_.  (See the following diagram.)  A
 user selects each of these interchangeable components based on different
 criteria.
 
-:::{figure} images/interoperability.svg
+:::{figure} ../images/interoperability.svg
 ---
 width: 400px
 name: pangeo-interoperability
@@ -132,15 +132,16 @@ name: pangeo-interoperability
 Interchangeable components composing a Pangeo Environment
 :::
 
+
 ### Data Model
 
 There are currently two different supported Data Models: Xarray and
 [Iris](https://scitools-iris.readthedocs.io/en/stable/).  Iris is primarily
-used at the UK MetOffice, as it is primarily tailored for their weather
-forecast data and its specifically designed metadata.  Xarray is arguably more
-general, and can convert to and from Iris objects, if one so chooses.  Hence,
-the determining factor in selecting the Data Model is the _kind of data_ (and
-_metadata_) one uses.
+used at the [UK MetOffice](https://www.metoffice.gov.uk/), as it is primarily
+tailored for their weather forecast data and its specifically designed metadata.
+Xarray is arguably more general, and can convert to and from Iris objects, if
+one so chooses.  Hence, the determining factor in selecting the Data Model is
+the _kind of data_ (and _metadata_) one uses.
 
 
 ### Array Structure
@@ -274,7 +275,7 @@ NCAR has partnered with the Pangeo community on a number of initiatives,
 including a number of funded projects, starting with the original
 [Pangeo NSF Earthcube award](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1740633).
 This award lead directly to the deployment of NCAR’s JupyterHub, and it
-motivated our first Python/Pangeo tutorials and hackathons in 2018 and 2019.
+motivated our first Python/Pangeo tutorials and hackathons at NCAR in 2018 and 2019.
 The Pangeo collaboration’s connections with Project Jupyter led to the
 launching of the NSF EarthCube-funded
 [Jupyter Meets the Earth project](https://blog.jupyter.org/jupyter-meets-the-earth-1b0eb33c83f),
@@ -289,7 +290,8 @@ NCAR is considered an
 with Pangeo, being a collaborative recipient of many Pangeo-related awards.
 
 NCAR has also made an internal commitment to Pangeo through the creation of
-the Experimental Development Team (Xdev) and the Earth System Data Science
-(ESDS) initiative out of CGD.  Both ESDS and Xdev are committed to the Pangeo
+the Experimental Development Team (Xdev) and the
+[Earth System Data Science (ESDS)](https://ncar.github.io/esds/)
+initiative.  Both ESDS and Xdev are committed to the Pangeo
 community and the Pangeo mission, and, in fact, the creation of both ESDS and
 Xdev was motivated by Pangeo.

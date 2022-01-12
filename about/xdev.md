@@ -1,16 +1,17 @@
 # The Experimental Development Team (Xdev)
 
-The Experimental Development Team (Xdev) was born out of Pangeo.  Matthew Long
-(CGD) and I felt that Pangeo was a movement that NCAR needed to join.  Not
-only does Pangeo offer a roadmap for interactive "Big Data" analysis for
-climate and weather scientists, but it demonstrates a revolutionary culture of
-collaboration between scientists and software engineers spanning both academia
-and industry.  Pangeo realizes the dream of open source software and open
-development that so many people evangelize but so few obtain.  But to realize
-this dream at NCAR, we need to do more than just _use_ Pangeo Environments.
-We need to do more than just teach scientists how to use Xarray and Dask and
-Jupyter, or program in Python, or even develop an NCL replacement in Python
-that leverages the Pangeo stack.
+The Experimental Development Team (Xdev) was born out of [Pangeo](https://pangeo.io).
+[Matthew Long](https://www.cgd.ucar.edu/staff/mclong/) and I felt that Pangeo was a
+movement that NCAR needed to join.  Not only does Pangeo offer a roadmap for
+interactive "Big Data" analysis for climate and weather scientists, but it
+demonstrates a revolutionary culture of collaboration between scientists and
+software engineers spanning both academia and industry.  Pangeo realizes the
+dream of open source software and open development that so many people evangelize
+but so few achieve.  But to realize this dream at NCAR, we need to do more than
+just _use_ Pangeo Environments.  We need to do more than just teach scientists
+how to use Xarray and Dask and Jupyter, or how program in Python, or even how to
+develop an [NCL](https://www.ncl.ucar.edu/) replacement in Python that leverages the
+Pangeo stack.
 
 _NCAR needs to change how its scientists and software engineers relate to one another, and how technology for data science and analysis at NCAR is developed openly._
 
@@ -30,10 +31,9 @@ and open source software best practices through example.
 
 ## The Xdev Manifesto
 
-Matt and I also recognized that Xdev needs to be something more than just
-"Pangeo at NCAR."  Xdev needs to be a voice in the Pangeo community for NCAR’s
-unique needs, and not just a bullhorn for Pangeo’s interests within NCAR.
-Thus, it behoves us to enumerate our _technical values_ to highlight how
+Xdev is an NCAR entity, and therefore must satisfy NCAR priorities and
+strategic objectives.  Xdev is also commited to the _external_ Pangeo community,
+and therefore it behoves us to enumerate our _technical values_ to highlight how
 Xdev’s values align with Pangeo.
 
 1. We value **interactivity** over batch processing.  While batch processing
@@ -99,7 +99,7 @@ can be run on the cloud.
 
 **Xdev’s mission is to advance open reproducible science through interactive Big Data analysis.**
 
-In five years, we envision a community of scientists at NCAR and beyond
+We envision a community of scientists at NCAR and beyond
 working together to develop and maintain scientific workflows and sharable
 software to support those workflows on a platform where these workflows can be
 efficiently developed in collaboration and executed.  We envision these
@@ -152,7 +152,7 @@ Read more about the [ESDS Vision](https://ncar.github.io/esds/about/#about-us)!
 > centered on analytics, improving our capacity to deliver impactful,
 > actionable, reproducible science and serve the university community by
 > transforming how geoscientists synthesize and extract information from
-> large, diverse data sets
+> large, diverse data sets.
 
 ESDS is the force bringing the scientific community together to collaborate,
 and Xdev is the catalyst for cultural change.  ESDS has an essentially
@@ -169,25 +169,26 @@ partner with Xdev and an excellent source for collaboration.
 
 ## Structure
 
-Xdev is currently a _matrixed_ team made of 3 full-time software engineers
-with funding from both CISL and CGD.  Two of the software engineers (Anderson
-Banihirwe and Julia Kent) report directly to Kevin Paul, and one (Max Grover)
-reports directly to Matt Long.  Like all matrixed teams, maintaining a clear
-vision of the team’s purpose and objectives across all of the team members’
+Xdev is a _matrixed_ team made of full-time and part-time software engineers.
+Currently, our two full-time software engineers (Anderson Banihirwe and Julia
+Kent) report directly to Kevin Paul.  Like all matrixed teams, maintaining a
+clear vision of the team’s purpose and objectives across all of the team members’
 supervisors is critical.
 
 Xdev also relies closely on a group of 8 software engineers across UCAR who
-act as stakeholders in Xdev’s activities.  These software engineers
+act as _stakeholders_ in Xdev’s activities.  These software engineers
 occasionally provide part-time development support on activities that directly
-impact their own work and feedback on and direction for Xdev’s activities,
-including assistance with short-term project selection, testing, and feedback,
-as well as tutorial input and guidance (see [Governance](#governance)).
-Most of these software engineers are also members of ESDS, but some simply
-represent Python expertise across UCAR and help expand and shape Xdev’s vision.
+impact their own work and provide feedback on (and direction for) Xdev’s
+activities, including assistance with short-term project selection, testing,
+and feedback, as well as tutorial input and guidance
+(see [Governance](#governance)).  Most of these software engineers are also
+members of ESDS, but some simply represent Python expertise across UCAR and
+help expand and shape Xdev’s vision.
 
 Within the core team, there are definite roles and responsibilities.
 
-Kevin Paul is the Team Lead, and helps define and scope development projects
+[Kevin Paul](https://staff.ucar.edu/users/kpaul) is the Team Lead,
+and helps define and scope of development projects
 and education/training activities.  The Team Lead seeks out and builds
 relationships with stakeholders across UCAR.  In all of our efforts, we hope
 that target users will provide direct feedback to our efforts in a tight,
@@ -198,21 +199,18 @@ a proxy for the user when the user is not available to provide feedback,
 providing functional specifications for Xdev activities from the target user
 perspective.
 
-Anderson Banihirwe is the Technical Lead and helps assess the right technology
+[Anderson Banihirwe](https://staff.ucar.edu/users/abanihi) is the
+Technical Lead and helps assess the right technology
 to use on Xdev projects and activities.  The Technical Lead is responsible for
 maintaining a current view of the relevant technology and assessing how
 processes need to change based on changing technological capabilities.
 
-Julia Kent is the Training Lead and helps organize and maintain our tutorials
-and training materials, working closely with ESDS and Project Pythia.  The
-Training Lead is responsible for keeping our educational and training mission
+[Julia Kent](https://staff.ucar.edu/users/jkent) is the Training Lead
+and helps organize and maintain our tutorials and training materials,
+working closely with ESDS and Project Pythia.  The Training Lead is
+responsible for keeping our educational and training mission
 constantly moving forward and building the knowledge base of the scientific
 community.
-
-Max Grover is the ESDS Coordinator.  The ESDS Coordinator acts as the liaison
-between ESDS and Xdev and helps interface the Xdev Team with ESDS activities.
-Max organizes much of the ESDS activities as well as acting as a core
-developer for Xdev.
 
 These roles have developed over time out of necessity and the people who have
 stepped into these roles have done so voluntarily as our activities have
@@ -249,11 +247,10 @@ through the Monthly Xdev Stakeholder meeting.  Being technical experts in
 their own right, Member Stakeholders are capable of being collaborators on
 Xdev Projects, even if they do not have the time to dedicate to project work
 themselves.  We call them Member Stakeholders because we consider them Xdev
-members, and they are included in all Xdev group communications (e.g., in the
-`#xdev` Zulip group, on the [xdev@ucar.edu](mailto:xdev@ucar.edu) mailing
-list, etc.).  Hence, Member Stakeholders are capable of staying up-to-date
-with Xdev activities and providing technical feedback and guidance on a
-frequent basis.
+members, and they are included in all Xdev group communications (e.g., on
+the [xdev@ucar.edu](mailto:xdev@ucar.edu) mailing list).  Hence, Member
+Stakeholders are capable of staying up-to-date with Xdev activities and
+providing technical feedback and guidance on a frequent basis.
 
 Community Stakeholders are the target demographic for all Xdev activities.
 Therefore, Community Stakeholders are the owners of "the problem" that Xdev is
@@ -277,6 +274,9 @@ assisting with extending Xdev across the UCAR organization and beyond.
 Leadership Stakeholders will meet on a quarterly, triannually, or biannually
 frequency, to be determined, at the Monthly Stakeholder Meeting.
 
+The frequency of these meetings and how they are conducted are expected to
+evolve as the team progresses.
+
 
 ## Activities
 
@@ -286,13 +286,11 @@ and held in collaboration with [Project Pythia](https://projectpythia.org) and
 [ESDS](https://ncar.github.io/esds).  Xdev’s development activities are
 centered on short-term projects, one-off prototypes, and center-wide service
 support.  These development activities focus mostly on usability issues,
-rather than performance enhancements, since much of the Pangeo stack is still,
-in our opinion, mostly skeletal.  Much of the necessary functionality is there
-in the Pangeo stack, but the ease with which many scientific workflows can be
-constructed is lacking.  There are usability pain points that we believe need
-to be addressed before too much focus can be spent on optimization and
-performance, though we recognize that some focus on performance is necessary
-to assure that developed solutions are scalable or "efficient enough."
+rather than performance enhancements.  There are usability pain points
+that we believe need to be addressed before too much focus can be spent
+on optimization and performance, though we recognize that some focus
+on performance is necessary to assure that developed solutions are
+scalable or "efficient enough."
 
 
 ### Education & Training
@@ -326,7 +324,7 @@ analytic workflows.  We use the term analytics, here, because the entire
 workflow goes well beyond simple analysis and visualization, as illustrated
 very coarsely in the following figure.
 
-:::{figure} images/pipline.svg
+:::{figure} ../images/pipline.svg
 ---
 width: 600px
 name: workflow-pipeline
@@ -342,9 +340,7 @@ depending on how many times the step needs to be performed during the
 iterative cycle.  Any of these steps can be slow and painful, and we are
 working toward addressing all of these steps over the next five years using
 the "squeaky wheel" approach: assess what is the most significant pain point,
-prototype a solution to alleviate this pain point, repeat.  The first pain
-point we are addressing relates to the issue of "checkpointing" noted in the
-illustration above.
+prototype a solution to alleviate this pain point, repeat.
 
 In addition to issues around workflow development, we are concerned with
 reproducibility (see the [note on reproducibility](#bookmark=id.r928icz34xhu)
@@ -367,11 +363,6 @@ directly through collaboration with the Xdev team. (These are the
 The result is not only a publishable software technology but also newly
 trained scientists in the maintenance and development of the technology
 itself.  This is vital for healthy open source software and sustainability.
-There is no single, ideal metric of the success of this goal, but we will
-monitor GitHub activity from Xdev Community Stakeholders (i.e., on GitHub
-repositories tied to Xdev Projects), tutorial attendance, software downloads,
-GitHub "stars" and "watchers", and any other correlated metric we can divine.
-All of these metrics will be displayed on the Xdev website.
 
 As mentioned earlier, much of the scalable capabilities already exist in the
 Pangeo stack, but it can be cumbersome or not obvious how to construct the
@@ -385,7 +376,7 @@ workflows of their teams and groups) and how to generalize those technologies
 for use by a broader audience.
 
 For more details about potential future projects and what we are currently
-working on, see the [Current & Future](#current-future) section below.
+working on, see the [Short-Term Projects](../status/projects) page.
 
 
 ### One-Off Prototypes
@@ -412,17 +403,23 @@ easily loaded into analysis notebooks as Xarray Datasets.  Intake-ESM is a
 plugin for Intake that makes large, cumbersome datasets of hundreds or even
 thousands of Earth system model (ESM) output files easy to access and load.
 
-These are just two examples of the short prototyping that the Xdev does, and
-all of these technologies are open source and publicly available.
+One of our most recent in-house technologies is
+[Xcollection](https://xcollection.readthedocs.io/en/latest/),
+an extension of the Xarray data model to be able to handle dictionaries
+of Xarray Datasets.  This extension allows you to apply common operations
+across multiple datasets easily, without needing for the datasets be
+merged (or mergeable) into a single dataset.
+
+To see more about our products, visit the [Xdev Products](../status/products) page.
 
 
 ### Center-Wide Service Support
 
 NCAR, and CISL in particular, provide technological services that leverage
 NCAR’s computing capabilities, such as our HPC environments, the NCAR
-JupyterHub, the Digital Asset Services Hub (DASH), and others.  These services
-interface with a great deal of software developed by the Pangeo community and
-by Xdev, at the very least because the software is run in those environments
+JupyterHub, and others.  These services interface with a great deal
+of software developed by the Pangeo community and by Xdev, at the
+very least because the software is run in those environments
 and through those services.  Hence, Xdev is committed to helping CISL
 sysadmins maintain and improve these services to create a better experience
 for our users.
@@ -440,7 +437,7 @@ Information System’s Division in CISL, another strong collaboration with Xdev,
 and the green boxes represent software and technology developed by other teams
 within the Technology Development Division in CISL.
 
-:::{figure} images/stack.svg
+:::{figure} ../images/stack.svg
 ---
 width: 600px
 name: Workflow
@@ -480,52 +477,3 @@ require fixes in order to address problems propagated through the dependency
 into our own software.  In an open source community, we may be the best people
 to implement those core technological fixes, and we should be ready to do so,
 if necessary.
-
-
-## Current & Future
-
-We are currently still organizing and conducting the Python Tutorial Seminar
-Series.  We are about to conclude our program leading attendees from Python
-basics to advanced Xarray and Dask.  The program will continue with more
-advanced topics such as advanced visualization in Python (in collaboration
-with the GeoCAT team), Object Oriented Programming with Python, machine
-learning with Python, and many more.  All of these tutorials are recorded and
-the videos hosted for free viewing on YouTube as part of the ProjectPythia
-channel.
-
-We are currently working on the Project Funnel short-term project, which seeks
-to enable a mechanism for scientists to easily cache and retrieve
-"intermediate products" (or diagnostic data produced after a model run, for
-example) within their workflows.  That is, after returning to a Jupyter
-Notebook after weeks working on another paper or proposal, it would be ideal
-for computationally expensive steps in the notebook to be "saved" and
-automatically retrieved when the notebook is run again.  Such a technology
-could also be modified to make it possible to share intermediate computed
-products between workflows, which might make it easier for scientists to build
-off of other scientists’ workflows.  This project is being conducted in
-collaboration with Matt Long in CGD, and it is also being used as a means of
-developing the Team Processes and determining how we can work best together.
-
-
-### Selecting Future Projects
-
-Our current mechanism for selecting short-term projects for Xdev’s effort is
-internal.  We have assessed the pain points that the community has based on Q/
-A through either our Zulip platform or through our weekly Office Hours and
-based on direct interactions with scientists.  A record of questions asked in
-the Xdev Office Hours is made, and Zulip records are held indefinitely.  We
-collaborate with individuals who reach out to us individually.
-
-Moving forward, however, we believe that we need to adopt a more equitable
-approach to assessing the most important activities for Xdev and what
-activities will have the greatest impact.  With that in mind, it is my belief
-that we should begin conducting surveys of the community to ask them
-specifically for their pain points and their thoughts on what we should be
-working on.  As more of the community adopts Pangeo technology and Python, we
-expect that a formal project proposal process can be created, whereby
-individuals or groups with a desire for software engineering experience in the
-Python realm can reach out for help on specific problems.  In this capacity,
-Xdev could select proposals that can be generalized to impact a broader range
-of users than just the proposing scientists.  Through this process, we believe
-that Xdev can have a strong impact on changing best practices and the
-development of scientific software.

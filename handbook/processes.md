@@ -1,4 +1,14 @@
-# How we work
+# Processes
+
+:::{warning} **TODO:**
+This page should detail what processes we use to do our work.  That includes
+that everything should be public on GitHub, and that we have weekly meetings
+on Wednesdays at 3PM.  Changes to our processes can be suggested with modifications
+to this document.
+
+Currently, this document contains the contents of the old "How we work" document
+contained on HackMD, which is *wildly* out of date.
+:::
 
 ## The Point
 
