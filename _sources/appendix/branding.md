@@ -11,7 +11,7 @@ Below are the logos, icons, and specifications needed to reproduce the Xdev bran
 For dark themes
 ^^^^^^^^^^^^^^^
 
-:::{image} images/xdev_logo_light.svg
+:::{image} ../images/xdev_logo_light.svg
 :alt: xdevlight
 :class: bg-dark
 :::
@@ -21,7 +21,7 @@ For dark themes
 For light themes
 ^^^^^^^^^^^^^^^^
 
-:::{image} images/xdev_logo_dark.svg
+:::{image} ../images/xdev_logo_dark.svg
 :alt: xdevdark
 :class: bg-light
 :::
@@ -37,7 +37,7 @@ For light themes
 For dark themes
 ^^^^^^^^^^^^^^^
 
-:::{image} images/x_icon_light.png
+:::{image} ../images/x_icon_light.png
 :alt: xlight
 :align: center
 :width: 50px
@@ -48,7 +48,7 @@ For dark themes
 For light themes
 ^^^^^^^^^^^^^^^^
 
-:::{image} images/x_icon_dark.png
+:::{image} ../images/x_icon_dark.png
 :alt: xdark
 :align: center
 :width: 50px
@@ -101,15 +101,4 @@ This allows you to write the Xdev logo purely with text like so:
 <span class="xdev-x">X</span><span class="xdev-dev">dev</span>
 ```
 
-<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
-<style>
-  span.xdev-x {
-    font-family: 'Saira Stencil One';
-  }
-  span.xdev-dev {
-    font-family: 'Audiowide';
-  }
-</style>
-
-which should display like <span class="xdev-x">X</span><span class="xdev-dev">dev</span>.
+which should display like <span style="font-family: 'Saira Stencil One'">X</span><span style="font-family: 'Audiowide';">dev</span>.

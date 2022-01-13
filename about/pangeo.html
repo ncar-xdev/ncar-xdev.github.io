@@ -1,0 +1,840 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pangeo &#8212; Xdev</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-pythia-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/ncar-xdev/ncar-xdev-utterances");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://ncar-xdev.github.io/about/pangeo.html" />
+    <link rel="shortcut icon" href="../_static/x_icon_light.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Experimental Development Team (Xdev)" href="xdev.html" />
+    <link rel="prev" title="About" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-50ST3W7ZN6"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-50ST3W7ZN6');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="132">
+    <div class="container-fluid" id="shim"></div>
+    <div class="container-fluid" id="banner"></div>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top bd-navbar shadow" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/xdev_logo_light.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class=" collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="index.html">About</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="../handbook/index.html">Handbook</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="../status/index.html">Status</a>
+  </li>
+  
+  
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ncar-xdev" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/NCARXdev" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    <div class="container-xl">
+      <div class="row">
+        
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   About
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Pangeo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="xdev.html">
+   Xdev
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Handbook
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../handbook/index.html">
+   Handbook
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../handbook/expectations.html">
+   Expectations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../handbook/processes.html">
+   Processes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../handbook/commplan.html">
+   Communications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CODEOFCONDUCT.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Status
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../status/index.html">
+   Status
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../status/tutorials.html">
+   Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../status/projects.html">
+   Projects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../status/products.html">
+   Products
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../status/metrics.html">
+   Metrics
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/branding.html">
+   Branding
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by <a href="https://projectpythia.org">Project Pythia</a>,<br>
+powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
+
+</div>
+
+</div>
+
+        
+
+        <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main"><div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/about/pangeo.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ncar-xdev/ncar-xdev.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ncar-xdev/ncar-xdev.github.io/issues/new?title=Issue%20on%20page%20%2Fabout/pangeo.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ncar-xdev/ncar-xdev.github.io/edit/main/about/pangeo.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> On this page
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-community">
+   The Community
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-stack-pangeo-environments">
+   The Stack: Pangeo Environments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-model">
+     Data Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#array-structure">
+     Array Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compute-platform">
+     Compute Platform
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processing-mode">
+     Processing Mode
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initiatives">
+   Initiatives
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cloud-operations">
+     Cloud Operations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#machine-learning">
+     Machine Learning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#education-project-pythia">
+     Education: Project Pythia
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pangeo-forge">
+     Pangeo Forge
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pangeo-ncar-partnerships">
+   Pangeo &amp; NCAR Partnerships
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+          <div id="main-content" class="row">
+            <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+              
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="pangeo">
+<h1>Pangeo<a class="headerlink" href="#pangeo" title="Permalink to this headline">¶</a></h1>
+<p>In December 2016, a small group of scientists and software engineers,
+including
+<a class="reference external" href="https://datascience.columbia.edu/people/ryan-abernathey/">Ryan Abernathey</a>,
+<a class="reference external" href="https://joehamman.com/">Joseph Hamman</a>,
+<a class="reference external" href="http://matthewrocklin.com/">Matthew Rocklin</a>, and many others (even I
+was there!), met at Columbia University for the
+<a class="reference external" href="https://rabernat.github.io/aospy-workshop/">Columbia AOSPY Workshop</a> to
+discuss the future of a Python “toolkit for the analysis of ocean and
+atmosphere general circulation model (GCM) output based on xarray and dask.”
+In a quote from the motivating documentation leading to the workshop:</p>
+<blockquote>
+<div><p>It is our determination that xarray and out-of-core [dask] are the future of
+climate-related computation using Python, and conversely that Python is the
+future of climate-related computation. This puts us in a unique position to
+introduce a set of tools that becomes the community standard and greatly
+enhances the speed and reliability of such computations and therefore of the
+science itself.</p>
+</div></blockquote>
+<p>At that workshop, the group coined the name <em>Pangeo</em>, and a few months later
+we began writing the <a class="reference external" href="https://www.earthcube.org/">NSF EarthCube</a>
+award that would launch Pangeo as a project.</p>
+<p>Over the next few years, the Pangeo project illuminated a number of insights.
+A good data model (e.g., Xarray) and API can empower scientists to focus more
+on science, rather than scripting and coding.  Interoperability across
+packages can enable broad open development and integration, and packages with
+a narrow focus and clear APIs can expose potential for interoperability.
+Cloud computing can support scientific analysis in ways that HPC cannot, and
+that cloud computing exposes new ways for extensive collaboration.  Lastly,
+providing scientists with access to “analysis ready” data is critical.</p>
+<p>At NCAR, this project led to the launching of
+<a class="reference external" href="https://jupyterhub.hpc.ucar.edu/">NCAR’s own JupyterHub</a>
+as well as numerous multi-day tutorials and hackathons.</p>
+<div class="section" id="the-community">
+<h2>The Community<a class="headerlink" href="#the-community" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Roughly speaking, each of these numbers is related to the number of core
+developers, the number of users, and the number of “other interested people.”
+This is an interesting metric, even if not very accurate!</p>
+</div>
+<p>Today, Pangeo is a community that spans the entire globe “promoting open,
+reproducible, and scalable science” (see
+<a class="reference external" href="https://pangeo.io">https://pangeo.io</a>).  At the writing of this document
+(1/12/2022), there are 373 contributing members in the
+<a class="reference external" href="https://github.com/pangeo-data">Pangeo GitHub organization</a>, 854 members of
+the <a class="reference external" href="https://discourse.pangeo.io/">Pangeo Discourse community</a>, and 4296
+followers of the <a class="reference external" href="https://twitter.com/pangeo_data">&#64;pangeo_data Twitter feed</a>.</p>
+<p>While the numbers suggest some measure of success, the real value provided by
+the Pangeo community is as a <em>community of practice</em>, where like-minded
+individuals can go to learn from each other and collaborate on the development
+of new software and new techniques.
+<a class="reference external" href="https://pangeo.io/about.html#mission-statement">Pangeo’s Mission Statement</a>
+clearly states this:</p>
+<blockquote>
+<div><p>Our mission is to cultivate an ecosystem in which the next generation of
+open-source analysis tools for ocean, atmosphere and climate science can be
+developed, distributed, and sustained. These tools must be scalable in order
+to meet the current and future challenges of big data, and these solutions
+should leverage the existing expertise outside of the geoscience community.</p>
+</div></blockquote>
+</div>
+<div class="section" id="the-stack-pangeo-environments">
+<h2>The Stack: Pangeo Environments<a class="headerlink" href="#the-stack-pangeo-environments" title="Permalink to this headline">¶</a></h2>
+<p>The Pangeo community doesn’t advocate for a single <em>monolithic</em> software
+application or stack.  In fact, the Pangeo community primarily advocates for
+technologies that are <em>interoperable</em>, <em>extensible</em>, and <em>portable</em>.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Read more about <a class="reference external" href="https://pangeo.io/architecture.html#technical-architecture">Pangeo’s technical architecture</a>!</p>
+</div>
+<blockquote>
+<div><p>Rather than designing and creating a single monolithic application, our
+vision is an ecosystem of tools that can be used together. We want you to be
+able to easily build your own Pangeo, whatever that means to you.</p>
+</div></blockquote>
+<div class="figure align-default" id="pangeo-tech">
+<a class="reference internal image-reference" href="../_images/pangeo_tech_1.png"><img alt="../_images/pangeo_tech_1.png" src="../_images/pangeo_tech_1.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">The original technical architecture for Pangeo.</span><a class="headerlink" href="#pangeo-tech" title="Permalink to this image">¶</a></p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Read more about <a class="reference external" href="https://pangeo.io/packages.html#why-xarray-and-dask">Why Xarray &amp; Dask?</a></p>
+</div>
+<p>While the original Pangeo architectural model consisted only of Xarray, Dask,
+and Jupyter (as depicted in the figure above), Pangeo has evolved to allow for
+a wide variety of compatible packages and technologies, as long as these
+technologies are <em>interoperable</em>.  Pangeo does <em>strongly encourage</em> the use of
+Xarray and Dask, but it is not required to be “Pangeo.”</p>
+<div class="admonition-a-note-on-interoperability admonition">
+<p class="admonition-title">A note on interoperability</p>
+<p>One of the primary mechanisms used in the scientific Python community for
+developing technologies that are <em>interoperable</em> is by conforming to a
+“standardized” API.  For Pangeo, this means conforming to the API defined by
+the most popular <em>core</em> data representations of the scientific Python
+ecosystem: <a class="reference external" href="https://pandas.pydata.org/">Pandas</a> and <a class="reference external" href="https://numpy.org/">NumPy</a>.
+Xarray builds upon both of these by providing a Pandas-like API for NumPy-like
+data arrays.  Hence, any NumPy-like array (or drop-in NumPy replacement) can be
+“handled natively” by Xarray.  The same is true for Dask, which provides
+distributed data representations for both DataFrames (i.e., Pandas-like) and
+DataArrays (i.e., NumPy-like), which are (mostly) drop-in replacements for
+Pandas DataFrames and NumPy ndarrays.  This means that Xarray data can be
+represented by Dask DataArrays (which themselves are composed of many NumPy
+ndarrays or CuPy ndarrays), Legate NumPy arrays, or any other “NumPy-like”
+array.  This is one of the primary reasons why Xarray is so strongly
+encouraged by the Pangeo community; Xarray provides a common
+layer of abstraction for climate and weather data.</p>
+</div>
+<p>In practice, the Pangeo community defines a <em>Pangeo Environment</em> as a system
+in which the <em>user</em> can select to use different “interchangeable components”
+with which to do their analysis: a <em>Data Model</em>, an <em>Array Structure</em>, a
+<em>Processing Mode</em>, and a <em>Compute Platform</em>.  (See the following diagram.)  A
+user selects each of these interchangeable components based on different
+criteria.</p>
+<div class="figure align-default" id="pangeo-interoperability">
+<a class="reference internal image-reference" href="../_images/interoperability.svg"><img alt="../_images/interoperability.svg" src="../_images/interoperability.svg" width="400px" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Interchangeable components composing a Pangeo Environment</span><a class="headerlink" href="#pangeo-interoperability" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="data-model">
+<h3>Data Model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h3>
+<p>There are currently two different supported Data Models: Xarray and
+<a class="reference external" href="https://scitools-iris.readthedocs.io/en/stable/">Iris</a>.  Iris is primarily
+used at the <a class="reference external" href="https://www.metoffice.gov.uk/">UK MetOffice</a>, as it is primarily
+tailored for their weather forecast data and its specifically designed metadata.
+Xarray is arguably more general, and can convert to and from Iris objects, if
+one so chooses.  Hence, the determining factor in selecting the Data Model is
+the <em>kind of data</em> (and <em>metadata</em>) one uses.</p>
+</div>
+<div class="section" id="array-structure">
+<h3>Array Structure<a class="headerlink" href="#array-structure" title="Permalink to this headline">¶</a></h3>
+<p>The Array Structure can currently be NumPy <code class="docutils literal notranslate"><span class="pre">ndarrays</span></code> or Dask <code class="docutils literal notranslate"><span class="pre">DataArrays</span></code>
+(which, by default, are composed of NumPy <code class="docutils literal notranslate"><span class="pre">ndarrays</span></code>).  The difference is
+whether the data is distributed or not, but since Xarray can deal with any
+kind of NumPy-like array (see the note on interoperability above), it would
+take little effort to build an Xarray object from any other kind of NumPy
+“drop-in” replacement, such as Legate NumPy arrays.  Hence, the determining
+factor in selecting the Array Structure is how you want the data represented
+<em>on your hardware</em>.</p>
+</div>
+<div class="section" id="compute-platform">
+<h3>Compute Platform<a class="headerlink" href="#compute-platform" title="Permalink to this headline">¶</a></h3>
+<p>The Compute Platform can be either an HPC or a cloud platform.  Deployment of
+the Pangeo Environment on each Compute Platform (sometimes called a Pangeo
+Platform) must be handled by an administrator, and the purpose of the Pangeo
+Environment concept is to make each deployment look and feel (essentially) the
+same.  There are obvious differences in what one can do on different
+platforms, how each deployment will perform, and what additional software can
+be used or is available.  For example, cloud platforms can scale elastically,
+while HPC platforms can be less flexible with immediate demands.  Also, cloud
+platforms are great for open access to data, while HPC platforms tend to have
+limited access.  However, the overarching goal of Pangeo is to make every
+Pangeo Environment feel the same by abstracting away the specific kind of
+deployment.  Why have so many different deployments?  Because the user should
+choose to do their analysis where the data they want to use resides.  Hence,
+the determining factor in selecting the Compute Platform is
+<em>where your data resides</em>.</p>
+</div>
+<div class="section" id="processing-mode">
+<h3>Processing Mode<a class="headerlink" href="#processing-mode" title="Permalink to this headline">¶</a></h3>
+<p>Lastly, the Processing Mode is usually either batch or interactive.  Batch
+processing is still useful for canned operations or stable operations that,
+even when parallelized, take an excessively long time.  Interactive
+processing, on the other hand, is ideal for scientific exploration of data,
+“curiosity-driven” analysis, and unstable (i.e., still in development)
+operations.  There are examples of “serverless” Processing Modes using AWS
+Lambda, too.  Hence, the determining factor in selecting the Processing Mode
+is the <em>kind of analysis</em>.</p>
+</div>
+</div>
+<div class="section" id="initiatives">
+<h2>Initiatives<a class="headerlink" href="#initiatives" title="Permalink to this headline">¶</a></h2>
+<p>Currently, the Pangeo community is focused on four unique initiatives: Cloud
+Operations, Machine Learning, Project Pythia, and Pangeo Forge.  Each of these
+initiatives is represented within the Pangeo community by a Working Group,
+which usually holds regular meetings in a public forum to which anyone in the
+Pangeo community can attend.</p>
+<div class="section" id="cloud-operations">
+<h3>Cloud Operations<a class="headerlink" href="#cloud-operations" title="Permalink to this headline">¶</a></h3>
+<p>The Cloud Operations working group was created to discuss and share
+experiences with deploying Pangeo Environments in the cloud, notably on the
+Google Cloud Platform (GCP), Amazon Web Services (AWS), and Microsoft Azure
+Cloud.  This working group continues to meet and discuss to tackle specific
+questions of how to update specific deployments of Pangeo Environments.  Much
+of this knowledge is codified in documents maintained by the working group and
+made public via the <a class="reference external" href="https://pangeo.io">Pangeo website</a>.</p>
+</div>
+<div class="section" id="machine-learning">
+<h3>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h3>
+<p>The Machine Learning working group discusses machine learning challenges
+within Pangeo Environments.  Much of the discussion, as far as I am aware, has
+been around restructuring data from Xarray formats to feed into ML frameworks
+like Keras and Tensorflow.  For example, the
+<a class="reference external" href="https://xbatcher.readthedocs.io/en/latest/">Xbatcher</a>
+package was created to aid with this:</p>
+<blockquote>
+<div><p>Xbatcher is a small library for iterating xarray DataArrays in batches. The
+goal is to make it easy to feed xarray datasets to machine learning
+libraries such as Keras.</p>
+</div></blockquote>
+<p>There is also a much larger NASA-funded project that has come out of work from
+this working group to aid with interoperability between the Pangeo stack and
+ML frameworks called
+<a class="reference external" href="https://earthdata.nasa.gov/esds/competitive-programs/access/pangeo-ml">Pangeo ML</a>.</p>
+</div>
+<div class="section" id="education-project-pythia">
+<h3>Education: Project Pythia<a class="headerlink" href="#education-project-pythia" title="Permalink to this headline">¶</a></h3>
+<p>The Education working group was formed in the early Pangeo days, but its
+progress was slow and limited.  One result from this working group is the
+<a class="reference external" href="https://gallery.pangeo.io/">Pangeo Gallery</a>, a gallery of
+<a class="reference external" href="https://mybinder.org/">Binderized</a> Jupyter Notebooks (and Notebook
+collections) that demonstrate the use of Pangeo in a wide variety of use
+cases.  The Gallery has grown substantially since its creation, and it is a
+well-used and appreciated resource by the user community.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Project Pythia is an
+<a class="reference external" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2026899&amp;HistoricalAwards=false">NSF collaborative award</a>
+to both NCAR and the University of Albany.</p>
+</div>
+<p>With the funding of <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>, the
+Education working group was superseded by Project Pythia.  Now, Project Pythia
+is leading the formation of an online resource for geoscientists to learn and
+navigate the scientific Python stack, and the Pangeo stack, as well.</p>
+</div>
+<div class="section" id="pangeo-forge">
+<h3>Pangeo Forge<a class="headerlink" href="#pangeo-forge" title="Permalink to this headline">¶</a></h3>
+<p>Pangeo Forge is Pangeo’s project to use continuous integration (CI) services
+to automate the production of Analysis Ready, Cloud Optimized (ARCO) data for
+public access in the cloud.  The idea behind Pangeo Forge is to borrow the
+concept that has made Conda Forge so successful, namely to use CI to automate
+the production of installable Conda packages.  With a recipe, users will be
+able to use Pangeo Forge to transfer and reformat (e.g., into
+<a class="reference external" href="https://zarr.readthedocs.io/en/stable/">Zarr</a> format) public datasets for use
+on the cloud.  There is enormous potential from this project for NCAR’s own
+efforts (see the <a class="reference external" href="https://github.com/NCAR/science-at-scale">Science &#64; Scale</a>
+initiative) to move its data to the public cloud, as well as hosting
+analysis-ready datasets on NCAR’s own platforms.</p>
+</div>
+</div>
+<div class="section" id="pangeo-ncar-partnerships">
+<h2>Pangeo &amp; NCAR Partnerships<a class="headerlink" href="#pangeo-ncar-partnerships" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Read more about the <a class="reference external" href="https://github.com/NCAR/pangeo-tutorial-august-2018">NCAR Fall 2018 Pangeo Tutorial</a>,
+the <a class="reference external" href="https://ncar.github.io/ncar-python-tutorial/pages/fall2019/">NCAR Fall 2019 Python Tutorial</a>,
+and the <a class="reference external" href="https://github.com/cmip6hack/cmip6hack.github.io">2019 CMIP6 Hackathon</a></p>
+</div>
+<p>NCAR has partnered with the Pangeo community on a number of initiatives,
+including a number of funded projects, starting with the original
+<a class="reference external" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1740633">Pangeo NSF Earthcube award</a>.
+This award lead directly to the deployment of NCAR’s JupyterHub, and it
+motivated our first Python/Pangeo tutorials and hackathons at NCAR in 2018 and 2019.
+The Pangeo collaboration’s connections with Project Jupyter led to the
+launching of the NSF EarthCube-funded
+<a class="reference external" href="https://blog.jupyter.org/jupyter-meets-the-earth-1b0eb33c83f">Jupyter Meets the Earth project</a>,
+and the Pangeo project’s success led to
+<a class="reference external" href="https://projectpythia.org">Project Pythia</a>.
+In addition to traditional federally-funded projects and grants, Joe Hamman
+has also demonstrated that it is possible to fund NCAR work via
+non-traditional approaches, including an award from the
+<a class="reference external" href="https://chanzuckerberg.com/">Chan-Zuckerberg Initiative (CZI)</a>.
+NCAR is considered an
+<a class="reference external" href="https://pangeo.io/collaborators.html#national-center-for-atmospheric-research">Institutional Partner</a>
+with Pangeo, being a collaborative recipient of many Pangeo-related awards.</p>
+<p>NCAR has also made an internal commitment to Pangeo through the creation of
+the Experimental Development Team (Xdev) and the
+<a class="reference external" href="https://ncar.github.io/esds/">Earth System Data Science (ESDS)</a>
+initiative.  Both ESDS and Xdev are committed to the Pangeo
+community and the Pangeo mission, and, in fact, the creation of both ESDS and
+Xdev was motivated by Pangeo.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./about"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">About</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="xdev.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The Experimental Development Team (Xdev)</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </div>
+          </div>
+        </main>
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+<footer class="footer">
+  <div class="container-fluid m-0 p-0">
+  
+    <div class="footer-item">
+    
+  <div class="container-fluid footer-logos">
+    <div class="container-xl">
+      <div class="row d-flex flex-wrap align-items-center">
+        <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
+          <img alt="NCAR" src="../_images/NCAR-contemp-logo-blue.png" style="width: 100%">
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  
+    <div class="footer-item">
+    
+    </div>
+  
+    <div class="footer-item">
+      <div class="container-fluid footer-info">
+    <div class="container-xl">
+      <div class="d-flex justify-content-center">
+        <p class="py-1 m-0">
+            &copy;&nbsp;2022.
+        
+          By the Xdev Team.
+        
+          Last updated on 13 January 2022.
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+  
+    <div class="footer-item">
+    <div class="container-fluid footer-extra">
+  <div class="container">
+    <div class="row">
+      <p class="m-0">
+        <img
+          src="../_static/NSF_AllWhite_bitmap_Logo.png"
+          style="float: left; width: 60px; height: 60px; margin-right: 1rem"
+        />
+        This material is based upon work supported by the National Science
+        Foundation. Any opinions, findings, and conclusions or recommendations
+        expressed in this material are those of the author(s) and do not
+        necessarily reflect the views of the National Science Foundation.
+      </p>
+    </div>
+  </div>
+</div>
+    </div>
+  
+  </div>
+</footer>
+  </body>
+</html>
