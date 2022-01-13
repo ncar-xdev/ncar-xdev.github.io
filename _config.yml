@@ -58,9 +58,11 @@ sphinx:
         index: page-banner.html
       navbar_links:
         - name: About
-          url: about
+          url: about/index
         - name: Handbook
-          url: handbook
+          url: handbook/index
+        - name: Status
+          url: status/index
       footer_logos:
         NCAR: images/NCAR-contemp-logo-blue.png
       extra_navbar: |
