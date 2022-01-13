@@ -113,7 +113,7 @@ Pandas DataFrames and NumPy ndarrays.  This means that Xarray data can be
 represented by Dask DataArrays (which themselves are composed of many NumPy
 ndarrays or CuPy ndarrays), Legate NumPy arrays, or any other "NumPy-like"
 array.  This is one of the primary reasons why Xarray is so strongly
-ncouraged by the Pangeo community; Xarray provides a common
+encouraged by the Pangeo community; Xarray provides a common
 layer of abstraction for climate and weather data.
 :::
 
@@ -158,7 +158,7 @@ _on your hardware_.
 
 ### Compute Platform
 
-The Compute Platform can be either an HPC or cloud platform.  Deployment of
+The Compute Platform can be either an HPC or a cloud platform.  Deployment of
 the Pangeo Environment on each Compute Platform (sometimes called a Pangeo
 Platform) must be handled by an administrator, and the purpose of the Pangeo
 Environment concept is to make each deployment look and feel (essentially) the

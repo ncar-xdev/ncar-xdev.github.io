@@ -21,7 +21,7 @@ The processes described in this document are shaped by our team process values.
 - It is preferable for the whole team to move forward slowly *together* than it is for one or two people to move forward quickly while others do nothing.
 - Allow the team to continue to make progress even when others are out or unavailable.
 - Be accommodating of team members schedules and let them read and respond to communication in their own time.
-- Use synchronous communication (e.g., video meetings/calls) for what it is best: real-time collaboration (e.g., pair programming).
+- Use synchronous communication (e.g., video meetings/calls) for what is best: real-time collaboration (e.g., pair programming).
     - Recall the [Xdev Communication Plan](https://github.com/NCAR/xdev/blob/main/COMMPLAN.md) (todo: add Trello to `COMMPLAN.md`)
 
 
