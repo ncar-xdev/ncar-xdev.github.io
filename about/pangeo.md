@@ -158,7 +158,7 @@ _on your hardware_.
 
 ### Compute Platform
 
-The Compute Platform can be either an HPC or cloud platform.  Deployment of
+The Compute Platform can be either an HPC or a cloud platform.  Deployment of
 the Pangeo Environment on each Compute Platform (sometimes called a Pangeo
 Platform) must be handled by an administrator, and the purpose of the Pangeo
 Environment concept is to make each deployment look and feel (essentially) the
