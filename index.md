@@ -11,6 +11,8 @@
 
 The Experimental Development Team at the [National Center for Atmospheric Research](https://ncar.ucar.edu).
 
-<span class="d-flex justify-content-center py-4">
-    <a href="about/index.html" role="button" class="btn btn-light btn-lg">Background</a>
-</span>
+<!-- <span class="d-flex justify-content-center py-4">
+    <a href="about/index.html" role="button" class="btn btn-light btn-lg mx-5">About</a>
+    <a href="handbook/index.html" role="button" class="btn btn-light btn-lg mx-5">Handbook</a>
+    <a href="status/index.html" role="button" class="btn btn-light btn-lg mx-5">Status</a>
+</span> -->
