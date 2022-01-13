@@ -8,6 +8,7 @@ exclude_patterns:
   - Thumbs.db
   - .DS_Store
   - "**.ipynb_checkpoints"
+  - README.md
 
 execute:
   execute_notebooks: "off"
@@ -31,46 +32,39 @@ parse:
    - https
   myst_dmath_double_inline: true
 
-html:
-  favicon: images/x_icon_light.png
-  use_edit_page_button: true
-  use_repository_button: true
-  use_issues_button: true
-  use_multitoc_numbering: true
-  google_analytics_id: "G-50ST3W7ZN6"
-  home_page_in_navbar: true
-  baseurl: "https://ncar-xdev.github.io"
-  comments:
-    hypothesis: false
-    utterances:
-      repo: https://github.com/ncar-xdev/ncar-xdev-utterances
-
-repository:
-  url: https://github.com/ncar-xdev/ncar-xdev.github.io
-  path_to_book: ""
-  branch: main
-
 sphinx:
   config:
+    html_baseurl: "https://ncar-xdev.github.io"
+    comments_config:
+      utterances:
+        repo: https://github.com/ncar-xdev/ncar-xdev-utterances
+    html_favicon: images/x_icon_light.png
+    html_last_updated_fmt: '%-d %B %Y'
     html_sidebars:
       index: []
-    html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
     html_theme_options:
+      use_edit_page_button: true
+      use_repository_button: true
+      use_issues_button: true
+      google_analytics_id: "G-50ST3W7ZN6"
+      home_page_in_toc: true
       github_url: https://github.com/ncar-xdev
       twitter_url: https://twitter.com/NCARXdev
+      repository_url: https://github.com/ncar-xdev/ncar-xdev.github.io
+      repository_branch: main
+      path_to_docs: ""
       page_layouts:
         index: page-banner.html
       navbar_links:
         - name: About
-          url: README
+          url: about/index
+        - name: Handbook
+          url: handbook/index
+        - name: Status
+          url: status/index
       footer_logos:
         NCAR: images/NCAR-contemp-logo-blue.png
-      extra_footer: |
-        <img src="/_static/NSF_AllWhite_bitmap_Logo.png" style="float:left;width:60px;height:60px;margin-right:1rem;">
-        This material is based upon work supported by the National
-        Science Foundation. Any opinions, findings, and conclusions
-        or recommendations expressed in this material are those of
-        the author(s) and do not necessarily reflect the views of
-        the National Science Foundation.
-      extra_navbar: Theme by <a href="https://projectpythia.org">Project Pythia</a>
+      extra_navbar: |
+        Theme by <a href="https://projectpythia.org">Project Pythia</a>,<br>
+        powered by <a href="https://jupyterbook.org">Jupyter Book</a>.

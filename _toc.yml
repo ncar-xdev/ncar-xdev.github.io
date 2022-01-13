@@ -1,5 +1,30 @@
 format: jb-book
 root: index
-chapters:
-- file: README
-- file: branding
+parts:
+- caption: About
+  chapters:
+  - file: about/index
+  - file: about/pangeo
+  - file: about/xdev
+    title: Xdev
+- caption: Handbook
+  chapters:
+  - file: handbook/index
+  - file: handbook/expectations
+  - file: handbook/processes
+  - file: handbook/commplan
+  - file: CODEOFCONDUCT
+- caption: Status
+  chapters:
+  - file: status/index
+  - file: status/tutorials
+    title: Tutorials
+  - file: status/projects
+    title: Projects
+  - file: status/products
+    title: Products
+  - file: status/metrics
+    title: Metrics
+- caption: Appendix
+  chapters:
+  - file: appendix/branding

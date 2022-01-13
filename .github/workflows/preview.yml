@@ -102,7 +102,7 @@ jobs:
           && steps.find-pull-request.outputs.number != ''
           && steps.fc.outputs.comment-id != ''
         run: |
-          rm -rf ./portal/_build/html
+          rm -rf ./_build/html
           unzip site.zip
           rm -f site.zip
 
