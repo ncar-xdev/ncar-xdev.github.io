@@ -1,4 +1,4 @@
-# Processes
+# Short-Term Projects
 
 :::{warning} **TODO:**
 This page should detail what processes we use to do our work.  That includes

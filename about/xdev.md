@@ -108,7 +108,7 @@ Another mechanism for training that goes beyond what can be learned simply in th
 
 Xdev is also planning a series of short-term projects advancing interactive Big Data analysis by focusing on pain points in the development of scientific analytic workflows.  We use the term analytics, here, because the entire workflow goes well beyond simple analysis and visualization, as illustrated very coarsely in the following figure.
 
-:::{figure} ../images/pipline.svg
+:::{figure} ../images/pipeline.svg
 ---
 width: 600px
 name: workflow-pipeline

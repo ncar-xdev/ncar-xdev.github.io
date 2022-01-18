@@ -4,16 +4,29 @@ parts:
 - caption: About
   chapters:
   - file: about/index
+    title: About
   - file: about/pangeo
+    title: Pangeo
   - file: about/xdev
     title: Xdev
 - caption: Handbook
   chapters:
   - file: handbook/index
+    title: Handbook
   - file: handbook/expectations
-  - file: handbook/processes
-  - file: handbook/commplan
+    title: Expections
   - file: CODEOFCONDUCT
+    title: Our Code
+  - file: handbook/github
+    title: GitHub
+    sections:
+    - file: handbook/more-github
+  - file: handbook/communicating
+    title: Communication
+  - file: handbook/meetings
+    title: Meetings
+  - file: handbook/projects
+    title: Projects
 - caption: Status
   chapters:
   - file: status/index
