@@ -70,7 +70,7 @@ While each project repository can vary depending upon the project, it is safe to
 - **High Priority:** This means that the issue is extremely important, possibly blocking of other development, and that it should be prioritized if at all possible.  These issues are labeled `high priority`.
 - **Low Priority:** This means that you shouldn't bother with this right now.  There are other more important things to consider unless you know that addressing this issue is incredibly easy or if there is nothing else to do.  These issues are labeled `low-priority`.
 - **Bug Report:** This means there is a bug (incorrect behavior) in the project code.  If the project repository is a *meta repository*, and the actual code is in another repository, then the Issue in the project repository should point to an actual issue in the code repository.  These issues are labeled `bug`.
-- **Enhancement Proposal:** These Issues are for new features that should be added for the project.  They may point to Issues in other repositories.  These Issues are labeled `enhancement`.
+- **Enhancement Proposal:** These Issues are for new features that should be added to the project.  They may point to Issues in other repositories.  These Issues are labeled `enhancement`.
 
 ## Issues
 
