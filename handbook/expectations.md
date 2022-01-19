@@ -61,7 +61,7 @@ This content is new and should be reviewed by the team!
 
 :::{admonition} Quick Links
 :class: info
-[How we use GitHub](github)
+[How we use GitHub](github)<br>
 [Xdev Daily Standups](https://github.com/orgs/ncar-xdev/teams/all/discussions/1)
 :::
 

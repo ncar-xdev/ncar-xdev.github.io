@@ -24,9 +24,9 @@ As part of our GitHub organization, we are all on a GitHub Team: `@ncar-xdev/all
 
 Through this GitHub Team, we also engage in [Team Discussions](https://github.com/orgs/ncar-xdev/teams/all/discussions).  The Team Discussions page should be used every day to share with the rest of the team *what you are planning to do that day.*  This is, in essence, an asynchronous stand-up meeting, and it is a good way for the team to keep in touch with each other and to build an understanding of what we are doing on any given day.
 
-:::{admonition} Quick Link
+:::{admonition} Quick Links
 :class: note
-[Team Discussions](https://github.com/orgs/ncar-xdev/teams/all/discussions)
+[Team Discussions](https://github.com/orgs/ncar-xdev/teams/all/discussions)<br>
 [Daily Standups](https://github.com/orgs/ncar-xdev/teams/all/discussions/1)
 :::
 
