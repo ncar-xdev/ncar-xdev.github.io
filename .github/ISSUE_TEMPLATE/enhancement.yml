@@ -1,0 +1,24 @@
+name: Enhancement Proposal
+description: Propose an Enhancement
+title: "[ENH]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this enhancement proposal!
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want changed or added?
+      description: Tell us what you want changed or added
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://ncar-xdev.github.io/CODEOFCONDUCT.html)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
