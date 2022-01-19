@@ -45,7 +45,7 @@ As the community of scientists who use this style of analysis, and who contribut
 
 ### Xdev & ESDS
 
-The [Earth System Data Science](https://ncar.github.io/esds/) initiative was created to motivate scientists to build community around using technology for open reproducible science:
+The [Earth System Data Science](https://ncar.github.io/esds/) initiative was created to motivate scientists to build a community around using technology for open reproducible science:
 
 :::{margin}
 Read more about the [ESDS Vision](https://ncar.github.io/esds/about/#about-us)!
