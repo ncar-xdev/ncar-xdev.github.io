@@ -57,9 +57,10 @@ It's okay to say you can't contribute during a week!  Life happens!  Remember th
 This content is new and should be reviewed by the team!
 :::
 
-**Every morning, each member of the core Xdev Team is expected to let everyone else know what Xdev-related activities you plan to work on *that day* via [GitHub Team Discussions](https://github.com/orgs/ncar-xdev/teams/all/discussions).**  If you don't plan on doing anything Xdev-related, or you can't do anything Xdev-related, then you do not need to post anything.
+**Every morning, each member of the core Xdev Team is expected to let everyone else know what Xdev-related activities you plan to work on *that day* via [GitHub Team Discussions](https://github.com/orgs/ncar-xdev/teams/all/discussions/1).**  If you don't plan on doing anything Xdev-related, or you can't do anything Xdev-related, then you do not need to post anything.
 
-:::{admonition} Quick Link
+:::{admonition} Quick Links
 :class: info
 [How we use GitHub](github)
+[Xdev Daily Standups](https://github.com/orgs/ncar-xdev/teams/all/discussions/1)
 :::
