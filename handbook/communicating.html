@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Processes &#8212; Xdev</title>
+    <title>Other communication &#8212; Xdev</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -84,12 +84,12 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://ncar-xdev.github.io/handbook/processes.html" />
+    <link rel="canonical" href="https://ncar-xdev.github.io/handbook/communicating.html" />
     <link rel="shortcut icon" href="../_static/x_icon_light.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Communications" href="commplan.html" />
-    <link rel="prev" title="Expectations" href="expectations.html" />
+    <link rel="next" title="Meetings" href="meetings.html" />
+    <link rel="prev" title="GitHub Glossary" href="more-github.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -235,22 +235,44 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="expectations.html">
-   Expectations
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Processes
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="commplan.html">
-   Communications
+   Expections
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../CODEOFCONDUCT.html">
-   Code of Conduct
+   Our Code
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="github.html">
+   GitHub
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="more-github.html">
+     GitHub Glossary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Communication
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="meetings.html">
+   Meetings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="projects.html">
+   Projects
   </a>
  </li>
 </ul>
@@ -335,7 +357,7 @@ powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/handbook/processes.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/handbook/communicating.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -355,10 +377,10 @@ powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ncar-xdev/ncar-xdev.github.io/issues/new?title=Issue%20on%20page%20%2Fhandbook/processes.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ncar-xdev/ncar-xdev.github.io/issues/new?title=Issue%20on%20page%20%2Fhandbook/communicating.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ncar-xdev/ncar-xdev.github.io/edit/main/handbook/processes.md"><button
+        <a class="edit-button" href="https://github.com/ncar-xdev/ncar-xdev.github.io/edit/main/handbook/communicating.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -384,47 +406,30 @@ powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-point">
-   The Point
+  <a class="reference internal nav-link" href="#email">
+   Email
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zulip">
+   Zulip
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#team-process-values">
-     Team Process Values
+    <a class="reference internal nav-link" href="#zulip-best-practices">
+     Zulip Best Practices
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#trello">
-   Trello
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-board">
-     Project Board
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#trello-board-how-to">
-     Trello Board How-To
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#team-async-days">
-   Team Async Days
+  <a class="reference internal nav-link" href="#zoom-google-meet">
+   Zoom &amp; Google Meet
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#weekly-hackathons">
-   Weekly Hackathons
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-should-new-members-infrequent-contributors-get-started">
-   How Should New Members / Infrequent Contributors Get Started?
+  <a class="reference internal nav-link" href="#blogs">
+   Blogs
   </a>
  </li>
 </ul>
@@ -438,99 +443,51 @@ powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
               
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="processes">
-<h1>Processes<a class="headerlink" href="#processes" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>TODO:</strong>
-This page should detail what processes we use to do our work.  That includes
-that everything should be public on GitHub, and that we have weekly meetings
-on Wednesdays at 3PM.  Changes to our processes can be suggested with modifications
-to this document.</p>
-<p>Currently, this document contains the contents of the old “How we work” document
-contained on HackMD, which is <em>wildly</em> out of date.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="other-communication">
+<h1>Other communication<a class="headerlink" href="#other-communication" title="Permalink to this headline">¶</a></h1>
+<div class="warning admonition">
+<p class="admonition-title">NEW!!!</p>
+<p>This content is new and should be reviewed!</p>
 </div>
-<div class="section" id="the-point">
-<h2>The Point<a class="headerlink" href="#the-point" title="Permalink to this headline">¶</a></h2>
-<p>This process document is meant as a guide for Xdev Project Team members on how to work on Xdev Projects and work together as a team.</p>
-<p>The processes described in this document are shaped by our team process values.</p>
-<div class="section" id="team-process-values">
-<h3>Team Process Values<a class="headerlink" href="#team-process-values" title="Permalink to this headline">¶</a></h3>
+<p>GitHub is a fantastic platform for collaborating on open source software, but it can’t do <em>everything</em>.  Additionally, we work with other people or institutions that use <em>different</em> platforms for collaboration, teamwork, and communication.  While Xdev uses GitHub for as much as we can, we acknowledge that sometimes you have to use something other than GitHub from time to time.</p>
+<div class="section" id="email">
+<h2>Email<a class="headerlink" href="#email" title="Permalink to this headline">¶</a></h2>
+<p>Email should be used sparingly, but there are times when it is necessary.  Sending invitations to Zoom or Google Meet calls sometimes requires knowing a teammate’s individual email address, which results in an email notification of the newly scheduled event.  Email is also a convenient mechanism for people <em>outside</em> of the team to communicate with us, in which case responses over email are obviously appropriate.</p>
+<p>Communication directly between team members with email should be discouraged, though.  The only time when such communication is appropriate is when you need to reference another email (e.g., replying or forwarding) for discussion, or you need to reference a Zoom or Google Meet event for which you were notified via email.</p>
+<p>These rules apply for both your individual work email addresses <em>and</em> the Xdev Team email address (<code class="docutils literal notranslate"><span class="pre">xdev&#64;ucar.edu</span></code>).</p>
+</div>
+<div class="section" id="zulip">
+<h2>Zulip<a class="headerlink" href="#zulip" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://zulip.com">Zulip</a> is an open source chat platform for distributed teams.  Because it is open source, we were able to launch our own Zulip server on NCAR systems.  We launched this platform primarily as a means for scientists to collaborate with the Xdev Team <em>and each other</em> around issues related to the adoption of Python and the Pangeo stack.</p>
+<p>Zulip is primarily useful for replying to people who are <em>outside the team</em> who have questions that the team can answer about Python, the Pangeo software stack, and general application questions regarding analysis.  The Team should monitor Zulip on a semi-regular basis, once or twice a day.  Fortunately, traffic on Zulip is not so great as to require more than that, even for a team our size!</p>
+<p>Zulip can also be useful for one-on-one communication between teammates.  Use Zulip for this rather than email, as much as possible.  Also, use Zulip for direct communication with another person primarily as a means of keeping other communication channels “less noisy,” even if the communication specifically doesn’t have anything terribly private in it.</p>
+<div class="section" id="zulip-best-practices">
+<h3>Zulip Best Practices<a class="headerlink" href="#zulip-best-practices" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>It is preferable for the whole team to move forward slowly <em>together</em> than it is for one or two people to move forward quickly while others do nothing.</p></li>
-<li><p>Allow the team to continue to make progress even when others are out or unavailable.</p></li>
-<li><p>Be accommodating of team members schedules and let them read and respond to communication in their own time.</p></li>
-<li><p>Use synchronous communication (e.g., video meetings/calls) for what is best: real-time collaboration (e.g., pair programming).</p>
-<ul>
-<li><p>Recall the <a class="reference external" href="https://github.com/NCAR/xdev/blob/main/COMMPLAN.md">Xdev Communication Plan</a> (todo: add Trello to <code class="docutils literal notranslate"><span class="pre">COMMPLAN.md</span></code>)</p></li>
+<li><p>Be timely in responding to people on Zulip.  One of Zulip’s greatest benefits is as a “quick” communication platform.  You shouldn’t expect people to respond to you (or for you to respond) <em>immediately</em>, but a person should expect getting a response within the day.</p></li>
+<li><p>When a person creates a topic for a specific question, and the answer to the question reveals that the topic title doesn’t really communicate the <em>actual problem</em> the person was experiencing, then it is useful to <a class="reference external" href="https://zulip.com/help/rename-a-topic"><em>rename the topic</em></a>.</p></li>
+<li><p>When a particular question seems like a common stumbling block, or a recurring question, or is just particularly challenging for a person to figure out on their own, it can be useful to post that question and answer in the <a class="reference external" href="https://ncar.github.io/esds/faq/">ESDS FAQ</a>.</p></li>
 </ul>
-</li>
-</ul>
+<div class="info admonition">
+<p class="admonition-title">Quick Link</p>
+<p><a class="reference external" href="https://zulip.ucar.edu/">NCAR Zulip</a></p>
 </div>
 </div>
-<div class="section" id="trello">
-<h2>Trello<a class="headerlink" href="#trello" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="project-board">
-<h3>Project Board<a class="headerlink" href="#project-board" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><strong>The <a class="reference external" href="https://trello.com/b/ul7PB0wv/xdev-team">Trello board</a> is to be considered the “fount of knowledge” regarding the project.</strong></p></li>
-<li><p>All relevant GitHub issues/PRs, documents (e.g., HackMD), and other information <em>not</em> contained explicitly in the board should be referenced or attached to cards on the board.</p>
-<ul>
-<li><p>You can add a Github issue/PR by copying the link to that issue or PR, and pasting in the “add a link” section of the card you are attaching it to</p></li>
-</ul>
-</li>
-<li><p>Collaboration and discussions around project activities should happen on the board, in the comments section of the relevant card.</p></li>
-<li><p>Keep up to date with changes on the board by using the “Activity” section of the Board Menu (top right).</p></li>
-</ul>
 </div>
-<div class="section" id="trello-board-how-to">
-<h3>Trello Board How-To<a class="headerlink" href="#trello-board-how-to" title="Permalink to this headline">¶</a></h3>
-<p>The Trello board is divided into multiple columns called “Lists”.  Each List contains “Cards.”  Trello board flow works by creating cards and moving them between lists to indicate a change in context related to the card.</p>
-<p>In the Xdev project boards, the lists are as follows:</p>
-<ul class="simple">
-<li><p><em>Info:</em> Cards in this list represent addition information pertaining to the project.  This includes User Stories, reference documents, and other kinds of information.  Use these cards to help define tasks in the backlog.  Look to this list to find out what the goals of the project are and what constitutes success.</p></li>
-<li><p><em>Backlog:</em> Cards in this column represent tasks that need to be done on the project. New tasks, as they are determined, will be created in this list.  Look to this list to find out what you can do next.</p></li>
-<li><p><em>In Progress:</em> Cards from the Backlog list should be moved into this list once work is started on them.  The person who moved the card should also “join” the card/task at this point in time.  Look to this list to find out what people are working on now.</p>
-<ul>
-<li><p>Consider having a limit of how many “in progress” cards a single person can have (2 or 3, or maybe even 1)</p></li>
-</ul>
-</li>
-<li><p><em>Done:</em> Cards in this list represent tasks that have been completed.  Look to this list to catch up on what the team has been up to over the last week.</p></li>
-<li><p><em>Archived:</em> Cards in this list represent tasks that have been reviewed and archives for reference.  Cards in the Done list will be automatically moved into the Archived list at 11:59PM every Wednesday Async Day.</p></li>
-</ul>
+<div class="section" id="zoom-google-meet">
+<h2>Zoom &amp; Google Meet<a class="headerlink" href="#zoom-google-meet" title="Permalink to this headline">¶</a></h2>
+<p>We use Zoom and Google Meet for many of our <a class="reference internal" href="meetings.html"><span class="doc std std-doc">meetings</span></a>.  These video meeting platforms are great for direct, synchronous communication.  But to accommodate everyone’s busy schedule, we use these platforms <em>only when synchronous communication is necesary</em>.</p>
 </div>
+<div class="section" id="blogs">
+<h2>Blogs<a class="headerlink" href="#blogs" title="Permalink to this headline">¶</a></h2>
+<p>Blog posts are an <em>excellent</em> forum for telling people about what we are doing and for sharing our little successes.  Everyone in Xdev is encouraged to write a blog post for the <a class="reference external" href="https://ncar.github.io/esds/blog/">ESDS Blog</a> on a monthly basis.</p>
+<div class="info admonition">
+<p class="admonition-title">Quick Link</p>
+<p><a class="reference external" href="https://ncar.github.io/esds/blog/">ESDS Blog</a></p>
 </div>
-<div class="section" id="team-async-days">
-<h2>Team Async Days<a class="headerlink" href="#team-async-days" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Wednesdays will be Team “Async Days”, when members of the team can “sync up” asynchronously with each other over the course of the day.</p></li>
-<li><p>Async Days are designed to remove the need for <em>another</em> Zoom meeting.</p></li>
-<li><p>On Async Days, members of the team are responsible for visiting the board and checking in on what their teammates have been doing.</p></li>
-<li><p>An automated message will be sent out every Wednesday morning from Trello summarizing what cards are “Done” and what cards are “In Progress”.</p></li>
-<li><p>At the end of the day on Wednesday (11:59PM), Trello will automatically move all cards in the “Done” list to the “Archived” list.</p></li>
-</ul>
-</div>
-<div class="section" id="weekly-hackathons">
-<h2>Weekly Hackathons<a class="headerlink" href="#weekly-hackathons" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>In order to facilitate and encourage teammates to engage in <em>pair programming</em>, the weekly Xdev Team Time slot will be used for project hackathons.</p></li>
-<li><p>We will meet in the <a class="reference external" href="https://gather.town/app/NF3AQ5keuLywswp2/xdev-projects">Xdev Projects Gather Town</a>.</p></li>
-<li><p>Each weekly hackathon will start with a brief “Stand Up” meeting in the <strong>Red Conference Room</strong> in the Gather Town.</p></li>
-<li><p>Find partners to work with together and pair program.</p></li>
-<li><p><em><strong>Remember:</strong></em> Don’t just always pick the same partners!  Don’t stick with the same partners for the entire hackathon!  Reach out and help each other out.  Use the hackathons to lift the team, to teach <em>and</em> get things done!</p></li>
-</ul>
-</div>
-<div class="section" id="how-should-new-members-infrequent-contributors-get-started">
-<h2>How Should New Members / Infrequent Contributors Get Started?<a class="headerlink" href="#how-should-new-members-infrequent-contributors-get-started" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Do we need a catalog of existing projects? (Revive <a class="reference external" href="https://github.com/NCAR/xdev/blob/main/projects/active"><code class="docutils literal notranslate"><span class="pre">projects/</span></code></a> in the repo?)</p></li>
-<li><p>Look in the <em>Backlog</em> or <em>In Progress</em> column of the Trello board</p>
-<ul>
-<li><p>Comment on an interesting looking card</p></li>
-<li><p>Do we need a “point of contact” in the Trello cards?</p></li>
-</ul>
-</li>
-</ul>
+<!-- ## Gather Town
+
+When we need to meet, we will hold all of our meetings in our [Xdev Remote Office]() on [Gather.Town](https://gather.town).  You are also welcome to work in this space as much as you like, as it is open at all times.  **For security reasons, we advise that you not share any personal information on the site, in the chat, or over video.**  The chat history in this space has been disabled, so it will only stay visible in your browser until the next time the tab is reloaded.  The space is password protected, so contact [Kevin](mailto:kpaul@ucar.edu) for information.  You will need a Gather.Town account before you can have access, and you need to be on the approved "member list" to enter! -->
 </div>
 </div>
 
@@ -557,17 +514,17 @@ contained on HackMD, which is <em>wildly</em> out of date.</p>
               </div>
               <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="expectations.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="more-github.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Expectations</p>
+            <p class="prev-next-title">GitHub Glossary</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="commplan.html" title="next page">
+    <a class='right-next' id="next-link" href="meetings.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Communications</p>
+        <p class="prev-next-title">Meetings</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

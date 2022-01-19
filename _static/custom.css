@@ -28,3 +28,10 @@ main.banner-main .dark-banner a {
 main.banner-main .dark-banner a.btn-light {
   color: rgba(var(--spt-color-dark), 1) !important;
 }
+
+main.bd-content #main-content div.section ul p,
+main.bd-content #main-content div.section ol p,
+main.bd-content #print-main-content div.section ul p,
+main.bd-content #print-main-content div.section ol p {
+  margin-bottom: 0.6rem;
+}
