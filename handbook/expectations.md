@@ -68,3 +68,8 @@ This content is new and should be reviewed by the team!
 ## Office Hours & Zulip Q&A
 
 In addition to Office Hours (mentioned [above](#meetings-are-for-engagement)), we also monitor the NCAR Zulip organization.  **Xdev is expected to help answer questions on Zulip when you can, in addition to attending Office Hours when you have no other conflicts.**  If you don't know the answer to a question, and nobody is answering, take the time to try to *find* the answer.  If you know the answer, or have an idea, take the time to help out.
+
+:::{admonition} Quick Link
+:class: info
+[NCAR Zulip](https://zulip.ucar.edu)
+:::
