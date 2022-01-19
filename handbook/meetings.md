@@ -22,6 +22,10 @@ The core Xdev Team has weekly meetings to discuss the status of projects and oth
 
 The purpose of Weekly Meetings is to collaborate!  It is not to go over what has been done the previous week, or to update everyone on what has been done or what you are planning to do.  That's what GitHub is for!  (See [How we use GitHub](github))  The Xdev Remote Office on Gather Town is meant to be an open space, and our weekly meeting reservation is meant to be a guaranteed time when we all will be available.  However, if there is nothing on the agenda for a meeting one week, then we can simply use the time to hack together.
 
+:::{admonition} Quick Link
+[Xdev Weekly Meetings](https://meet.google.com/ign-wzyh-kbu)
+:::
+
 ## Stakeholder Meetings
 
 Once a quarter (or thenabouts), we hold a meeting to discuss our status as a team with the broader Xdev Stakeholders community.  We open this up to everyone who is interested and involved with Xdev, whether at a leadership level or a developer level or just an external interested party.
