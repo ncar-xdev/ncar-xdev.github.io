@@ -51,7 +51,7 @@ The [Earth System Data Science](https://ncar.github.io/esds/) initiative was cre
 Read more about the [ESDS Vision](https://ncar.github.io/esds/about/#about-us)!
 :::
 
-> The Earth System Data Science initiative aims to profoundly increase the effectiveness of the NCAR/UCAR workforce by promoting deeper collaboration centered on analytics, improving our capacity to deliver impactful, actionable, reproducible science and serve the university community by transforming how geoscientists synthesize and extract information from large, diverse data sets.
+> The Earth System Data Science initiative aims to profoundly increase the effectiveness of the NCAR/UCAR workforce by promoting deeper collaboration centered on analytics, improving our capacity to deliver impactful, actionable, reproducible science, and serve the university community by transforming how geoscientists synthesize and extract information from large, diverse data sets.
 
 ESDS is the force bringing the scientific community together to collaborate, and Xdev is the catalyst for cultural change.  ESDS has an essentially scientific focus, while Xdev has an engineering focus.  Xdev brings its expertise to bear on specific problems that scientists have with the technology.  Xdev helps steer ESDS scientists toward solutions that interoperate within Pangeo Environments and helps the scientists build and depend upon a common stack of software that empowers everyone.  Xdev helps teach ESDS scientists through ESDS’s training efforts and through direct collaboration with ESDS scientists on technical projects.  While Xdev means to address more than just the ESDS community of scientists, ESDS is a strong partner with Xdev and an excellent source for collaboration.
 
