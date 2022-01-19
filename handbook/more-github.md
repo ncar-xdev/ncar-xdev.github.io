@@ -1,6 +1,6 @@
 # GitHub Glossary
 
-Knowing how to *use* GitHub on a day-to-day basis is one thing (see [How we use GitHub](github)), but knowing all of the necessary components is another.  Most of the components are *mentioned* in the [How we use GitHub](github)) section, but it's worth while to list the components in more explicit detail so you have a "lay of the land."
+Knowing how to *use* GitHub on a day-to-day basis is one thing (see [How we use GitHub](github)), but knowing all of the necessary components is another.  Most of the components are *mentioned* in the [How we use GitHub](github)) section, but it's worthwhile to list the components in more explicit detail so you have a "lay of the land."
 
 ## Organization
 
