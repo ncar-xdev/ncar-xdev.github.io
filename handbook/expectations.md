@@ -34,7 +34,7 @@ Unfortunately, not everything can be done on GitHub.  We understand that, and yo
 
 ## Meetings are for engagement
 
-The Xdev Team and Xdev Stakeholders (see [Xdev Governance](../about/xdev#governance)) meet on a regular basis.  Core team members meet on a weekly basis for *synchronous* discussions related to our projects and other team activity.  The broader stakeholder community meets with the core team on a less frequent basis (TBD) to discuss past accomplishments, the current status of the team, and future plans.  **If you are an Xdev core team member, you are expected to attend all of these meetings, barring vacation, conflicting high-priority meetings, etc.**  If you are an Xdev Stakeholder, we hope you will join us at these meetings when you can attend.
+The Xdev Team holds weekly office hours and team meetings.  Additionally, the Xdev Team and Xdev Stakeholders (see [Xdev Governance](../about/xdev#governance)) meet on a regular basis.  Core team members meet on a weekly basis for *synchronous* discussions related to our projects and other team activity.  The broader stakeholder community meets with the core team on a less frequent basis (TBD) to discuss past accomplishments, the current status of the team, and future plans.  **If you are an Xdev core team member, you are expected to attend all of these meetings, barring vacation, conflicting high-priority meetings, etc.**  If you are an Xdev Stakeholder, we hope you will join us at these meetings when you can attend.
 
 :::{admonition} Quick Link
 :class: info
@@ -64,3 +64,7 @@ This content is new and should be reviewed by the team!
 [How we use GitHub](github)
 [Xdev Daily Standups](https://github.com/orgs/ncar-xdev/teams/all/discussions/1)
 :::
+
+## Office Hours & Zulip Q&A
+
+In addition to Office Hours (mentioned [above](#meetings-are-for-engagement)), we also monitor the NCAR Zulip organization.  **Xdev is expected to help answer questions on Zulip when you can.**  If you don't know the answer to a question, and nobody is answering, take the time to try to *find* the answer.  If you know the answer, or have an idea, take the time to help out.
