@@ -1,6 +1,6 @@
 # What we expect
 
-As a member of the Xdev Team or as an external collaborator working with the Xdev Team, these are the basic expections that we have of each other.
+As a member of the Xdev Team or as an external collaborator working with the Xdev Team, these are the basic expectations that we have of each other.
 
 ## This book is TRUTH
 
