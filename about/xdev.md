@@ -11,7 +11,7 @@ To achieve this, Xdev acts as navigators for NCAR scientists in the Pangeo sea. 
 
 ## The Xdev Manifesto
 
-Xdev is an NCAR entity, and therefore must satisfy NCAR priorities and strategic objectives.  Xdev is also commited to the _external_ Pangeo community, and therefore it behoves us to enumerate our _technical values_ to highlight how Xdev’s values align with Pangeo.
+Xdev is an NCAR entity, and therefore must satisfy NCAR priorities and strategic objectives.  Xdev is also committed to the _external_ Pangeo community, and therefore it behooves us to enumerate our _technical values_ to highlight how Xdev’s values align with Pangeo.
 
 1. We value **interactivity** over batch processing.  While batch processing is still necessary for many things, we believe that the need for curiosity-driven analysis is greater and that this should be the priority.
 
