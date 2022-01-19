@@ -21,6 +21,21 @@ Zulip is primarily useful for replying to people who are *outside the team* who 
 
 Zulip can also be useful for one-on-one communication between teammates.  Use Zulip for this rather than email, as much as possible.  Also, use Zulip for direct communication with another person primarily as a means of keeping other communication channels "less noisy," even if the communication specifically doesn't have anything terribly private in it.
 
-## Gather Town
+### Zulip Best Practices
 
-When we need to meet, we will hold all of our meetings in our [Xdev Remote Office](https://gather.town/app/BvQlfpMShIsMMXw3/Xdev%20Remote%20Office) on [Gather.Town](https://gather.town).  You are also welcome to work in this space as much as you like, as it is open at all times.  **For security reasons, we advise that you not share any personal information on the site, in the chat, or over video.**  The chat history in this space has been disabled, so it will only stay visible in your browser until the next time the tab is reloaded.  The space is password protected, so contact [Kevin](mailto:kpaul@ucar.edu) for information.  You will need a Gather.Town account before you can have access, and you need to be on the approved "member list" to enter!
+- Be timely in responding to people on Zulip.  One of Zulip's greatest benefits is as a "quick" communication platform.  You shouldn't expect people to respond to you (or for you to respond) *immediately*, but a person should expect getting a response within the day.
+- When a person creates a topic for a specific question, and the answer to the question reveals that the topic title doesn't really communicate the *actual problem* the person was experiencing, then it is useful to [*rename the topic*](https://zulip.com/help/rename-a-topic).
+- When a particular question seems like a common stumbling block, or a recurring question, or is just particularly challenging for a person to figure out on their own, it can be useful to post that question and answer in the [ESDS FAQ](https://ncar.github.io/esds/faq/).
+
+:::{admonition} Quick Link
+:class: info
+[NCAR Zulip](https://zulip.ucar.edu/)
+:::
+
+## Zoom & Google Meet
+
+We use Zoom and Google Meet for many of our [meetings](meetings).  These video meeting platforms are great for direct, synchronous communication.  But to accommodate everyone's busy schedule, we use these platforms *only when synchronous communication is necesary*.
+
+<!-- ## Gather Town
+
+When we need to meet, we will hold all of our meetings in our [Xdev Remote Office]() on [Gather.Town](https://gather.town).  You are also welcome to work in this space as much as you like, as it is open at all times.  **For security reasons, we advise that you not share any personal information on the site, in the chat, or over video.**  The chat history in this space has been disabled, so it will only stay visible in your browser until the next time the tab is reloaded.  The space is password protected, so contact [Kevin](mailto:kpaul@ucar.edu) for information.  You will need a Gather.Town account before you can have access, and you need to be on the approved "member list" to enter! -->
