@@ -50,7 +50,7 @@ There will be plenty of times when you realize that something that needs to be d
 
 ### Xdevdome: *Two devs enter, One team leaves!*
 
-If you're familiar with the old movie [Max Max Beyond Thunderdome](https://en.wikipedia.org/wiki/Mad_Max_Beyond_Thunderdome), you will know the single rule of the Thunderdome is ["two men enter, one man leaves"](https://www.youtube.com/watch?v=9yDL0AKUCKo).  Well, Xdev isn't really competative in nature, and it *certainly* isn't a bloodsport!  Instead, Xdev encourages more of a cheesy "two devs enter, one team leaves" attitude.
+If you're familiar with the old movie [Max Max Beyond Thunderdome](https://en.wikipedia.org/wiki/Mad_Max_Beyond_Thunderdome), you will know the single rule of the Thunderdome is ["two men enter, one man leaves"](https://www.youtube.com/watch?v=9yDL0AKUCKo).  Well, Xdev isn't really competitive in nature, and it *certainly* isn't a bloodsport!  Instead, Xdev encourages more of a cheesy "two devs enter, one team leaves" attitude.
 
 What we mean by this is that we are about trying to build collaboration rather than exclude people.  So, if the most interesting "next step" *to you* is an Issue that someone has already assigned themselves to, then go ahead and assign yourself to the Issue, too.  How does this work in practice?
 
