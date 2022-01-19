@@ -1,8 +1,18 @@
-# Team & Stakeholder Meetings
+# Meetings
 
-The Xdev Team has two kinds of meetings: Weekly Meetings and Stakeholder Meetings.  Weekly meetings are for regular communication on our *ongoing work*.  Stakeholder meetings are for check-ins with our stakeholders, to gather feedback, and to help determine what direction we should be heading.
+The Xdev Team has three kinds of regular meetings: Office Hours, Weekly Meetings, and Stakeholder Meetings.  Office Hours are for helping scientists with workflow and software problems they experience doing daily work.  Weekly meetings are for regular communication on our *ongoing work*.  Stakeholder meetings are for check-ins with our stakeholders, to gather feedback, and to help determine what direction we should be heading.
 
-**In general, our goal is to do as much communication asynchronously as possible!**  That means limiting the number of meetings, and focusing meetings on actual collaboration, rather than just updating each other on our work!
+**In general, our goal is to do as much communication asynchronously as possible!**  That means limiting the number of meetings, and focusing meetings on actual collaboration, rather than just updating each other on our work!  However, synchronous communication *does have value,* and for that reason, we hold these regular meetings.
+
+## Office Hours
+
+As a courtesy to the NCAR scientific community, we hold Office Hours to help scientists figure out how to use the Pangeo software stack in their day-to-day work.  Sometimes [Zulip](communicating#zulip) isn't enough, and you need someone to "sit down with you" and show you the ropes, and that's what the Office Hours are for.
+
+Office Hours are held every Monday from 3 PM to 5 PM MST/MDT (GMT-7/6) on Zoom.  The Zoom link is [here](https://ucar-edu.zoom.us/j/98106855651).  It is password protected, and those that have been invited to the Office Hours Google Event can find the password in the event details.  If you are not on the invite list, you are NCAR staff or a collaborator, and you want to join our Office Hours, please contact us at [xdev@ucar.edu](mailto:xdev@ucar.edu).
+
+:::{admonition} Quick Link
+[Xdev Office Hours](https://ucar-edu.zoom.us/j/98106855651)
+:::
 
 ## Weekly Meetings
 
