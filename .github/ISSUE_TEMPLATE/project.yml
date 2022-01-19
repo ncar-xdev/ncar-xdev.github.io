@@ -1,0 +1,72 @@
+name: New Project Proposal
+description: Propose a short-term project for the Xdev Team
+title: "[PROJECT]: "
+labels: ["project"]
+body:
+  - type: markdown
+    value: |
+      Your job in filling out this short-term project proposal is to provide the Xdev Team
+      with an understanding of the dilemma that you are hoping to find a solution to and to
+      help use understand what you want that solution to look like.  You do not have to provide
+      details about *how to solve the problem* or *how the solution should be implemented*!
+      
+      Please keep in mind that these proposals should be for fairly short-term work, less than
+      three months.  We understand that without knowing the software stack in great detail, it
+      can be hard to actually *know* how long such a project might take.  So, if you feel that
+      the solution you have envisioned *has value* propose the project anyway!  We will do
+      what we can to find an acceptable solution in a reasonable time.
+  - type: input
+    id: codename
+    attributes:
+      label: Project Codename
+      description: Give a short codename to which we refer to this project
+      placeholder: codename
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The Problem
+      description: Tell us the problem that you are hoping to solve with this project.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: The Solution
+      description: Tell us what you think a solution to the above problem should look like.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Additional Requirements
+      description: In addition to the solution described above, what other requirements should this project satisfy?
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: If you have additional references you can provide that help us understand the problem or what the solution should look like, provide them here.
+  - type: checkboxes
+    id: commitment
+    attributes:
+      label: Level of Commitment
+      description: |
+        How do you want to be involved in this project?  Note that projects submitted
+        by people who are willing to be closely involved with the project (e.g., as a
+        co-developer) will be prioritized.  Don't be afraid to learn by doing!  If you
+        aren't an expert software developer, you can still be involved.
+      options:
+        - label: As a code developer (writing code alongside the Xdev Team)
+        - label: As a code reviewer (writing reviews of Xdev code)
+        - label: As a code tester (testing code provided by the Xdev Team)
+        - label: As a non-developer teammate (attending weekly project meetings)
+        - label: As a watcher (watching the Xdev Project repository)
+  - type: checkboxes
+    id: code
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://ncar-xdev.github.io/CODEOFCONDUCT.html).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
