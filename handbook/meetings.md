@@ -10,13 +10,15 @@ As a courtesy to the NCAR scientific community, we hold Office Hours to help sci
 
 Office Hours are held every Monday from 3 PM to 5 PM MST/MDT (GMT-7/6) on Zoom.  The Zoom link is [here](https://ucar-edu.zoom.us/j/98106855651).  It is password protected, and those that have been invited to the Office Hours Google Event can find the password in the event details.  If you are not on the invite list, you are NCAR staff or a collaborator, and you want to join our Office Hours, please contact us at [xdev@ucar.edu](mailto:xdev@ucar.edu).
 
+At the conclusion of each Office Hours session, it is important to record the questions and answers that were given during the session in the [Xdev Office Hour Summary](https://docs.google.com/spreadsheets/d/1ruUDOIOprMXFr3rZIt7bJFpYwBsDtYSbLNz0YeYNDnM/edit#gid=0) document.  (Only Xdev staff have access to this document!)  Particularly useful Q&A sessions should be converted to blog posts on the [ESDS Blog](https://ncar.github.io/esds/blog/), and other Q&A sessions that need to be recorded for future reference should be added to the [ESDS FAQ](https://ncar.github.io/esds/faq/), like appropriate questions from [Zulip](communicating#zulip).
+
 :::{admonition} Quick Link
 [Xdev Office Hours](https://ucar-edu.zoom.us/j/98106855651)
 :::
 
 ## Weekly Meetings
 
-The core Xdev Team has weekly meetings to discuss the status of projects and other activities.  These meetings are held on Wednesdays from 3:00 PM to 5:00 PM mountain over [Gather Town](communicating#gather-town).  Once you are a member of Xdev, you should have an event on Google Calendar with connection details.  When possible, all Xdev members (core team members and interested stakeholders) are encouraged to attend these meetings.  If you are involved in an ongoing Xdev project, then you are *strongly encouraged* to attend, barring other conflicts (e.g., vacation, other high-priority meetings).
+The core Xdev Team has weekly meetings to discuss the status of projects and other activities.  These meetings are held on Wednesdays from 3:00 PM to 5:00 PM mountain over [Google Meet](communicating#zoom-google-meet).  Once you are a member of Xdev, you should have an event on Google Calendar with connection details.  When possible, all Xdev members (core team members and interested stakeholders) are encouraged to attend these meetings.  If you are involved in an ongoing Xdev project, then you are *strongly encouraged* to attend, barring other conflicts (e.g., vacation, other high-priority meetings).
 
 The purpose of Weekly Meetings is to collaborate!  It is not to go over what has been done the previous week, or to update everyone on what has been done or what you are planning to do.  That's what GitHub is for!  (See [How we use GitHub](github))  The Xdev Remote Office on Gather Town is meant to be an open space, and our weekly meeting reservation is meant to be a guaranteed time when we all will be available.  However, if there is nothing on the agenda for a meeting one week, then we can simply use the time to hack together.
 
