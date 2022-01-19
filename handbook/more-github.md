@@ -4,7 +4,7 @@ Knowing how to *use* GitHub on a day-to-day basis is one thing (see [How we use 
 
 ## Organization
 
-To keep us from being to scattered, we have opted to do all of our work (or as much as possible) in our own GitHub organization: [ncar-xdev](https://github.com/ncar-xdev).  If you are a core member of the Xdev Team, you should already be a member (or owner) of the GitHub organization.  If you are a collaborator working with Xdev on a specific project, you should request to be added to the project repositories, as needed.
+To keep us from being too scattered, we have opted to do all of our work (or as much as possible) in our own GitHub organization: [ncar-xdev](https://github.com/ncar-xdev).  If you are a core member of the Xdev Team, you should already be a member (or owner) of the GitHub organization.  If you are a collaborator working with Xdev on a specific project, you should request to be added to the project repositories, as needed.
 
 :::{admonition} Tip
 :class: tip
