@@ -4,17 +4,18 @@ title: "[PROJECT]: "
 labels: ["project"]
 body:
   - type: markdown
-    value: |
-      Your job in filling out this short-term project proposal is to provide the Xdev Team
-      with an understanding of the dilemma that you are hoping to find a solution to and to
-      help use understand what you want that solution to look like.  You do not have to provide
-      details about *how to solve the problem* or *how the solution should be implemented*!
+    attributes:
+      value: |
+        Your job in filling out this short-term project proposal is to provide the Xdev Team
+        with an understanding of the dilemma that you are hoping to find a solution to and to
+        help use understand what you want that solution to look like.  You do not have to provide
+        details about *how to solve the problem* or *how the solution should be implemented*!
       
-      Please keep in mind that these proposals should be for fairly short-term work, less than
-      three months.  We understand that without knowing the software stack in great detail, it
-      can be hard to actually *know* how long such a project might take.  So, if you feel that
-      the solution you have envisioned *has value* propose the project anyway!  We will do
-      what we can to find an acceptable solution in a reasonable time.
+        Please keep in mind that these proposals should be for fairly short-term work, less than
+        three months.  We understand that without knowing the software stack in great detail, it
+        can be hard to actually *know* how long such a project might take.  So, if you feel that
+        the solution you have envisioned *has value* propose the project anyway!  We will do
+        what we can to find an acceptable solution in a reasonable time.
   - type: input
     id: codename
     attributes:
