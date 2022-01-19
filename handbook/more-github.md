@@ -78,7 +78,7 @@ Issues on repositories represent *tasks* that need to be done (or are done, if t
 
 :::{admonition} Label issues appropriately!
 :class: warning
-Please label all new issue appropriately when they are created.  This helps the team decide what they need to work on next.  If you need help deciding an Issue's priority, ping the entire [team](#team) on a comment in the Issue to ask for a decision.
+Please label all new issues appropriately when they are created.  This helps the team decide what they need to work on next.  If you need help deciding an Issue's priority, ping the entire [team](#team) on a comment in the Issue to ask for a decision.
 :::
 
 Remember that once you realize that something needs to be done in a project or on a specific repository, you should create an issue for that task in the appropriate repository so that others might be able to help address it.
