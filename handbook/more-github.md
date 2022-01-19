@@ -27,6 +27,7 @@ Through this GitHub Team, we also engage in [Team Discussions](https://github.co
 :::{admonition} Quick Link
 :class: note
 [Team Discussions](https://github.com/orgs/ncar-xdev/teams/all/discussions)
+[Daily Standups](https://github.com/orgs/ncar-xdev/teams/all/discussions/1)
 :::
 
 ## Project Board
