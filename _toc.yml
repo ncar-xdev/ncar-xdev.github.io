@@ -25,6 +25,8 @@ parts:
     title: Communication
   - file: handbook/meetings
     title: Meetings
+  - file: handbook/projects
+    title: Projects
 - caption: Status
   chapters:
   - file: status/index
