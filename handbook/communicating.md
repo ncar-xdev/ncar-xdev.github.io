@@ -17,6 +17,8 @@ These rules apply for both your individual work email addresses *and* the Xdev T
 
 ## Zulip
 
+[Zulip](https://zulip.com) is an open source chat platform for distributed teams.  Because it is open source, we were able to launch our own Zulip server on NCAR systems.  We launched this platform primarily as a means for scientists to collaborate with the Xdev Team *and each other* around issues related to the adoption of Python and the Pangeo stack.
+
 Zulip is primarily useful for replying to people who are *outside the team* who have questions that the team can answer about Python, the Pangeo software stack, and general application questions regarding analysis.  The Team should monitor Zulip on a semi-regular basis, once or twice a day.  Fortunately, traffic on Zulip is not so great as to require more than that, even for a team our size!
 
 Zulip can also be useful for one-on-one communication between teammates.  Use Zulip for this rather than email, as much as possible.  Also, use Zulip for direct communication with another person primarily as a means of keeping other communication channels "less noisy," even if the communication specifically doesn't have anything terribly private in it.
