@@ -1,6 +1,6 @@
 # What we expect
 
-As a member of the Xdev Team or as an external collaborator working with the Xdev Team, these are the basic expections that we have of each other.
+As a member of the Xdev Team or as an external collaborator working with the Xdev Team, these are the basic expectations that we have of each other.
 
 ## This book is TRUTH
 
@@ -9,7 +9,7 @@ As a member of the Xdev Team or as an external collaborator working with the Xde
 This content is new and should be reviewed by the team!
 :::
 
-**As a member of the Xdev Team, you are expected to help keep this book *correct* and *up-to-date*.**  If anything seems outdated, or no longer correct, you are expected to [create a GitHub Issue](https://github.com/ncar-xdev/ncar-xdev.github.io/issues/new) to notify the team of the problem.  If you have time, [create a pull request](https://github.com/ncar-xdev/ncar-xdev.github.io/compare) to fix it!  If a process we are using seem to not be working for us, or an expectation seems too much to ask, suggest a change to this document or bring it up at the next [Xdev Meeting](#meetings-are-for-engagement).
+**As a member of the Xdev Team, you are expected to help keep this book *correct* and *up-to-date*.**  If anything seems outdated, or no longer correct, you are expected to [create a GitHub Issue](https://github.com/ncar-xdev/ncar-xdev.github.io/issues/new) to notify the team of the problem.  If you have time, [create a pull request](https://github.com/ncar-xdev/ncar-xdev.github.io/compare) to fix it!  If a process we are using seems to not be working for us, or an expectation seems too much to ask, suggest a change to this document or bring it up at the next [Xdev Meeting](#meetings-are-for-engagement).
 
 ## Follow the Code of Conduct
 

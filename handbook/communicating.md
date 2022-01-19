@@ -9,7 +9,7 @@ GitHub is a fantastic platform for collaborating on open source software, but it
 
 ## Email
 
-Email should be used sparingly, but there are times when it is necessary.  Sending inviations to Zoom or Google Meet calls sometimes requires knowing a teammate's individual email address, which results in an email notification of the newly scheduled event.  Email is also a convenient mechanism for people *outside* of the team to communicate with us, in which case responses over email are obviously appropriate.
+Email should be used sparingly, but there are times when it is necessary.  Sending invitations to Zoom or Google Meet calls sometimes requires knowing a teammate's individual email address, which results in an email notification of the newly scheduled event.  Email is also a convenient mechanism for people *outside* of the team to communicate with us, in which case responses over email are obviously appropriate.
 
 Communication directly between team members with email should be discouraged, though.  The only time when such communication is appropriate is when you need to reference another email (e.g., replying or forwarding) for discussion, or you need to reference a Zoom or Google Meet event for which you were notified via email.
 
