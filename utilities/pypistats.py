@@ -1,3 +1,16 @@
+"""
+This file contains a simple function to read data from Google BigQuery (i.e., via SQL).
+To access Google BigQuery, you need a Google Cloud Project with the BigQuery API
+enabled.  (Note, you cannot do this with your NCAR Google account!)  Once you have
+a BigQuery-enabled GC project, you can download credentials to your laptop/machine as
+a JSON, and you can set the environment variable:
+
+GOOGLE_APPLICATION_CREDENTIALS="path/to/credentials.json"
+
+Without the credentials file AND this environment variable set, this funciton will
+fail with authentication errors.
+"""
+
 from calendar import monthrange
 
 from google.cloud import bigquery

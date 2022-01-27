@@ -1,3 +1,8 @@
+"""
+This file contains a function to read data from a public AWS S3 store containing hourly
+Conda package download data.
+"""
+
 import dask.dataframe as dd
 
 
