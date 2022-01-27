@@ -1,37 +1,37 @@
-#!/usr/bin/env python
+from calendar import monthrange
+
 from google.cloud import bigquery
 
-client = bigquery.Client()
 
-pkgs = [
-    'intake-esm',
-    'jupyter-forward',
-    'ncar-jobqueue',
-]
+def get_pypi_stats_for_month(packages=[], year=2022, month=1):
+    if not packages:
+        return None
 
-pkg_string = ', '.join(f"'{p}'" for p in pkgs)
-pkg_query_list = []
-for i, p in enumerate(pkgs):
-    pkg_query_list.append(f"SUM(CASE WHEN file.project = '{p}' THEN 1 ELSE 0 END) AS `pkg{i}`")
-pkg_queries = ',\n    '.join(pkg_query_list)
+    client = bigquery.Client()
 
-query = f"""
-SELECT
-    FORMAT_DATE("%Y-%m", DATE(timestamp)) as `month`,
-    {pkg_queries}
-FROM `bigquery-public-data.pypi.file_downloads`
-WHERE
-    file.project in ({pkg_string})
-    AND DATE(timestamp) > '2018-01-01'
-GROUP BY `month`
-ORDER BY `month` ASC
-"""
+    pkg_string = ', '.join(f"'{p}'" for p in packages)
 
-headings = ('month',) + tuple(p for p in pkgs)
-print(*headings)
+    pkg_query_list = []
+    for i, p in enumerate(packages):
+        pkg_query_list.append(f"SUM(CASE WHEN file.project = '{p}' THEN 1 ELSE 0 END) AS `p{i}`")
+    pkg_queries = ',\n    '.join(pkg_query_list)
 
-query_job = client.query(query)
-results = query_job.result()
-for row in results:
-    vals = (row.month,) + tuple(row.get(f'pkg{i}') for i in range(len(pkgs)))
-    print(*vals)
+    sql = f"""
+    SELECT
+        FORMAT_DATE("%Y-%m", DATE(timestamp)) as `month`,
+        {pkg_queries}
+    FROM `bigquery-public-data.pypi.file_downloads`
+    WHERE
+        file.project in ({pkg_string})
+        AND DATE(timestamp) >= '{year:04d}-{month:02d}-01'
+        AND DATE(timestamp) <= '{year:04d}-{month:02d}-{monthrange(year, month)[1]:02d}'
+    GROUP BY `month`
+    ORDER BY `month` ASC
+    """
+
+    df = client.query(sql).to_dataframe()
+    df.rename(columns={f'p{i}':p for i,p in enumerate(packages)}, inplace=True)
+    df = df.set_index('month')
+    df.columns.name = 'pkg_name'
+
+    return df
