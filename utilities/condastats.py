@@ -11,7 +11,6 @@ def get_conda_stats_for_month(packages=[], year=2022, month=1):
         return None
 
     s3uri = f's3://anaconda-package-data/conda/hourly/{year:04d}/{month:02d}/{year:04d}-{month:02d}-*.parquet'
-    print(s3uri)
     df = dd.read_parquet(
         s3uri,
         columns=['time', 'data_source', 'pkg_name', 'counts'],
