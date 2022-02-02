@@ -1,3 +1,4 @@
+ecgtools: ncar-xdev/ecgtools
 Intake-ESM: intake/intake-esm
 Jupyter-Forward: ncar-xdev/jupyter-forward
 NCAR-Jobqueue: NCAR/ncar-jobqueue
