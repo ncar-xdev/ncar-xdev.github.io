@@ -1,12 +1,45 @@
 #!/usr/bin/env python
 from calendar import monthrange
-from pathlib import Path
+from datetime import datetime
 
+import dask.dataframe as dd
 from google.cloud import bigquery
 import pandas as pd
 
-from common import update_stats, read_stats_file
-from xdevrepos import read_repos_file, get_packages
+
+def get_conda_stats(packages=[], year=None, month=None):
+    """
+    Read Conda download statistics from AWS S3
+
+    This function readS data from a public AWS S3 store containing hourly
+    Conda package download data.
+    """
+    if not packages:
+        return None
+
+    if year is None:
+        year = '*'
+
+    if month is None:
+        month = '*'
+
+    s3uri = f's3://anaconda-package-data/conda/hourly/{year}/{month}/*-*-*.parquet'
+    df = dd.read_parquet(
+        s3uri,
+        storage_options={'anon': True},
+        engine='pyarrow',
+    )
+    if 'pkg_name' not in df:
+        return None
+
+    df = df[['time', 'data_source', 'pkg_name', 'counts']]
+    df = df.loc[df.pkg_name.isin(packages)].compute()
+    df.pkg_name = df.pkg_name.cat.remove_unused_categories()
+    df = df.groupby([df.time.dt.to_period('M'), df.pkg_name]).sum().reset_index()
+    df = df.pivot(index='time', columns='pkg_name', values='counts')
+    df.index.name = 'month'
+
+    return df
 
 
 def get_pypi_stats(packages=[], year=None, month=None):
@@ -16,21 +49,20 @@ def get_pypi_stats(packages=[], year=None, month=None):
     if not packages:
         return None
 
-    if isinstance(year, (list, tuple)):
-        year1, year2 = min(year), max(year)
-    elif year is None:
-        year1, year2 = 2018, 2030
+    if year is None:
+        year1 = 2019
+        year2 = datetime.now().year
     else:
         year1 = year2 = year
 
-    if isinstance(month, (list, tuple)):
-        month1, month2 = min(month), max(month)
-    elif month is None:
-        month1, month2 = 1, 12
+    if month is None:
+        month1 = 1
+        month2 = 12
     else:
         month1 = month2 = month
 
-    day1, day2 = 1, monthrange(year2, month2)[1]
+    day1 = 1
+    day2 = monthrange(year2, month2)[1]
 
     client = bigquery.Client()
 
@@ -61,19 +93,3 @@ def get_pypi_stats(packages=[], year=None, month=None):
     df = df.set_index('month')
 
     return df
-
-
-if __name__ == '__main__':
-    repos = read_repos_file()
-    packages = get_packages(repos, kind='pypi')
-
-    STATS_FILE = Path(__file__).with_suffix('.csv')
-    if STATS_FILE.exists():
-        print('Updating PyPI stats...')
-        df = read_stats_file(STATS_FILE)
-        df = update_stats(df, packages=packages, method=get_pypi_stats)
-    else:
-        print('Downloading all PyPI stats...')
-        df = get_pypi_stats(packages=packages)
-
-    df.to_csv(STATS_FILE)
