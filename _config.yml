@@ -27,9 +27,9 @@ parse:
     - substitution
     - tasklist
   myst_url_schemes:
-   - mailto
-   - http
-   - https
+    - mailto
+    - http
+    - https
   myst_dmath_double_inline: true
 
 sphinx:
