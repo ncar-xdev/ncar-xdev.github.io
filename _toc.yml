@@ -34,8 +34,8 @@ parts:
     title: Tutorials
   - file: status/projects
     title: Projects
-  - file: status/products
-    title: Products
+  - file: status/packages
+    title: Packages
   - file: status/metrics
     title: Metrics
 - caption: Appendix
