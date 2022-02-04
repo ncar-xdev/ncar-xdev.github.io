@@ -5,7 +5,7 @@ import yaml
 class XdevRepos:
 
     def __init__(self) -> None:
-        self._filename = Path(__file__).with_suffix('.yml')
+        self._filename = '../data' / Path(__file__).with_suffix('.yml')
         self._repos = {}
 
     def _parse_github_string(self, gh_string: str) -> None:
