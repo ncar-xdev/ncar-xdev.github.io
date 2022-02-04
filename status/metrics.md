@@ -1,12 +1,58 @@
 # Metrics
 
-:::{warning} **TODO:**
-This document should be a list of metrics that monitor our progress on various goals.
-Some metrics to include are:
+Below are some of the metrics of things that Xdev does.
 
-- GitHub activity from Xdev Community Stakeholders (i.e., anyone other than an Xdev core member on GitHub repositories tied to Xdev Projects)
-- tutorial attendance
-- software downloads
-- GitHub "stars" and "watchers" on Xdev repos
-- ...
+## Package Downloads
+
+### ncar-jobqueue
+
+:::{raw} html
+---
+file: ../images/metrics/ncar-jobqueue-downloads.html
+---
+:::
+
+
+### ecgtools
+
+:::{raw} html
+---
+file: ../images/metrics/ecgtools-downloads.html
+---
+:::
+
+
+### xcollection
+
+:::{raw} html
+---
+file: ../images/metrics/xcollection-downloads.html
+---
+:::
+
+
+### jupyter-forward
+
+:::{raw} html
+---
+file: ../images/metrics/jupyter-forward-downloads.html
+---
+:::
+
+
+### intake-esm
+
+:::{raw} html
+---
+file: ../images/metrics/intake-esm-downloads.html
+---
+:::
+
+
+### xpersist
+
+:::{raw} html
+---
+file: ../images/metrics/xpersist-downloads.html
+---
 :::

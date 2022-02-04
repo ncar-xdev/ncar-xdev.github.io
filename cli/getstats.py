@@ -6,8 +6,8 @@ import click
 from dateutil.relativedelta import relativedelta
 import pandas as pd
 
-from ..utilities import download_stats
-from ..utilities.xdev_repos import XdevRepos
+from utilities import download_stats
+from utilities.xdev_repos import XdevRepos
 
 
 def update_dataframe(df1, df2):
@@ -72,7 +72,7 @@ def main(sources, last, all):
         packages = repos.packages(source=source)
         method = getattr(download_stats, f'get_{source}_stats')
 
-        statsfile = '../data' / Path(f'{source}_stats.csv')
+        statsfile = 'data' / Path(f'{source}_stats.csv')
         if statsfile.exists():
             print(f'Reading {source} statistics file...')
             df = pd.read_csv(statsfile)
