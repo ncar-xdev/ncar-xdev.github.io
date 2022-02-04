@@ -1,4 +1,4 @@
-month,intake-esm,jupyter-forward,ncar-jobqueue,xcollection,ecgtools
+month,intake-esm,jupyter-forward,ncar-jobqueue,ecgtools,xcollection
 2019-03,34,0,0,0,0
 2019-04,118,0,0,0,0
 2019-05,126,0,0,0,0
@@ -29,7 +29,7 @@ month,intake-esm,jupyter-forward,ncar-jobqueue,xcollection,ecgtools
 2021-06,3674,242,208,0,0
 2021-07,3353,299,289,0,0
 2021-08,2970,534,400,0,0
-2021-09,2377,309,249,0,126
-2021-10,2249,359,271,0,129
-2021-11,2499,199,180,0,62
-2021-12,2031,201,151,236,59
+2021-09,2377,309,249,126,0
+2021-10,2249,359,271,129,0
+2021-11,2499,199,180,62,0
+2021-12,2031,201,151,59,236
