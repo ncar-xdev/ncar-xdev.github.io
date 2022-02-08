@@ -48,25 +48,30 @@ def validate_source(ctx, param, value):
 
 
 @click.command()
-@click.option('-s', '--sources',
+@click.option(
+    '-s',
+    '--sources',
     type=click.Choice(['pypi', 'conda', 'all'], case_sensitive=False),
     default='all',
     callback=validate_source,
     help='Download statistics data from given source',
 )
-@click.option('-n', '--last',
+@click.option(
+    '-n',
+    '--last',
     type=click.IntRange(1, 12, clamp=True),
     default=3,
-    help='Download data for the last n months'
+    help='Download data for the last n months',
 )
-@click.option('-a', '--all',
+@click.option(
+    '-a',
+    '--all',
     default=False,
     is_flag=True,
-    help='Download all data, not just recent data'
+    help='Download all data, not just recent data',
 )
 def main(sources, last, all):
     repos = XdevRepos()
-    repos.read()
 
     for source in sources:
         packages = repos.packages(source=source)
@@ -81,7 +86,12 @@ def main(sources, last, all):
         else:
             print(f'Initializing {source} statistics...')
             df = pd.DataFrame()
-            df.index = pd.period_range(start='2019-01', periods=0, freq='M', name='month')
+            df.index = pd.period_range(
+                start='2019-01',
+                periods=0,
+                freq='M',
+                name='month',
+            )
 
         if all:
             print(f'Downloading all {source} statistics...')
