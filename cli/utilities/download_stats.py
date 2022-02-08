@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 from calendar import monthrange
 from datetime import datetime
 
@@ -87,7 +86,7 @@ def get_pypi_stats(packages=[], year=None, month=None):
     """
 
     df = client.query(sql).to_dataframe()
-    df = df.rename(columns={f'p{i}':p for i,p in enumerate(packages)})
+    df = df.rename(columns={f'p{i}': p for i, p in enumerate(packages)})
     df['month'] = pd.to_datetime(df.month).dt.to_period('M')
     df.columns.name = 'pkg_name'
     df = df.set_index('month')
