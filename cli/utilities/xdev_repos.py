@@ -1,14 +1,15 @@
 from pathlib import Path
 import yaml
 
-
 ROOT_DIR = Path(__file__).parent.parent.parent.absolute()
+
 
 class XdevRepos:
 
     def __init__(self) -> None:
         self._filename = Path(ROOT_DIR / 'data' / Path(__file__).name).with_suffix('.yml')
         self._repos = {}
+        self._read()
 
     def _parse_github_string(self, gh_string: str) -> None:
         try:
@@ -18,7 +19,7 @@ class XdevRepos:
             gh_repo = None
         return gh_org, gh_repo
 
-    def read(self) -> None:
+    def _read(self) -> None:
         with open(self._filename) as yml:
             _repos = yaml.safe_load(yml)
 
@@ -48,3 +49,18 @@ class XdevRepos:
             if source in self._repos[repo] and self._repos[repo][source]:
                 packages.append(self._repos[repo][source])
         return packages
+
+    def __len__(self):
+        return len(self._repos)
+
+    def keys(self):
+        return self._repos.keys()
+
+    def values(self):
+        return self._repos.values()
+
+    def items(self):
+        return self._repos.items()
+
+    def __getitem__(self, key):
+        return self._repos[key]
