@@ -89,6 +89,7 @@ query {{
             edges {{
               node {{
                 additions
+                committedDate
                 deletions
                 author {{
                   user {{
@@ -121,6 +122,7 @@ query {{
             data['package'] = name
             data['additions'] = node['node']['additions']
             data['deletions'] = node['node']['deletions']
+            data['date'] = node['node']['committedDate']
             user = node['node']['author']['user']
             if user:
                 data['author'] = user['login']
