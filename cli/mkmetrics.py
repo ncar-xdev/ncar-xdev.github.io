@@ -227,25 +227,25 @@ new information.
 
 :::{{raw}} html
 ---
-file: ../images/metrics/{pkg}-downloads.html
+file: ../images/metrics/{pkg.lower()}-downloads.html
 ---
 :::
 
 :::{{raw}} html
 ---
-file: ../images/metrics/{pkg}-commits.html
+file: ../images/metrics/{pkg.lower()}-commits.html
 ---
 :::
 
 :::{{raw}} html
 ---
-file: ../images/metrics/{pkg}-contributors.html
+file: ../images/metrics/{pkg.lower()}-contributors.html
 ---
 :::
 
 :::{{raw}} html
 ---
-file: ../images/metrics/{pkg}-burndown.html
+file: ../images/metrics/{pkg.lower()}-burndown.html
 ---
 :::
 

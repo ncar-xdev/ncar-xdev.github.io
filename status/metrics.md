@@ -37,25 +37,25 @@ file: ../images/metrics/ecgtools-burndown.html
 
 :::{raw} html
 ---
-file: ../images/metrics/Intake-ESM-downloads.html
+file: ../images/metrics/intake-esm-downloads.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/Intake-ESM-commits.html
+file: ../images/metrics/intake-esm-commits.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/Intake-ESM-contributors.html
+file: ../images/metrics/intake-esm-contributors.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/Intake-ESM-burndown.html
+file: ../images/metrics/intake-esm-burndown.html
 ---
 :::
 
@@ -64,25 +64,25 @@ file: ../images/metrics/Intake-ESM-burndown.html
 
 :::{raw} html
 ---
-file: ../images/metrics/Jupyter-Forward-downloads.html
+file: ../images/metrics/jupyter-forward-downloads.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/Jupyter-Forward-commits.html
+file: ../images/metrics/jupyter-forward-commits.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/Jupyter-Forward-contributors.html
+file: ../images/metrics/jupyter-forward-contributors.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/Jupyter-Forward-burndown.html
+file: ../images/metrics/jupyter-forward-burndown.html
 ---
 :::
 
@@ -91,25 +91,25 @@ file: ../images/metrics/Jupyter-Forward-burndown.html
 
 :::{raw} html
 ---
-file: ../images/metrics/NCAR-Jobqueue-downloads.html
+file: ../images/metrics/ncar-jobqueue-downloads.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/NCAR-Jobqueue-commits.html
+file: ../images/metrics/ncar-jobqueue-commits.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/NCAR-Jobqueue-contributors.html
+file: ../images/metrics/ncar-jobqueue-contributors.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/NCAR-Jobqueue-burndown.html
+file: ../images/metrics/ncar-jobqueue-burndown.html
 ---
 :::
 
@@ -118,25 +118,25 @@ file: ../images/metrics/NCAR-Jobqueue-burndown.html
 
 :::{raw} html
 ---
-file: ../images/metrics/xWRF-downloads.html
+file: ../images/metrics/xwrf-downloads.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/xWRF-commits.html
+file: ../images/metrics/xwrf-commits.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/xWRF-contributors.html
+file: ../images/metrics/xwrf-contributors.html
 ---
 :::
 
 :::{raw} html
 ---
-file: ../images/metrics/xWRF-burndown.html
+file: ../images/metrics/xwrf-burndown.html
 ---
 :::
 
