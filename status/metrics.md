@@ -1,10 +1,12 @@
 # Metrics
 
-Below are some of the metrics of things that Xdev does.
+Below are some of the metrics related to activity on repositories that Xdev owns
+and package downloads for repositories that are published packaged on PyPI or
+Conda Forge.  These metrics are updated periodically, so check back later for
+new information.
 
-## Package Downloads
 
-### ecgtools
+## ecgtools
 
 :::{raw} html
 ---
@@ -31,7 +33,7 @@ file: ../images/metrics/ecgtools-burndown.html
 :::
 
 
-### Intake-ESM
+## Intake-ESM
 
 :::{raw} html
 ---
@@ -58,7 +60,7 @@ file: ../images/metrics/Intake-ESM-burndown.html
 :::
 
 
-### Jupyter-Forward
+## Jupyter-Forward
 
 :::{raw} html
 ---
@@ -85,7 +87,7 @@ file: ../images/metrics/Jupyter-Forward-burndown.html
 :::
 
 
-### NCAR-Jobqueue
+## NCAR-Jobqueue
 
 :::{raw} html
 ---
@@ -112,7 +114,7 @@ file: ../images/metrics/NCAR-Jobqueue-burndown.html
 :::
 
 
-### xWRF
+## xWRF
 
 :::{raw} html
 ---
@@ -139,7 +141,7 @@ file: ../images/metrics/xWRF-burndown.html
 :::
 
 
-### xcollection
+## xcollection
 
 :::{raw} html
 ---
@@ -166,7 +168,7 @@ file: ../images/metrics/xcollection-burndown.html
 :::
 
 
-### xpersist
+## xpersist
 
 :::{raw} html
 ---
