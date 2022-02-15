@@ -4,11 +4,6 @@ As a member of the Xdev Team or as an external collaborator working with the Xde
 
 ## This book is TRUTH
 
-:::{admonition} NEW!!!
-:class: warning
-This content is new and should be reviewed by the team!
-:::
-
 **As a member of the Xdev Team, you are expected to help keep this book *correct* and *up-to-date*.**  If anything seems outdated, or no longer correct, you are expected to [create a GitHub Issue](https://github.com/ncar-xdev/ncar-xdev.github.io/issues/new) to notify the team of the problem.  If you have time, [create a pull request](https://github.com/ncar-xdev/ncar-xdev.github.io/compare) to fix it!  If a process we are using seems to not be working for us, or an expectation seems too much to ask, suggest a change to this document or bring it up at the next [Xdev Meeting](#meetings-are-for-engagement).
 
 ## Follow the Code of Conduct
@@ -51,11 +46,6 @@ It's okay to say you can't contribute during a week!  Life happens!  Remember th
 :::
 
 ## Daily Standups
-
-:::{admonition} NEW!!!
-:class: warning
-This content is new and should be reviewed by the team!
-:::
 
 **Every morning, each member of the core Xdev Team is expected to let everyone else know what Xdev-related activities you plan to work on *that day* via [GitHub Team Discussions](https://github.com/orgs/ncar-xdev/teams/all/discussions/1).**  If you don't plan on doing anything Xdev-related, or you can't do anything Xdev-related, then you do not need to post anything.
 

@@ -27,9 +27,9 @@ parse:
     - substitution
     - tasklist
   myst_url_schemes:
-   - mailto
-   - http
-   - https
+    - mailto
+    - http
+    - https
   myst_dmath_double_inline: true
 
 sphinx:
@@ -37,7 +37,7 @@ sphinx:
     html_baseurl: "https://ncar-xdev.github.io"
     comments_config:
       utterances:
-        repo: https://github.com/ncar-xdev/ncar-xdev-utterances
+        repo: ncar-xdev/ncar-xdev.github.io
     html_favicon: images/x_icon_light.png
     html_last_updated_fmt: '%-d %B %Y'
     html_sidebars:
