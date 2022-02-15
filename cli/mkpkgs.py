@@ -211,8 +211,8 @@ def make_burndown_images(df_i: pd.DataFrame):
         _make_stacked_bar_plot(df, filename, title, 'Issues')
 
 
-def make_metrics_markdown(packages):
-    metrics_md = """# Metrics
+def make_package_metrics_markdown(packages):
+    metrics_md = """# Package Metrics
 
 Below are some of the metrics related to activity on repositories that Xdev owns
 and package downloads for repositories that are published packaged on PyPI or
@@ -251,7 +251,7 @@ file: ../images/metrics/{pkg.lower()}-burndown.html
 
 """
 
-    with open(ROOT_DIR / 'status/metrics.md', 'w') as f:
+    with open(ROOT_DIR / 'status/packages.md', 'w') as f:
         f.write(metrics_md)
 
 
@@ -268,4 +268,4 @@ if __name__ == '__main__':
 
     repos = get_repo_data()
     packages = repos.package.to_list()
-    make_metrics_markdown(packages)
+    make_package_metrics_markdown(packages)
