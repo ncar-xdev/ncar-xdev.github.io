@@ -3,8 +3,11 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - dask
+  - google-cloud-bigquery
   - jupyter-book
   - pip
   - python>=3.8
   - pip:
+    - python-dateutil
     - sphinx-pythia-theme
