@@ -137,7 +137,7 @@ Another example of an Xdev-authored in-house technology is [Intake-ESM](https://
 
 One of our most recent in-house technologies is [Xcollection](https://xcollection.readthedocs.io/en/latest/), an extension of the Xarray data model to be able to handle dictionaries of Xarray Datasets.  This extension allows you to apply common operations across multiple datasets easily, without needing for the datasets be merged (or mergeable) into a single dataset.
 
-To see more about our products, visit the [Xdev Products](../status/products) page.
+To see more about our products, visit the [Xdev Packages](../status/packages) page.
 
 
 ### Center-Wide Service Support

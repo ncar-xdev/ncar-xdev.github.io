@@ -1,4 +1,4 @@
-# Metrics
+# Package Metrics
 
 Below are some of the metrics related to activity on repositories that Xdev owns
 and package downloads for repositories that are published packaged on PyPI or
