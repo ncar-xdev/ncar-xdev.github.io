@@ -36,8 +36,6 @@ parts:
     title: Projects
   - file: status/packages
     title: Packages
-  - file: status/metrics
-    title: Metrics
 - caption: Appendix
   chapters:
   - file: appendix/branding
