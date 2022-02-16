@@ -32,10 +32,10 @@ parts:
   - file: status/index
   - file: status/tutorials
     title: Tutorials
-  - file: status/projects
-    title: Projects
   - file: status/packages
     title: Packages
+  - file: status/projects
+    title: Projects
 - caption: Appendix
   chapters:
   - file: appendix/branding
