@@ -63,7 +63,6 @@ Our upcoming tutorials can also be viewed on the
 ## {title}
 
 {date}{post}{content}{video}{faq}{attendance}
-
 """
 
     with open(ROOT_DIR / 'status/tutorials.md', 'w') as f:
