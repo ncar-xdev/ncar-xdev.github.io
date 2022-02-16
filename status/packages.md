@@ -8,6 +8,11 @@ new information.
 
 ## ecgtools
 
+> ESM Catalog Generation Utilities
+
+The `ecgtools` [repository](https://github.com/ncar-xdev/ecgtools) has **7 Watchers** and **2 Stargazers**.
+The most recent release is tagged at **v2021.9.23**.
+
 :::{raw} html
 ---
 file: ../images/metrics/ecgtools-downloads.html
@@ -34,6 +39,11 @@ file: ../images/metrics/ecgtools-burndown.html
 
 
 ## Intake-ESM
+
+> An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and loading assets (netCDF files and/or Zarr stores) into xarray datasets.
+
+The `Intake-ESM` [repository](https://github.com/intake/intake-esm) has **10 Watchers** and **68 Stargazers**.
+The most recent release is tagged at **v2021.8.17**.
 
 :::{raw} html
 ---
@@ -62,6 +72,11 @@ file: ../images/metrics/intake-esm-burndown.html
 
 ## Jupyter-Forward
 
+> Jupyter Lab Port Forwarding Utility
+
+The `Jupyter-Forward` [repository](https://github.com/ncar-xdev/jupyter-forward) has **7 Watchers** and **19 Stargazers**.
+The most recent release is tagged at **v2022.1.15**.
+
 :::{raw} html
 ---
 file: ../images/metrics/jupyter-forward-downloads.html
@@ -88,6 +103,11 @@ file: ../images/metrics/jupyter-forward-burndown.html
 
 
 ## NCAR-Jobqueue
+
+> Utilities for expanding dask-jobqueue with appropriate settings for NCAR's clusters
+
+The `NCAR-Jobqueue` [repository](https://github.com/NCAR/ncar-jobqueue) has **8 Watchers** and **7 Stargazers**.
+The most recent release is tagged at **v2021.4.14**.
 
 :::{raw} html
 ---
@@ -116,6 +136,11 @@ file: ../images/metrics/ncar-jobqueue-burndown.html
 
 ## xWRF
 
+
+
+The `xWRF` [repository](https://github.com/ncar-xdev/xwrf) has **8 Watchers** and **30 Stargazers**.
+
+
 :::{raw} html
 ---
 file: ../images/metrics/xwrf-downloads.html
@@ -143,6 +168,11 @@ file: ../images/metrics/xwrf-burndown.html
 
 ## xcollection
 
+> A high-level mapping of name/key to Xarray.Datasets.
+
+The `xcollection` [repository](https://github.com/ncar-xdev/xcollection) has **8 Watchers** and **3 Stargazers**.
+The most recent release is tagged at **v2021.12.23**.
+
 :::{raw} html
 ---
 file: ../images/metrics/xcollection-downloads.html
@@ -169,6 +199,11 @@ file: ../images/metrics/xcollection-burndown.html
 
 
 ## xpersist
+
+> xpersist provides custom caching utility functions in Python
+
+The `xpersist` [repository](https://github.com/ncar-xdev/xpersist) has **7 Watchers** and **4 Stargazers**.
+The most recent release is tagged at **v2021.12.17**.
 
 :::{raw} html
 ---

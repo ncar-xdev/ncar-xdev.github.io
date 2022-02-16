@@ -8,6 +8,9 @@ from bokeh.models.formatters import DatetimeTickFormatter, PrintfTickFormatter
 from bokeh.palettes import Blues4
 from bokeh.plotting import figure, reset_output
 import pandas as pd
+import requests
+
+from utilities.xdev_repos import XdevRepos
 
 ROOT_DIR = Path(__file__).parent.parent
 XDEV_AUTHORS = set(['andersy005', 'kmpaul', 'jukent', 'matt-long', 'mgrover1'])
@@ -211,8 +214,8 @@ def make_burndown_images(df_i: pd.DataFrame):
         _make_stacked_bar_plot(df, filename, title, 'Issues')
 
 
-def make_package_metrics_markdown(packages):
-    metrics_md = """# Package Metrics
+def make_package_metrics_markdown():
+    packages_md = """# Package Metrics
 
 Below are some of the metrics related to activity on repositories that Xdev owns
 and package downloads for repositories that are published packaged on PyPI or
@@ -221,9 +224,33 @@ new information.
 
 """
 
+    repos = XdevRepos()
+    repo_data = get_repo_data()
+    packages = repo_data.package.to_list()
+
     for pkg in packages:
-        metrics_md += f"""
+        resp = requests.get(f'https://pypi.org/pypi/{pkg}/json')
+        info = resp.json()['info'] if resp.status_code == 200 else {}
+
+        summary = f"> {info['summary']}" if 'summary' in info else ''
+        url = f"https://github.com/{repos[pkg]['org']}/{repos[pkg]['repo']}"
+
+        pkg_data = repo_data[repo_data.package == pkg]
+        watchers = int(pkg_data['watchers'].item())
+        stargazers = int(pkg_data['stargazers'].item())
+        release = str(pkg_data['release'].item())
+        if release == 'nan':
+            release_str = ''
+        else:
+            release_str = f'The most recent release is tagged at **{release}**.'
+
+        packages_md += f"""
 ## {pkg}
+
+{summary}
+
+The `{pkg}` [repository]({url}) has **{watchers} Watchers** and **{stargazers} Stargazers**.
+{release_str}
 
 :::{{raw}} html
 ---
@@ -252,7 +279,7 @@ file: ../images/metrics/{pkg.lower()}-burndown.html
 """
 
     with open(ROOT_DIR / 'status/packages.md', 'w') as f:
-        f.write(metrics_md)
+        f.write(packages_md)
 
 
 if __name__ == '__main__':
@@ -266,6 +293,4 @@ if __name__ == '__main__':
     df_i = get_issue_data()
     make_burndown_images(df_i)
 
-    repos = get_repo_data()
-    packages = repos.package.to_list()
-    make_package_metrics_markdown(packages)
+    make_package_metrics_markdown()
