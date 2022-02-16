@@ -3,21 +3,21 @@
   Date: '2020-10-14'
   FAQ: https://ncar.github.io/esds/posts/2020/python-tutorial-faq/
   Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
-  Title: Your First Python Script - Reading in a .txt File
+  Title: 'Your First Python Script: Reading in a .txt File'
   Video: https://youtu.be/Jog7ybd6amw
 - Attendance: 174
   Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary
   Date: '2020-10-28'
   FAQ: https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-2/
   Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
-  Title: Your First Python Script - Creating a Data Dictionary
+  Title: 'Your First Python Script: Creating a Data Dictionary'
   Video: https://youtu.be/5z6-t62x7Xs
 - Attendance: 135
   Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions
-  Date: '2021-11-11'
+  Date: '2020-11-11'
   FAQ: https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-3/
   Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
-  Title: Your First Python Script - Writing Functions
+  Title: 'Your First Python Script: Writing Functions'
   Video: https://youtu.be/BerEf_3CsL8
 - Attendance: 135
   Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package
@@ -36,7 +36,7 @@
   Date: '2021-02-24'
   FAQ: https://ncar.github.io/esds/posts/2021/jupyter-notebooks-faq/
   Post: https://ncar.github.io/esds/posts/2021/python-tutorial-seminar-series-spring-2021/
-  Title: 'Jupyter '
+  Title: Introduction to Jupyter
   Video: https://www.youtube.com/watch?v=xSzXvwzFsDU
 - Attendance: 142
   Date: '2021-03-10'
@@ -79,31 +79,31 @@
   Content: https://github.com/andersy005/xarray-tutorial
   Date: '2021-06-09'
   Post: https://ncar.github.io/esds/posts/2021/xarray-tutorial/
-  Title: Xarray P1
+  Title: 'Xarray: Part 1'
   Video: https://youtu.be/Ss4ryKukhi4
 - Attendance: 83
   Content: https://github.com/andersy005/xarray-tutorial
   Date: '2021-06-23'
   Post: https://ncar.github.io/esds/posts/2021/xarray-tutorial/
-  Title: Xarray P2
+  Title: 'Xarray: Part 2'
   Video: https://youtu.be/2H_4drBwORY
 - Attendance: 96
   Content: https://github.com/andersy005/xarray-tutorial
   Date: '2021-07-28'
   Post: https://ncar.github.io/esds/posts/2021/dask-tutorial-update/
-  Title: Dask P1
+  Title: 'Dask: Part 1'
   Video: https://youtu.be/wn-QM6QUB_U
 - Attendance: 62
   Content: https://github.com/andersy005/xarray-tutorial
   Date: '2021-08-11'
   Post: https://ncar.github.io/esds/posts/2021/dask-tutorial-update/
-  Title: Dask P2
+  Title: 'Dask: Part 2'
   Video: https://youtu.be/yn4_-1pHC5k
 - Attendance: 79
   Content: https://github.com/anissa111/plotting-with-geocat-tutorial
   Date: '2021-08-25'
   Post: https://ncar.github.io/esds/posts/2021/geocat-tutorial/
-  Title: Plotting w GeoCAT
+  Title: Plotting with GeoCAT
   Video: https://youtu.be/It231le1fAU
 - Attendance: 62
   Content: https://github.com/pilotchute/geocat_comp_tutorial
@@ -130,4 +130,4 @@
   Title: MetPy
   Video: https://youtu.be/a3VXzFOPuCg
 - Date: '2022-03-09'
-  Title: Thinking w Xarray
+  Title: Thinking with Xarray
