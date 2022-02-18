@@ -7,7 +7,7 @@ ROOT_DIR = Path(__file__).parent.parent
 
 
 def get_tutorials_data():
-    with open('data/tutorials.yml') as f:
+    with open(ROOT_DIR / 'data/tutorials.yml') as f:
         data = yaml.safe_load(f)
     data = sorted(data, key=lambda x: x['Date'], reverse=True)
 
