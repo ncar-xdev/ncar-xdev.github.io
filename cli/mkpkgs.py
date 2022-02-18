@@ -16,38 +16,6 @@ ROOT_DIR = Path(__file__).parent.parent
 XDEV_AUTHORS = set(['andersy005', 'kmpaul', 'jukent', 'matt-long', 'mgrover1'])
 
 
-def get_downloads_data() -> pd.DataFrame:
-    df_pypi = pd.read_csv('data/pypi_stats.csv', index_col='month')
-    df_pypi.index = pd.to_datetime(df_pypi.index).to_period('M')
-
-    df_conda = pd.read_csv('data/conda_stats.csv', index_col='month')
-    df_conda.index = pd.to_datetime(df_conda.index).to_period('M')
-
-    pkgs = set(df_pypi.columns).union(df_conda.columns)
-    dfs = {}
-    for pkg in pkgs:
-        df = pd.DataFrame()
-        df.index = pd.period_range(
-            start='2019-01',
-            periods=0,
-            freq='M',
-            name='month',
-        )
-        include_df = False
-        if pkg in df_pypi and df_pypi[pkg].sum() > 0:
-            df['PyPI'] = df_pypi[pkg]
-            df['PyPI'] = df['PyPI'].fillna(0).astype('int64')
-            include_df = True
-        if pkg in df_conda and df_conda[pkg].sum() > 0:
-            df['Conda'] = df_conda[pkg]
-            df['Conda'] = df['Conda'].fillna(0).astype('int64')
-            include_df = True
-        if include_df:
-            dfs[pkg] = df
-
-    return dfs
-
-
 def _make_stacked_bar_plot(
     df: pd.DataFrame,
     filename: str,
@@ -104,16 +72,40 @@ def _make_stacked_bar_plot(
     save(p)
 
 
-def make_downloads_images(dfs: dict[pd.DataFrame]):
-    for pkg in dfs:
-        df = dfs[pkg]
-        filename = f'images/metrics/{pkg}-downloads.html'
-        title = 'Package Downloads'
-        _make_stacked_bar_plot(df, filename, title, 'Downloads')
+def get_downloads_data() -> pd.DataFrame:
+    df_pypi = pd.read_csv(ROOT_DIR / 'data/pypi_stats.csv', index_col='month')
+    df_pypi.index = pd.to_datetime(df_pypi.index).to_period('M')
+
+    df_conda = pd.read_csv(ROOT_DIR / 'data/conda_stats.csv', index_col='month')
+    df_conda.index = pd.to_datetime(df_conda.index).to_period('M')
+
+    pkgs = set(df_pypi.columns).union(df_conda.columns)
+    dfs = {}
+    for pkg in pkgs:
+        df = pd.DataFrame()
+        df.index = pd.period_range(
+            start='2019-01',
+            periods=0,
+            freq='M',
+            name='month',
+        )
+        include_df = False
+        if pkg in df_pypi and df_pypi[pkg].sum() > 0:
+            df['PyPI'] = df_pypi[pkg]
+            df['PyPI'] = df['PyPI'].fillna(0).astype('int64')
+            include_df = True
+        if pkg in df_conda and df_conda[pkg].sum() > 0:
+            df['Conda'] = df_conda[pkg]
+            df['Conda'] = df['Conda'].fillna(0).astype('int64')
+            include_df = True
+        if include_df:
+            dfs[pkg] = df
+
+    return dfs
 
 
 def get_repo_data() -> pd.DataFrame:
-    df = pd.read_csv('data/github_repos.csv')
+    df = pd.read_csv(ROOT_DIR / 'data/github_repos.csv')
     df.package = df.package.apply(lambda x: x.replace('_', '-'))
     return df
 
@@ -127,13 +119,29 @@ def get_commits_data() -> pd.DataFrame:
         else:
             return 'External'
 
-    df = pd.read_csv('data/github_commits.csv', index_col='date', parse_dates=True) \
+    df = pd.read_csv(ROOT_DIR / 'data/github_commits.csv', index_col='date', parse_dates=True) \
            .sort_index() \
            .tz_localize(None)
     df['changes'] = df.additions + df.deletions
     df['author_type'] = df.author.apply(author_type)
     df = df.drop(columns=['additions', 'deletions'])
     return df
+
+
+def get_issue_data() -> pd.DataFrame:
+    df = pd.read_csv(ROOT_DIR / 'data/github_issues.csv')
+    df.created = pd.to_datetime(df.created).dt.tz_localize(None)
+    df.closed = pd.to_datetime(df.closed).dt.tz_localize(None)
+    df['is_open'] = df.closed.apply(lambda x: pd.isnull(x))
+    return df
+
+
+def make_downloads_images(dfs: dict[pd.DataFrame]):
+    for pkg in dfs:
+        df = dfs[pkg]
+        filename = f'images/metrics/{pkg}-downloads.html'
+        title = 'Package Downloads'
+        _make_stacked_bar_plot(df, filename, title, 'Downloads')
 
 
 def make_commit_images(df_c: pd.DataFrame):
@@ -189,14 +197,6 @@ def make_contributor_images(df_c: pd.DataFrame):
         _make_stacked_bar_plot(df, filename, title, 'Contributors')
 
 
-def get_issue_data() -> pd.DataFrame:
-    df = pd.read_csv('data/github_issues.csv')
-    df.created = pd.to_datetime(df.created).dt.tz_localize(None)
-    df.closed = pd.to_datetime(df.closed).dt.tz_localize(None)
-    df['is_open'] = df.closed.apply(lambda x: pd.isnull(x))
-    return df
-
-
 def make_burndown_images(df_i: pd.DataFrame):
     for pkg in df_i.package.unique():
         df = pd.DataFrame(columns=['nopen'])
@@ -214,7 +214,7 @@ def make_burndown_images(df_i: pd.DataFrame):
         _make_stacked_bar_plot(df, filename, title, 'Issues')
 
 
-def make_package_metrics_markdown():
+def make_packages_markdown():
     packages_md = """# Package Metrics
 
 Below are some of the metrics related to activity on repositories that Xdev owns
@@ -228,12 +228,44 @@ new information.
     repo_data = get_repo_data()
     packages = repo_data.package.to_list()
 
+    dl_dfs = get_downloads_data()
+    make_downloads_images(dl_dfs)
+
+    co_df = get_commits_data()
+    make_commit_images(co_df)
+    make_contributor_images(co_df)
+
+    is_df = get_issue_data()
+    make_burndown_images(is_df)
+
     for pkg in packages:
         resp = requests.get(f'https://pypi.org/pypi/{pkg}/json')
         info = resp.json()['info'] if resp.status_code == 200 else {}
 
         summary = f"> {info['summary']}" if 'summary' in info else ''
         url = f"https://github.com/{repos[pkg]['org']}/{repos[pkg]['repo']}"
+
+        this_time = datetime.now()
+        this_year = this_time.year
+        last_year = this_year - 1
+
+        if pkg.lower() in dl_dfs:
+            df = dl_dfs[pkg.lower()]
+            dls_this_year = df[df.index.year == this_year].sum().sum()
+            dls_last_year = df[df.index.year == last_year].sum().sum()
+        else:
+            dls_this_year = 0
+            dls_last_year = 0
+
+        dl_str = ''
+        if dls_last_year > 0:
+            dls = dls_last_year
+            yr = last_year
+            dl_str += f'In {yr}, there were **{dls} downloads**. '
+        if dls_this_year > 0:
+            dls = dls_this_year
+            yr = this_year
+            dl_str += f'Currently, there have been **{dls} downloads** so far in {yr}.'
 
         pkg_data = repo_data[repo_data.package == pkg]
         watchers = int(pkg_data['watchers'].item())
@@ -250,6 +282,7 @@ new information.
 {summary}
 
 The `{pkg}` [repository]({url}) has **{watchers} Watchers** and **{stargazers} Stargazers**.
+{dl_str}
 {release_str}
 
 :::{{raw}} html
@@ -283,14 +316,4 @@ file: ../images/metrics/{pkg.lower()}-burndown.html
 
 
 if __name__ == '__main__':
-    dfs = get_downloads_data()
-    make_downloads_images(dfs)
-
-    df_c = get_commits_data()
-    make_commit_images(df_c)
-    make_contributor_images(df_c)
-
-    df_i = get_issue_data()
-    make_burndown_images(df_i)
-
-    make_package_metrics_markdown()
+    make_packages_markdown()
