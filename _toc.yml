@@ -27,6 +27,8 @@ parts:
     title: Meetings
   - file: handbook/projects
     title: Projects
+  - file: handbook/packages
+    title: Packages
 - caption: Status
   chapters:
   - file: status/index
