@@ -5,6 +5,9 @@ on:
     - cron: '0 8 * * *' # run at 8 AM UTC
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN: '${{ secrets.GRAPHQL_TOKEN }}'
+
 jobs:
   build:
     runs-on: ubuntu-latest
