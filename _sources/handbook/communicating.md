@@ -1,10 +1,5 @@
 # Other communication
 
-:::{admonition} NEW!!!
-:class: warning
-This content is new and should be reviewed!
-:::
-
 GitHub is a fantastic platform for collaborating on open source software, but it can't do *everything*.  Additionally, we work with other people or institutions that use *different* platforms for collaboration, teamwork, and communication.  While Xdev uses GitHub for as much as we can, we acknowledge that sometimes you have to use something other than GitHub from time to time.
 
 ## Email

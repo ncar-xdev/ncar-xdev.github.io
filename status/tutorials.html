@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorials &#8212; Xdev</title>
+    <title>Python Tutorials &#8212; Xdev</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -88,7 +88,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="shortcut icon" href="../_static/x_icon_light.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Short-Term Projects" href="projects.html" />
+    <link rel="next" title="Package Metrics" href="packages.html" />
     <link rel="prev" title="Status" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -275,6 +275,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    Projects
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../handbook/packages.html">
+   Packages
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -293,18 +298,13 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="projects.html">
-   Projects
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="packages.html">
    Packages
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="metrics.html">
-   Metrics
+  <a class="reference internal" href="projects.html">
+   Projects
   </a>
  </li>
 </ul>
@@ -400,6 +400,124 @@ powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> On this page
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#thinking-with-xarray">
+   Thinking with Xarray
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metpy">
+   MetPy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intake-esm">
+   Intake-ESM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#object-oriented-programming">
+   Object Oriented Programming
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#geocat-comp">
+   GeoCAT Comp
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-with-geocat">
+   Plotting with GeoCAT
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dask-part-2">
+   Dask: Part 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dask-part-1">
+   Dask: Part 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#xarray-part-2">
+   Xarray: Part 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#xarray-part-1">
+   Xarray: Part 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas">
+   Pandas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-and-github">
+   Git and GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cartopy">
+   Cartopy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Object Oriented Programming
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matplotlib">
+   Matplotlib
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#numpy">
+   Numpy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-jupyter">
+   Introduction to Jupyter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-first-python-package-using-a-built-in-package-and-publishing-your-package">
+   Your First Python Package: Using a Built-In Package and Publishing Your Package
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-first-python-package-creating-your-own-package">
+   Your First Python Package: Creating Your Own Package
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-first-python-script-writing-functions">
+   Your First Python Script: Writing Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-first-python-script-creating-a-data-dictionary">
+   Your First Python Script: Creating a Data Dictionary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-first-python-script-reading-in-a-txt-file">
+   Your First Python Script: Reading in a .txt File
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -408,20 +526,102 @@ powered by <a href="https://jupyterbook.org">Jupyter Book</a>.
               
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="tutorials">
-<h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>TODO:</strong>
-This document should be an autogenerated (if possible) list of past and future tutorials, with links to the videos etc.</p>
-</div>
-<p>We are currently still organizing and conducting the Python Tutorial Seminar
-Series.  These tutorials will continue throughout the next year.
-All of these tutorials are recorded and the videos hosted for free
-viewing on YouTube as part of the
-<a class="reference external" href="https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw">ProjectPythia channel</a>.</p>
-<p>Our upcoming tutorials can be viewed on the
+  <div class="tex2jax_ignore mathjax_ignore section" id="python-tutorials">
+<h1>Python Tutorials<a class="headerlink" href="#python-tutorials" title="Permalink to this headline">¶</a></h1>
+<p>Below you will see all of our past and upcoming tutorials as part of our
+Python Tutorial Seminars.  All of these tutorials are recorded and the videos
+are hosted for free viewing on YouTube as part of the
+<a class="reference external" href="https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw">ProjectPythia channel</a>.
+Our upcoming tutorials can also be viewed on the
 <a class="reference external" href="https://ncar.github.io/esds/calendar/#python-training">ESDS Python Training page</a>.</p>
+<div class="section" id="thinking-with-xarray">
+<h2>Thinking with Xarray<a class="headerlink" href="#thinking-with-xarray" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2022 March 9 <span class="badge badge-warning">UPCOMING</span><br></p>
+</div>
+<div class="section" id="metpy">
+<h2>MetPy<a class="headerlink" href="#metpy" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2022 February 9<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2022/metpy_tutorial/">https://ncar.github.io/esds/posts/2022/metpy_tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/ProjectPythiaTutorials/metpy-2022-02-09">https://github.com/ProjectPythiaTutorials/metpy-2022-02-09</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/a3VXzFOPuCg">https://youtu.be/a3VXzFOPuCg</a><br><strong>Number of Attendees:</strong> 95<br></p>
+</div>
+<div class="section" id="intake-esm">
+<h2>Intake-ESM<a class="headerlink" href="#intake-esm" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 December 8<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/intake-esm-tutorial-2021/">https://ncar.github.io/esds/posts/2021/intake-esm-tutorial-2021/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/ProjectPythiaTutorials/intake-esm-tutorial_2021_12_08">https://github.com/ProjectPythiaTutorials/intake-esm-tutorial_2021_12_08</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/pfdMbJMlYsw">https://youtu.be/pfdMbJMlYsw</a><br><strong>Number of Attendees:</strong> 54<br></p>
+</div>
+<div class="section" id="object-oriented-programming">
+<h2>Object Oriented Programming<a class="headerlink" href="#object-oriented-programming" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 November 10<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/oop-tutorial/">https://ncar.github.io/esds/posts/2021/oop-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/kmpaul/pg2oop">https://github.com/kmpaul/pg2oop</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/zlHkkjr7e6k">https://youtu.be/zlHkkjr7e6k</a><br><strong>Number of Attendees:</strong> 85<br></p>
+</div>
+<div class="section" id="geocat-comp">
+<h2>GeoCAT Comp<a class="headerlink" href="#geocat-comp" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 September 8<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/geocat-comp-tutorial/">https://ncar.github.io/esds/posts/2021/geocat-comp-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/pilotchute/geocat_comp_tutorial">https://github.com/pilotchute/geocat_comp_tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://www.youtube.com/watch?v=uiWDQKI8YTQ&amp;t=6s">https://www.youtube.com/watch?v=uiWDQKI8YTQ&amp;t=6s</a><br><strong>Number of Attendees:</strong> 62<br></p>
+</div>
+<div class="section" id="plotting-with-geocat">
+<h2>Plotting with GeoCAT<a class="headerlink" href="#plotting-with-geocat" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 August 25<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/geocat-tutorial/">https://ncar.github.io/esds/posts/2021/geocat-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/anissa111/plotting-with-geocat-tutorial">https://github.com/anissa111/plotting-with-geocat-tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/It231le1fAU">https://youtu.be/It231le1fAU</a><br><strong>Number of Attendees:</strong> 79<br></p>
+</div>
+<div class="section" id="dask-part-2">
+<h2>Dask: Part 2<a class="headerlink" href="#dask-part-2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 August 11<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/dask-tutorial-update/">https://ncar.github.io/esds/posts/2021/dask-tutorial-update/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/andersy005/xarray-tutorial">https://github.com/andersy005/xarray-tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/yn4_-1pHC5k">https://youtu.be/yn4_-1pHC5k</a><br><strong>Number of Attendees:</strong> 62<br></p>
+</div>
+<div class="section" id="dask-part-1">
+<h2>Dask: Part 1<a class="headerlink" href="#dask-part-1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 July 28<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/dask-tutorial-update/">https://ncar.github.io/esds/posts/2021/dask-tutorial-update/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/andersy005/xarray-tutorial">https://github.com/andersy005/xarray-tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/wn-QM6QUB_U">https://youtu.be/wn-QM6QUB_U</a><br><strong>Number of Attendees:</strong> 96<br></p>
+</div>
+<div class="section" id="xarray-part-2">
+<h2>Xarray: Part 2<a class="headerlink" href="#xarray-part-2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 June 23<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/xarray-tutorial/">https://ncar.github.io/esds/posts/2021/xarray-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/andersy005/xarray-tutorial">https://github.com/andersy005/xarray-tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/2H_4drBwORY">https://youtu.be/2H_4drBwORY</a><br><strong>Number of Attendees:</strong> 83<br></p>
+</div>
+<div class="section" id="xarray-part-1">
+<h2>Xarray: Part 1<a class="headerlink" href="#xarray-part-1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 June 9<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/xarray-tutorial/">https://ncar.github.io/esds/posts/2021/xarray-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/andersy005/xarray-tutorial">https://github.com/andersy005/xarray-tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/Ss4ryKukhi4">https://youtu.be/Ss4ryKukhi4</a><br><strong>Number of Attendees:</strong> 114<br></p>
+</div>
+<div class="section" id="pandas">
+<h2>Pandas<a class="headerlink" href="#pandas" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 May 26<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/pandas-tutorial/">https://ncar.github.io/esds/posts/2021/pandas-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/mgrover1/ncar_pandas_tutorial">https://github.com/mgrover1/ncar_pandas_tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/BsV3ek7qsiM">https://youtu.be/BsV3ek7qsiM</a><br><strong>Number of Attendees:</strong> 107<br></p>
+</div>
+<div class="section" id="git-and-github">
+<h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 May 12<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/git-and-github-tutorial/">https://ncar.github.io/esds/posts/2021/git-and-github-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/NCAR/git-github-demo">https://github.com/NCAR/git-github-demo</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/fYkPn0Nttlg">https://youtu.be/fYkPn0Nttlg</a><br><strong>Number of Attendees:</strong> 112<br></p>
+</div>
+<div class="section" id="cartopy">
+<h2>Cartopy<a class="headerlink" href="#cartopy" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 April 28<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/cartopy-tutorial/">https://ncar.github.io/esds/posts/2021/cartopy-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/michaelavs/cartopy_tutorial">https://github.com/michaelavs/cartopy_tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/ivmd3RluMiw">https://youtu.be/ivmd3RluMiw</a><br><strong>Number of Attendees:</strong> 115<br></p>
+</div>
+<div class="section" id="id1">
+<h2>Object Oriented Programming<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 April 14<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/object-oriented-programming-tutorial/">https://ncar.github.io/esds/posts/2021/object-oriented-programming-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/pilotchute/oop_hrrr_tutorial">https://github.com/pilotchute/oop_hrrr_tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/GEFnL8C62u8">https://youtu.be/GEFnL8C62u8</a><br><strong>Number of Attendees:</strong> 124<br></p>
+</div>
+<div class="section" id="matplotlib">
+<h2>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 March 24<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/matplotlib-tutorial/">https://ncar.github.io/esds/posts/2021/matplotlib-tutorial/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://github.com/anissa111/matplotlib-tutorial">https://github.com/anissa111/matplotlib-tutorial</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/EiPRIdHQEmE">https://youtu.be/EiPRIdHQEmE</a><br><strong>Q/A:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/matplotlib-faq/">https://ncar.github.io/esds/posts/2021/matplotlib-faq/</a><br><strong>Number of Attendees:</strong> 111<br></p>
+</div>
+<div class="section" id="numpy">
+<h2>Numpy<a class="headerlink" href="#numpy" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 March 10<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/numpy-tutorial/">https://ncar.github.io/esds/posts/2021/numpy-tutorial/</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/kstc-6uz7AQ">https://youtu.be/kstc-6uz7AQ</a><br><strong>Q/A:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/numpy-faq/">https://ncar.github.io/esds/posts/2021/numpy-faq/</a><br><strong>Number of Attendees:</strong> 142<br></p>
+</div>
+<div class="section" id="introduction-to-jupyter">
+<h2>Introduction to Jupyter<a class="headerlink" href="#introduction-to-jupyter" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 February 24<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/python-tutorial-seminar-series-spring-2021/">https://ncar.github.io/esds/posts/2021/python-tutorial-seminar-series-spring-2021/</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://www.youtube.com/watch?v=xSzXvwzFsDU">https://www.youtube.com/watch?v=xSzXvwzFsDU</a><br><strong>Q/A:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2021/jupyter-notebooks-faq/">https://ncar.github.io/esds/posts/2021/jupyter-notebooks-faq/</a><br><strong>Number of Attendees:</strong> 147<br></p>
+</div>
+<div class="section" id="your-first-python-package-using-a-built-in-package-and-publishing-your-package">
+<h2>Your First Python Package: Using a Built-In Package and Publishing Your Package<a class="headerlink" href="#your-first-python-package-using-a-built-in-package-and-publishing-your-package" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 February 10<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/">https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/44QUMCh2ZHU">https://youtu.be/44QUMCh2ZHU</a><br><strong>Number of Attendees:</strong> 92<br></p>
+</div>
+<div class="section" id="your-first-python-package-creating-your-own-package">
+<h2>Your First Python Package: Creating Your Own Package<a class="headerlink" href="#your-first-python-package-creating-your-own-package" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2021 January 27<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/">https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/6lbbTwGFcTc">https://youtu.be/6lbbTwGFcTc</a><br><strong>Number of Attendees:</strong> 135<br></p>
+</div>
+<div class="section" id="your-first-python-script-writing-functions">
+<h2>Your First Python Script: Writing Functions<a class="headerlink" href="#your-first-python-script-writing-functions" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2020 November 11<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/">https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/BerEf_3CsL8">https://youtu.be/BerEf_3CsL8</a><br><strong>Q/A:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-3/">https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-3/</a><br><strong>Number of Attendees:</strong> 135<br></p>
+</div>
+<div class="section" id="your-first-python-script-creating-a-data-dictionary">
+<h2>Your First Python Script: Creating a Data Dictionary<a class="headerlink" href="#your-first-python-script-creating-a-data-dictionary" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2020 October 28<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/">https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/5z6-t62x7Xs">https://youtu.be/5z6-t62x7Xs</a><br><strong>Q/A:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-2/">https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-2/</a><br><strong>Number of Attendees:</strong> 174<br></p>
+</div>
+<div class="section" id="your-first-python-script-reading-in-a-txt-file">
+<h2>Your First Python Script: Reading in a .txt File<a class="headerlink" href="#your-first-python-script-reading-in-a-txt-file" title="Permalink to this headline">¶</a></h2>
+<p><strong>Date:</strong> 2020 October 14<br><strong>Original Posting:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/">https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/</a><br><strong>Tutorial Data:</strong> <a class="reference external" href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">https://ncar.github.io/python-tutorial/tutorials/yourfirst.html</a><br><strong>Video Recording:</strong> <a class="reference external" href="https://youtu.be/Jog7ybd6amw">https://youtu.be/Jog7ybd6amw</a><br><strong>Q/A:</strong> <a class="reference external" href="https://ncar.github.io/esds/posts/2020/python-tutorial-faq/">https://ncar.github.io/esds/posts/2020/python-tutorial-faq/</a><br><strong>Number of Attendees:</strong> 242<br></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -454,10 +654,10 @@ viewing on YouTube as part of the
             <p class="prev-next-title">Status</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="projects.html" title="next page">
+    <a class='right-next' id="next-link" href="packages.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Short-Term Projects</p>
+        <p class="prev-next-title">Package Metrics</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -500,7 +700,7 @@ viewing on YouTube as part of the
         
           By the Xdev Team.
         
-          Last updated on 15 February 2022.
+          Last updated on 21 February 2022.
         </p>
       </div>
     </div>
