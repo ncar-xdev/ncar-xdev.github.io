@@ -27,17 +27,17 @@ parts:
     title: Meetings
   - file: handbook/projects
     title: Projects
+  - file: handbook/packages
+    title: Packages
 - caption: Status
   chapters:
   - file: status/index
   - file: status/tutorials
     title: Tutorials
-  - file: status/projects
-    title: Projects
   - file: status/packages
     title: Packages
-  - file: status/metrics
-    title: Metrics
+  - file: status/projects
+    title: Projects
 - caption: Appendix
   chapters:
   - file: appendix/branding

@@ -1,0 +1,133 @@
+- Attendance: 242
+  Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html
+  Date: '2020-10-14'
+  FAQ: https://ncar.github.io/esds/posts/2020/python-tutorial-faq/
+  Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
+  Title: 'Your First Python Script: Reading in a .txt File'
+  Video: https://youtu.be/Jog7ybd6amw
+- Attendance: 174
+  Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary
+  Date: '2020-10-28'
+  FAQ: https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-2/
+  Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
+  Title: 'Your First Python Script: Creating a Data Dictionary'
+  Video: https://youtu.be/5z6-t62x7Xs
+- Attendance: 135
+  Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions
+  Date: '2020-11-11'
+  FAQ: https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-3/
+  Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
+  Title: 'Your First Python Script: Writing Functions'
+  Video: https://youtu.be/BerEf_3CsL8
+- Attendance: 135
+  Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package
+  Date: '2021-01-27'
+  Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
+  Title: 'Your First Python Package: Creating Your Own Package'
+  Video: https://youtu.be/6lbbTwGFcTc
+- Attendance: 92
+  Content: https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package
+  Date: '2021-02-10'
+  Post: https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/
+  Title: 'Your First Python Package: Using a Built-In Package and Publishing Your
+    Package'
+  Video: https://youtu.be/44QUMCh2ZHU
+- Attendance: 147
+  Date: '2021-02-24'
+  FAQ: https://ncar.github.io/esds/posts/2021/jupyter-notebooks-faq/
+  Post: https://ncar.github.io/esds/posts/2021/python-tutorial-seminar-series-spring-2021/
+  Title: Introduction to Jupyter
+  Video: https://www.youtube.com/watch?v=xSzXvwzFsDU
+- Attendance: 142
+  Date: '2021-03-10'
+  FAQ: https://ncar.github.io/esds/posts/2021/numpy-faq/
+  Post: https://ncar.github.io/esds/posts/2021/numpy-tutorial/
+  Title: Numpy
+  Video: https://youtu.be/kstc-6uz7AQ
+- Attendance: 111
+  Content: https://github.com/anissa111/matplotlib-tutorial
+  Date: '2021-03-24'
+  FAQ: https://ncar.github.io/esds/posts/2021/matplotlib-faq/
+  Post: https://ncar.github.io/esds/posts/2021/matplotlib-tutorial/
+  Title: Matplotlib
+  Video: https://youtu.be/EiPRIdHQEmE
+- Attendance: 124
+  Content: https://github.com/pilotchute/oop_hrrr_tutorial
+  Date: '2021-04-14'
+  Post: https://ncar.github.io/esds/posts/2021/object-oriented-programming-tutorial/
+  Title: Object Oriented Programming
+  Video: https://youtu.be/GEFnL8C62u8
+- Attendance: 115
+  Content: https://github.com/michaelavs/cartopy_tutorial
+  Date: '2021-04-28'
+  Post: https://ncar.github.io/esds/posts/2021/cartopy-tutorial/
+  Title: Cartopy
+  Video: https://youtu.be/ivmd3RluMiw
+- Attendance: 112
+  Content: https://github.com/NCAR/git-github-demo
+  Date: '2021-05-12'
+  Post: https://ncar.github.io/esds/posts/2021/git-and-github-tutorial/
+  Title: Git and GitHub
+  Video: https://youtu.be/fYkPn0Nttlg
+- Attendance: 107
+  Content: https://github.com/mgrover1/ncar_pandas_tutorial
+  Date: '2021-05-26'
+  Post: https://ncar.github.io/esds/posts/2021/pandas-tutorial/
+  Title: Pandas
+  Video: https://youtu.be/BsV3ek7qsiM
+- Attendance: 114
+  Content: https://github.com/andersy005/xarray-tutorial
+  Date: '2021-06-09'
+  Post: https://ncar.github.io/esds/posts/2021/xarray-tutorial/
+  Title: 'Xarray: Part 1'
+  Video: https://youtu.be/Ss4ryKukhi4
+- Attendance: 83
+  Content: https://github.com/andersy005/xarray-tutorial
+  Date: '2021-06-23'
+  Post: https://ncar.github.io/esds/posts/2021/xarray-tutorial/
+  Title: 'Xarray: Part 2'
+  Video: https://youtu.be/2H_4drBwORY
+- Attendance: 96
+  Content: https://github.com/andersy005/xarray-tutorial
+  Date: '2021-07-28'
+  Post: https://ncar.github.io/esds/posts/2021/dask-tutorial-update/
+  Title: 'Dask: Part 1'
+  Video: https://youtu.be/wn-QM6QUB_U
+- Attendance: 62
+  Content: https://github.com/andersy005/xarray-tutorial
+  Date: '2021-08-11'
+  Post: https://ncar.github.io/esds/posts/2021/dask-tutorial-update/
+  Title: 'Dask: Part 2'
+  Video: https://youtu.be/yn4_-1pHC5k
+- Attendance: 79
+  Content: https://github.com/anissa111/plotting-with-geocat-tutorial
+  Date: '2021-08-25'
+  Post: https://ncar.github.io/esds/posts/2021/geocat-tutorial/
+  Title: Plotting with GeoCAT
+  Video: https://youtu.be/It231le1fAU
+- Attendance: 62
+  Content: https://github.com/pilotchute/geocat_comp_tutorial
+  Date: '2021-09-08'
+  Post: https://ncar.github.io/esds/posts/2021/geocat-comp-tutorial/
+  Title: GeoCAT Comp
+  Video: https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s
+- Attendance: 85
+  Content: https://github.com/kmpaul/pg2oop
+  Date: '2021-11-10'
+  Post: https://ncar.github.io/esds/posts/2021/oop-tutorial/
+  Title: Object Oriented Programming
+  Video: https://youtu.be/zlHkkjr7e6k
+- Attendance: 54
+  Content: https://github.com/ProjectPythiaTutorials/intake-esm-tutorial_2021_12_08
+  Date: '2021-12-08'
+  Post: https://ncar.github.io/esds/posts/2021/intake-esm-tutorial-2021/
+  Title: Intake-ESM
+  Video: https://youtu.be/pfdMbJMlYsw
+- Attendance: 95
+  Content: https://github.com/ProjectPythiaTutorials/metpy-2022-02-09
+  Date: '2022-02-09'
+  Post: https://ncar.github.io/esds/posts/2022/metpy_tutorial/
+  Title: MetPy
+  Video: https://youtu.be/a3VXzFOPuCg
+- Date: '2022-03-09'
+  Title: Thinking with Xarray

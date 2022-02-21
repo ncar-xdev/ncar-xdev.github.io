@@ -1,0 +1,23 @@
+Date,Title,Attendance,Post,Content,Video,FAQ
+2020-10-14,Your First Python Script: Reading in a .txt File,242,https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/,https://ncar.github.io/python-tutorial/tutorials/yourfirst.html,https://youtu.be/Jog7ybd6amw,https://ncar.github.io/esds/posts/2020/python-tutorial-faq/
+2020-10-28,Your First Python Script: Creating a Data Dictionary,174,https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/,https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary,https://youtu.be/5z6-t62x7Xs,https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-2/
+2021-11-11,Your First Python Script: Writing Functions,135,https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/,https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions,https://youtu.be/BerEf_3CsL8,https://ncar.github.io/esds/posts/2020/python-tutorial-faq-part-3/
+2021-01-27,Your First Python Package: Creating Your Own Package,135,https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/,https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package,https://youtu.be/6lbbTwGFcTc,
+2021-02-10,Your First Python Package: Using a Built-In Package and Publishing Your Package,92,https://ncar.github.io/esds/posts/2020/tutorial-seminar-series/,https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package,https://youtu.be/44QUMCh2ZHU,
+2021-02-24,Introduction to Jupyter,147,https://ncar.github.io/esds/posts/2021/python-tutorial-seminar-series-spring-2021/,,https://www.youtube.com/watch?v=xSzXvwzFsDU,https://ncar.github.io/esds/posts/2021/jupyter-notebooks-faq/
+2021-03-10,Numpy,142,https://ncar.github.io/esds/posts/2021/numpy-tutorial/,,https://youtu.be/kstc-6uz7AQ,https://ncar.github.io/esds/posts/2021/numpy-faq/
+2021-03-24,Matplotlib,111,https://ncar.github.io/esds/posts/2021/matplotlib-tutorial/,https://github.com/anissa111/matplotlib-tutorial,https://youtu.be/EiPRIdHQEmE,https://ncar.github.io/esds/posts/2021/matplotlib-faq/
+2021-04-14,Object Oriented Programming,124,https://ncar.github.io/esds/posts/2021/object-oriented-programming-tutorial/,https://github.com/pilotchute/oop_hrrr_tutorial,https://youtu.be/GEFnL8C62u8,
+2021-04-28,Cartopy,115,https://ncar.github.io/esds/posts/2021/cartopy-tutorial/,https://github.com/michaelavs/cartopy_tutorial,https://youtu.be/ivmd3RluMiw,
+2021-05-12,Git and GitHub,112,https://ncar.github.io/esds/posts/2021/git-and-github-tutorial/,https://github.com/NCAR/git-github-demo,https://youtu.be/fYkPn0Nttlg,
+2021-05-26,Pandas,107,https://ncar.github.io/esds/posts/2021/pandas-tutorial/,https://github.com/mgrover1/ncar_pandas_tutorial,https://youtu.be/BsV3ek7qsiM,
+2021-06-09,Xarray P1,114,https://ncar.github.io/esds/posts/2021/xarray-tutorial/,https://github.com/andersy005/xarray-tutorial,https://youtu.be/Ss4ryKukhi4,
+2021-06-23,Xarray P2,83,https://ncar.github.io/esds/posts/2021/xarray-tutorial/,https://github.com/andersy005/xarray-tutorial,https://youtu.be/2H_4drBwORY,
+2021-07-28,Dask P1,96,https://ncar.github.io/esds/posts/2021/dask-tutorial-update/,https://github.com/andersy005/xarray-tutorial,https://youtu.be/wn-QM6QUB_U,
+2021-08-11,Dask P2,62,https://ncar.github.io/esds/posts/2021/dask-tutorial-update/,https://github.com/andersy005/xarray-tutorial,https://youtu.be/yn4_-1pHC5k,
+2021-08-25,Plotting w GeoCAT,79,https://ncar.github.io/esds/posts/2021/geocat-tutorial/,https://github.com/anissa111/plotting-with-geocat-tutorial,https://youtu.be/It231le1fAU,
+2021-09-08,GeoCAT Comp,62,https://ncar.github.io/esds/posts/2021/geocat-comp-tutorial/,https://github.com/pilotchute/geocat_comp_tutorial,https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s,
+2021-11-10,Object Oriented Programming,85,https://ncar.github.io/esds/posts/2021/oop-tutorial/,https://github.com/kmpaul/pg2oop,https://youtu.be/zlHkkjr7e6k,
+2021-12-08,Intake-ESM,54,https://ncar.github.io/esds/posts/2021/intake-esm-tutorial-2021/,https://github.com/ProjectPythiaTutorials/intake-esm-tutorial_2021_12_08,https://youtu.be/pfdMbJMlYsw,
+2022-02-09,MetPy,95,https://ncar.github.io/esds/posts/2022/metpy_tutorial/,https://github.com/ProjectPythiaTutorials/metpy-2022-02-09,https://youtu.be/a3VXzFOPuCg,
+2022-03-09,Thinking with Xarray,,,,,
