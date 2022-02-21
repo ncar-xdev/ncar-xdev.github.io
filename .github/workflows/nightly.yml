@@ -5,9 +5,6 @@ on:
     - cron: '0 8 * * *' # run at 8 AM UTC
   workflow_dispatch:
 
-env:
-  GITHUB_TOKEN: '${{ secrets.GRAPHQL_TOKEN }}'
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,6 +42,8 @@ jobs:
 
       - name: Update GitHub statistics
         run: ./cli/getghstats.py
+        env:
+          GITHUB_TOKEN: '${{ secrets.GRAPHQL_TOKEN }}'
 
       - name: Update Packages metrics page
         run: ./cli/mkpkgs.py
