@@ -38,7 +38,7 @@ jobs:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
       - name: Update package download data
-        run: GOOGLE_APPLICATION_CREDENTIALS=${{ steps.auth.outputs.credentials_file_path }} ./cli/getdownloads.py
+        run: ./cli/getdownloads.py
 
       - name: Update GitHub statistics
         run: ./cli/getghstats.py
