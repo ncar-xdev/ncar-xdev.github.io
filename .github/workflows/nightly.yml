@@ -31,6 +31,12 @@ jobs:
       - name: Verify environment installation
         run: conda env list
 
+      - id: 'auth'
+        name: Authenticate for Google BigQuery access
+        uses: google-github-actions/auth@v0
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+
       - name: Update package download data
         run: ./cli/getdownloads.py
 
