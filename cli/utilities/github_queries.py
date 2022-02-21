@@ -42,7 +42,7 @@ fragment repoInfo on Repository {{
     headers = {'Authorization': f'bearer {token}'}
     response = requests.post(url, json=json, headers=headers)
     if response.status_code != 200:
-        raise RuntimeError(f'Failed to read project data [{response.status}]')
+        raise RuntimeError(f'Failed to read project data [{response.status_code}]')
     response_data = response.json()
 
     df = pd.DataFrame()
