@@ -55,8 +55,7 @@ jobs:
         run: |
           conda install pre-commit
           pre-commit install
-          pre-commit run --all
-          pre-commit run --all
+          pre-commit run --all || pre-commit run --all
 
       - name: Commit new changes
         uses: EndBug/add-and-commit@v8
