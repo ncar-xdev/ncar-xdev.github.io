@@ -1,5 +1,6 @@
-import requests
+from collections import defaultdict
 
+import requests
 import pandas as pd
 
 
@@ -140,9 +141,9 @@ def get_repo_issues(owner=None, name=None, token=None):
     url = 'https://api.github.com/graphql'
     headers = {'Authorization': f'bearer {token}'}
 
+    data = defaultdict(list)
     after = None
     has_next_page = True
-    df = pd.DataFrame(columns=['package', 'number', 'created', 'closed', 'author'])
     while has_next_page:
         after_str = '' if after is None else f', after: "{after}"'
         query = f"""
@@ -179,12 +180,10 @@ query {{
         has_next_page = issue_data['pageInfo']['hasNextPage']
 
         for node in issue_data['edges']:
-            data = {}
-            data['package'] = name
-            data['number'] = node['node']['number']
-            data['created'] = node['node']['createdAt']
-            data['closed'] = node['node']['closedAt']
-            data['author'] = node['node']['author']['login']
-            df = df.append(data, ignore_index=True)
+            data['package'].append(name)
+            data['number'].append(node['node']['number'])
+            data['created'].append(node['node']['createdAt'])
+            data['closed'].append(node['node']['closedAt'])
+            data['author'].append(node['node']['author']['login'])
 
-    return df
+    return pd.DataFrame(data)
