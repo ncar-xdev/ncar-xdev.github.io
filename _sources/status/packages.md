@@ -44,7 +44,7 @@ file: ../images/metrics/ecgtools-burndown.html
 > An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and loading assets (netCDF files and/or Zarr stores) into xarray datasets.
 
 The `Intake-ESM` [repository](https://github.com/intake/intake-esm) has **10 Watchers** and **68 Stargazers**.
-In 2021, there were **49810 downloads**. Currently, there have been **3100 downloads** so far in 2022.
+In 2021, there were **49810 downloads**. Currently, there have been **3262 downloads** so far in 2022.
 The most recent release is tagged at **v2021.8.17**.
 
 :::{raw} html
@@ -209,7 +209,7 @@ file: ../images/metrics/xcollection-burndown.html
 > xpersist provides custom caching utility functions in Python
 
 The `xpersist` [repository](https://github.com/ncar-xdev/xpersist) has **7 Watchers** and **4 Stargazers**.
-In 2021, there were **637 downloads**. Currently, there have been **406 downloads** so far in 2022.
+In 2021, there were **637 downloads**. Currently, there have been **410 downloads** so far in 2022.
 The most recent release is tagged at **v2021.12.17**.
 
 :::{raw} html
