@@ -235,4 +235,3 @@ file: ../images/metrics/xpersist-contributors.html
 file: ../images/metrics/xpersist-burndown.html
 ---
 :::
-
