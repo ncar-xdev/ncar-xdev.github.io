@@ -54,7 +54,7 @@ jobs:
       - name: Use pre-commit to fix newly generated pages
         run: |
           conda install pre-commit
-          pre-commit install .
+          pre-commit install
           pre-commit run --all
           pre-commit run --all
 
