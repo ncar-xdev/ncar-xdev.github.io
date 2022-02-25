@@ -163,8 +163,8 @@ def make_commit_images(df_c: pd.DataFrame):
                  .pivot(index='month', columns='author_type', values='changes') \
                  .astype('int64')
         filename = f'images/metrics/{pkg}-commits.html'
-        title = 'Repository Commits'
-        _make_stacked_bar_plot(df, filename, title, 'Commits')
+        title = 'Repository Changes (Additions + Deletions)'
+        _make_stacked_bar_plot(df, filename, title, 'Changes')
 
 
 def make_contributor_images(df_c: pd.DataFrame):
