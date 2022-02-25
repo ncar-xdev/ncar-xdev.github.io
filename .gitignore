@@ -3,3 +3,4 @@ _build/
 __pycache__
 .ipynb_checkpoints
 gha-creds-*.json
+setup-miniconda-patched-environment.yml
