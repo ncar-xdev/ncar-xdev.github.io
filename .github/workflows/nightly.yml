@@ -54,9 +54,8 @@ jobs:
       - name: Use pre-commit to fix newly generated pages
         run: |
           conda install pre-commit
-          pre-commit install .
-          pre-commit run --all
-          pre-commit run --all
+          pre-commit install
+          pre-commit run --all || pre-commit run --all
 
       - name: Commit new changes
         uses: EndBug/add-and-commit@v8
