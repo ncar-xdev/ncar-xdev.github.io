@@ -222,7 +222,7 @@ and package downloads for repositories that are published packaged on PyPI or
 Conda Forge.  These metrics are updated periodically, so check back later for
 new information.  (*Note that Conda download statistics can be months out of
 date, so it is likely that download numbers for the current and last months will
-be inaccurate.)
+be inaccurate.*)
 
 """
 
