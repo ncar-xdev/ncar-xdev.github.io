@@ -46,22 +46,21 @@ fragment repoInfo on Repository {{
         raise RuntimeError(f'Failed to read project data [{response.status_code}]')
     response_data = response.json()
 
-    df = pd.DataFrame()
+    data = defaultdict(list)
     for pkg in response_data['data']:
-        data = {}
-        data['package'] = pkg
-        data['forks'] = response_data['data'][pkg]['forkCount']
+        data['package'].append(pkg)
+        data['forks'].append(response_data['data'][pkg]['forkCount'])
         if response_data['data'][pkg]['latestRelease']:
-            data['release'] = response_data['data'][pkg]['latestRelease']['tag']['name']
+            rls = response_data['data'][pkg]['latestRelease']['tag']['name']
         else:
-            data['release'] = None
-        data['stargazers'] = response_data['data'][pkg]['stargazerCount']
-        data['watchers'] = response_data['data'][pkg]['watchers']['totalCount']
-        df = df.append(data, ignore_index=True)
+            rls = None
+        data['release'].append(rls)
+        data['stargazers'].append(response_data['data'][pkg]['stargazerCount'])
+        data['watchers'].append(response_data['data'][pkg]['watchers']['totalCount'])
 
-    df = df.astype(dtype={'forks': 'int64', 'stargazers': 'int64', 'watchers': 'int64'})
+    df = pd.DataFrame.from_dict(data)
 
-    return df
+    return df.astype(dtype={'forks': 'int64', 'stargazers': 'int64', 'watchers': 'int64'})
 
 
 def get_repo_commits(owner=None, name=None, token=None):
@@ -73,7 +72,7 @@ def get_repo_commits(owner=None, name=None, token=None):
 
     after = None
     has_next_page = True
-    df = pd.DataFrame()
+    data = defaultdict(list)
     while has_next_page:
         after_str = '' if after is None else f', after: "{after}"'
         query = f"""
@@ -119,19 +118,17 @@ query {{
         has_next_page = history_data['pageInfo']['hasNextPage']
 
         for node in history_data['edges']:
-            data = {}
-            data['package'] = name
-            data['additions'] = node['node']['additions']
-            data['deletions'] = node['node']['deletions']
-            data['date'] = node['node']['committedDate']
+            data['package'].append(name)
+            data['additions'].append(node['node']['additions'])
+            data['deletions'].append(node['node']['deletions'])
+            data['date'].append(node['node']['committedDate'])
             user = node['node']['author']['user']
-            if user:
-                data['author'] = user['login']
-            df = df.append(data, ignore_index=True)
+            author = user['login'] if user else None
+            data['author'].append(author)
 
-    df = df.astype(dtype={'additions': 'int64', 'deletions': 'int64'})
+    df = pd.DataFrame.from_dict(data)
 
-    return df
+    return df.astype(dtype={'additions': 'int64', 'deletions': 'int64'})
 
 
 def get_repo_issues(owner=None, name=None, token=None):
