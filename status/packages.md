@@ -13,7 +13,7 @@ be inaccurate.*)
 > ESM Catalog Generation Utilities
 
 The `ecgtools` [repository](https://github.com/ncar-xdev/ecgtools) has **7 Watchers** and **2 Stargazers**.
-In 2021, there were **3465 downloads**. Currently, there have been **811 downloads** so far in 2022.
+In 2021, there were **3465 downloads**. Currently, there have been **819 downloads** so far in 2022.
 The most recent release is tagged at **v2021.9.23**.
 
 :::{raw} html
@@ -46,7 +46,7 @@ file: ../images/metrics/ecgtools-burndown.html
 > An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and loading assets (netCDF files and/or Zarr stores) into xarray datasets.
 
 The `Intake-ESM` [repository](https://github.com/intake/intake-esm) has **10 Watchers** and **69 Stargazers**.
-In 2021, there were **49810 downloads**. Currently, there have been **3916 downloads** so far in 2022.
+In 2021, there were **49810 downloads**. Currently, there have been **3974 downloads** so far in 2022.
 The most recent release is tagged at **v2021.8.17**.
 
 :::{raw} html
@@ -79,7 +79,7 @@ file: ../images/metrics/intake-esm-burndown.html
 > Jupyter Lab Port Forwarding Utility
 
 The `Jupyter-Forward` [repository](https://github.com/ncar-xdev/jupyter-forward) has **7 Watchers** and **19 Stargazers**.
-In 2021, there were **11929 downloads**. Currently, there have been **2186 downloads** so far in 2022.
+In 2021, there were **11929 downloads**. Currently, there have been **2190 downloads** so far in 2022.
 The most recent release is tagged at **v2022.2.25**.
 
 :::{raw} html

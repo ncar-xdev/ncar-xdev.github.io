@@ -20,6 +20,7 @@ def main(token):
     repos_df.to_csv('data/github_repos.csv', index=False)
 
     commits_df = pd.DataFrame()
+    dfs = []
     print('Downloading commit histories for each repository...')
     for repo in repos.values():
         owner = repo['org']
@@ -27,10 +28,11 @@ def main(token):
         print(f'  {owner}/{name}...', end='', flush=True)
         df = gq.get_repo_commits(owner=owner, name=name, token=token)
         print(f'  ({len(df)} commits)')
-        commits_df = commits_df.append(df)
+        dfs.append(df)
+    commits_df = pd.concat(dfs, ignore_index=True)
     commits_df.to_csv('data/github_commits.csv', index=False)
 
-    issues_df = pd.DataFrame()
+    dfs = []
     print('Downloading issue statistics for each repository...')
     for repo in repos.values():
         owner = repo['org']
@@ -38,7 +40,8 @@ def main(token):
         print(f'  {owner}/{name}...', end='', flush=True)
         df = gq.get_repo_issues(owner=owner, name=name, token=token)
         print(f'  ({len(df)} issues)')
-        issues_df = issues_df.append(df)
+        dfs.append(df)
+    issues_df = pd.concat(dfs, ignore_index=True)
     issues_df.to_csv('data/github_issues.csv', index=False)
 
     print('Done.')
