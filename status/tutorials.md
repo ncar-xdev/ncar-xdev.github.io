@@ -10,7 +10,7 @@ Our upcoming tutorials can also be viewed on the
 
 ## Thinking with Xarray
 
-**Date:** 2022 March 9<br>
+**Date:** 2022 March 9<br>**Original Posting:** https://ncar.github.io/esds/posts/2022/Thinking-with-Xarray/<br>**Tutorial Data:** https://github.com/ProjectPythiaTutorials/thinking-with-xarray_2022_03_09<br>**Video Recording:** https://www.youtube.com/watch?v=TSw3GF_d2y8<br>**Number of Attendees:** 84<br>
 
 ## MetPy
 
