@@ -10,7 +10,7 @@ Our upcoming tutorials can also be viewed on the
 
 ## Thinking with Xarray
 
-**Date:** 2022 March 9 <span class="badge badge-warning">UPCOMING</span><br>
+**Date:** 2022 March 9<br>
 
 ## MetPy
 
