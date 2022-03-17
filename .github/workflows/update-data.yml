@@ -1,8 +1,6 @@
 name: nightly
 
 on:
-  schedule:
-    - cron: '0 8 * * *' # run at 8 AM UTC
   workflow_dispatch:
 
 jobs:
@@ -45,13 +43,7 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.GRAPHQL_TOKEN }}'
 
-      - name: Update Packages metrics page
-        run: ./cli/mkpkgs.py
-
-      - name: Update Tutorials metrics page
-        run: ./cli/mktuts.py
-
-      - name: Use pre-commit to fix newly generated pages
+      - name: Use pre-commit to fix newly generated data
         run: |
           conda install pre-commit
           pre-commit install
