@@ -1,17 +1,25 @@
-name: nightly
+name: build-and-deploy
 
 on:
+  push:
+  pull_request:
   schedule:
     - cron: '0 8 * * *' # run at 8 AM UTC
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash -l {0}
+    if: github.repository == 'ncar-xdev/ncar-xdev.github.io'
     steps:
+
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
 
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -31,41 +39,61 @@ jobs:
       - name: Verify environment installation
         run: conda env list
 
-      - id: 'auth'
-        name: Authenticate for Google BigQuery access
+      - name: Authenticate for Google BigQuery access
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        id: 'auth'
         uses: google-github-actions/auth@v0
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
       - name: Update package download data
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         run: ./cli/getdownloads.py
 
       - name: Update GitHub statistics
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         run: ./cli/getghstats.py
         env:
           GITHUB_TOKEN: '${{ secrets.GRAPHQL_TOKEN }}'
 
-      - name: Update Packages metrics page
-        run: ./cli/mkpkgs.py
-
-      - name: Update Tutorials metrics page
-        run: ./cli/mktuts.py
-
-      - name: Use pre-commit to fix newly generated pages
+      - name: Use pre-commit to fix newly generated data files
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         run: |
           conda install pre-commit
           pre-commit install
           pre-commit run --all || pre-commit run --all
 
-      - name: Commit new changes
+      - name: Commit new data files to repo
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         uses: EndBug/add-and-commit@v8
         with:
           add: '-A'
           default_author: github_actions
-          message: '[skip ci] Nightly metrics updates'
+          message: '[skip ci] Commit new data'
+
+      - name: Generate Packages metrics page
+        run: ./cli/mkpkgs.py
+
+      - name: Generate Tutorials metrics page
+        run: ./cli/mktuts.py
 
       - name: Build the book
         run: jupyter-book build .
+
+      - name: Zip up the site
+        run: |
+          set -x
+          set -e
+          if [ -f site.zip ]; then
+              rm -rf site.zip
+          fi
+          zip -r site.zip ./_build/html
+
+      - name: Upload zipped site artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: site-zip
+          path: ./site.zip
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
