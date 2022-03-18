@@ -4,3 +4,5 @@ __pycache__
 .ipynb_checkpoints
 gha-creds-*.json
 setup-miniconda-patched-environment.yml
+status/packages.md
+status/tutorials.md
