@@ -24,6 +24,7 @@ ecgtools,87,2021-10-03T13:04:45Z,2022-02-02T04:50:17Z,matt-long
 ecgtools,89,2021-10-18T17:29:22Z,,mgrover1
 ecgtools,98,2021-12-28T22:32:32Z,2022-01-06T18:34:07Z,andersy005
 ecgtools,110,2022-03-07T23:01:24Z,2022-03-07T23:04:33Z,github-actions
+ecgtools,119,2022-04-12T15:46:57Z,2022-04-12T15:53:47Z,github-actions
 intake-esm,7,2019-01-29T06:21:06Z,2019-01-30T23:30:00Z,andersy005
 intake-esm,8,2019-01-29T15:16:48Z,2019-01-30T23:29:08Z,andersy005
 intake-esm,10,2019-02-01T20:26:20Z,2019-10-18T21:14:49Z,andersy005
@@ -287,6 +288,7 @@ xcollection,33,2021-12-20T20:42:39Z,,mgrover1
 xcollection,36,2021-12-22T13:29:59Z,2021-12-23T16:14:52Z,andersy005
 xcollection,39,2021-12-22T14:00:37Z,2021-12-23T15:46:08Z,andersy005
 xcollection,40,2021-12-22T17:37:15Z,2021-12-22T18:28:09Z,andersy005
+xcollection,64,2022-04-12T15:46:22Z,2022-04-12T15:54:11Z,github-actions
 xpersist,1,2019-11-19T04:35:30Z,2020-12-17T22:10:15Z,matt-long
 xpersist,5,2019-11-20T15:54:20Z,,matt-long
 xpersist,6,2019-11-20T17:27:24Z,,matt-long
@@ -300,4 +302,4 @@ xpersist,43,2021-12-15T22:46:17Z,2021-12-20T16:43:30Z,andersy005
 xpersist,49,2021-12-16T21:07:40Z,,andersy005
 xpersist,57,2021-12-28T16:51:15Z,2021-12-28T17:03:52Z,andersy005
 xpersist,61,2022-01-12T22:56:52Z,,andersy005
-xpersist,74,2022-04-11T20:43:08Z,,github-actions
+xpersist,74,2022-04-11T20:43:08Z,2022-04-12T15:43:57Z,github-actions
