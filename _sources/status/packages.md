@@ -46,7 +46,7 @@ file: ../images/metrics/ecgtools-burndown.html
 > An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and loading assets (netCDF files and/or Zarr stores) into xarray datasets.
 
 The `Intake-ESM` [repository](https://github.com/intake/intake-esm) has **10 Watchers** and **70 Stargazers**.
-In 2021, there were **49810 downloads**. Currently, there have been **8893 downloads** so far in 2022.
+In 2021, there were **49810 downloads**. Currently, there have been **8900 downloads** so far in 2022.
 The most recent release is tagged at **v2021.8.17**.
 
 :::{raw} html
@@ -112,7 +112,7 @@ file: ../images/metrics/jupyter-forward-burndown.html
 > Utilities for expanding dask-jobqueue with appropriate settings for NCAR's clusters
 
 The `NCAR-Jobqueue` [repository](https://github.com/NCAR/ncar-jobqueue) has **7 Watchers** and **7 Stargazers**.
-In 2021, there were **15025 downloads**. Currently, there have been **3866 downloads** so far in 2022.
+In 2021, there were **15025 downloads**. Currently, there have been **3869 downloads** so far in 2022.
 The most recent release is tagged at **v2021.4.14**.
 
 :::{raw} html
@@ -178,7 +178,7 @@ file: ../images/metrics/xwrf-burndown.html
 > A high-level mapping of name/key to Xarray.Datasets.
 
 The `xcollection` [repository](https://github.com/ncar-xdev/xcollection) has **7 Watchers** and **3 Stargazers**.
-In 2021, there were **2311 downloads**. Currently, there have been **7375 downloads** so far in 2022.
+In 2021, there were **2311 downloads**. Currently, there have been **7405 downloads** so far in 2022.
 The most recent release is tagged at **v2021.12.23**.
 
 :::{raw} html
@@ -211,7 +211,7 @@ file: ../images/metrics/xcollection-burndown.html
 > xpersist provides custom caching utility functions in Python
 
 The `xpersist` [repository](https://github.com/ncar-xdev/xpersist) has **6 Watchers** and **4 Stargazers**.
-In 2021, there were **637 downloads**. Currently, there have been **4778 downloads** so far in 2022.
+In 2021, there were **637 downloads**. Currently, there have been **4786 downloads** so far in 2022.
 The most recent release is tagged at **v2021.12.17**.
 
 :::{raw} html
