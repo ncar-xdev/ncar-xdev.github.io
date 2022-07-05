@@ -46,7 +46,7 @@ file: ../images/metrics/ecgtools-burndown.html
 > An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and loading assets (netCDF files and/or Zarr stores) into xarray datasets.
 
 The `Intake-ESM` [repository](https://github.com/intake/intake-esm) has **10 Watchers** and **76 Stargazers**.
-In 2021, there were **49810 downloads**. Currently, there have been **12897 downloads** so far in 2022.
+In 2021, there were **49810 downloads**. Currently, there have been **12993 downloads** so far in 2022.
 The most recent release is tagged at **v2021.8.17**.
 
 :::{raw} html
@@ -178,7 +178,7 @@ file: ../images/metrics/xwrf-burndown.html
 > A high-level mapping of name/key to Xarray.Datasets.
 
 The `xcollection` [repository](https://github.com/ncar-xdev/xcollection) has **7 Watchers** and **4 Stargazers**.
-In 2021, there were **2311 downloads**. Currently, there have been **12396 downloads** so far in 2022.
+In 2021, there were **2311 downloads**. Currently, there have been **12420 downloads** so far in 2022.
 The most recent release is tagged at **v2021.12.23**.
 
 :::{raw} html
