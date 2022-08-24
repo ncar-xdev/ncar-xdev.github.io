@@ -101,6 +101,7 @@ ecgtools,729,175,2020-06-24T10:47:22Z,andersy005
 ecgtools,0,0,2020-06-02T06:58:38Z,andersy005
 ecgtools,197,11,2020-06-01T23:15:51Z,andersy005
 ecgtools,1467,0,2020-06-01T23:12:13Z,andersy005
+intake-esm,26,7,2022-08-23T19:00:28Z,andersy005
 intake-esm,2,0,2022-08-22T19:48:18Z,andersy005
 intake-esm,1,1,2022-08-22T18:54:36Z,pre-commit-ci[bot]
 intake-esm,5,14,2022-08-18T21:31:55Z,andersy005
@@ -1146,6 +1147,7 @@ intake-esm,3555,0,2018-12-31T17:11:29Z,andersy005
 intake-esm,7,42,2018-12-31T17:07:02Z,andersy005
 intake-esm,3590,0,2018-12-31T16:57:42Z,andersy005
 intake-esm,104,0,2018-12-31T16:43:26Z,andersy005
+jupyter-forward,56,12,2022-08-23T22:29:28Z,keewis
 jupyter-forward,19,9,2022-08-19T14:33:46Z,keewis
 jupyter-forward,1,1,2022-08-18T14:24:15Z,dependabot[bot]
 jupyter-forward,3,3,2022-08-18T14:17:04Z,pre-commit-ci[bot]
@@ -1417,6 +1419,7 @@ ncar-jobqueue,2496,0,2019-03-08T16:31:24Z,andersy005
 ncar-jobqueue,20,2,2019-03-08T16:23:31Z,andersy005
 ncar-jobqueue,2,0,2019-03-08T01:10:31Z,andersy005
 ncar-jobqueue,305,0,2019-03-08T01:10:20Z,andersy005
+xwrf,26,27,2022-08-24T00:25:27Z,jthielen
 xwrf,3,3,2022-08-02T00:09:27Z,pre-commit-ci[bot]
 xwrf,4,4,2022-07-05T19:30:09Z,pre-commit-ci[bot]
 xwrf,84,0,2022-06-22T15:45:46Z,jthielen
