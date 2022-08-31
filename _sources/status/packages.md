@@ -46,7 +46,7 @@ file: ../images/metrics/ecgtools-burndown.html
 > An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and loading assets (netCDF files and/or Zarr stores) into xarray datasets.
 
 The `Intake-ESM` [repository](https://github.com/intake/intake-esm) has **10 Watchers** and **81 Stargazers**.
-In 2021, there were **49810 downloads**. Currently, there have been **16028 downloads** so far in 2022.
+In 2021, there were **49810 downloads**. Currently, there have been **16082 downloads** so far in 2022.
 The most recent release is tagged at **v2021.8.17**.
 
 :::{raw} html
@@ -79,7 +79,7 @@ file: ../images/metrics/intake-esm-burndown.html
 > Jupyter Lab Port Forwarding Utility
 
 The `Jupyter-Forward` [repository](https://github.com/ncar-xdev/jupyter-forward) has **6 Watchers** and **22 Stargazers**.
-In 2021, there were **11929 downloads**. Currently, there have been **7289 downloads** so far in 2022.
+In 2021, there were **11929 downloads**. Currently, there have been **7315 downloads** so far in 2022.
 The most recent release is tagged at **v2022.3.28**.
 
 :::{raw} html
@@ -112,7 +112,7 @@ file: ../images/metrics/jupyter-forward-burndown.html
 > Utilities for expanding dask-jobqueue with appropriate settings for NCAR's clusters
 
 The `NCAR-Jobqueue` [repository](https://github.com/NCAR/ncar-jobqueue) has **7 Watchers** and **7 Stargazers**.
-In 2021, there were **15025 downloads**. Currently, there have been **6161 downloads** so far in 2022.
+In 2021, there were **15025 downloads**. Currently, there have been **6163 downloads** so far in 2022.
 The most recent release is tagged at **v2021.4.14**.
 
 :::{raw} html
